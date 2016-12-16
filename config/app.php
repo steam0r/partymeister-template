@@ -193,6 +193,7 @@ return [
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Motor\Core\Providers\MotorServiceProvider::class,
+        Motor\CMS\Providers\MotorServiceProvider::class,
 
         Partymeister\Core\Providers\PartymeisterServiceProvider::class,
         Partymeister\Accounting\Providers\PartymeisterServiceProvider::class,
