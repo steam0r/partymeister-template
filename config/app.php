@@ -194,6 +194,7 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
         Motor\Core\Providers\MotorServiceProvider::class,
         Motor\CMS\Providers\MotorServiceProvider::class,
+        Motor\Media\Providers\MotorServiceProvider::class,
 
         Partymeister\Core\Providers\PartymeisterServiceProvider::class,
         Partymeister\Accounting\Providers\PartymeisterServiceProvider::class,
