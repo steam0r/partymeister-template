@@ -174,7 +174,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+         App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
@@ -197,6 +197,12 @@ return [
 
         Partymeister\Core\Providers\PartymeisterServiceProvider::class,
         Partymeister\Accounting\Providers\PartymeisterServiceProvider::class,
+        Partymeister\Competitions\Providers\PartymeisterServiceProvider::class,
+        Partymeister\Slides\Providers\PartymeisterServiceProvider::class,
+        Partymeister\Slides\Providers\EventServiceProvider::class,
+        Partymeister\Frontend\Providers\PartymeisterServiceProvider::class,
+
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class
     ],
 
     /*
@@ -252,6 +258,9 @@ return [
         'Image'       => Intervention\Image\Facades\Image::class,
         'Menu'        => Lavary\Menu\Facade::class,
         'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+
     ],
 
 ];

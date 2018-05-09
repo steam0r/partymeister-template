@@ -6,10 +6,11 @@
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
+@import "~@coreui/ajax/Static_Starter_GULP/src/scss/style.scss";
 
 //Ionicons
-@import "node_modules/ionicons/dist/scss/ionicons.scss";
+//@import "~ionicons/dist/scss/ionicons.scss";
 
 //Font awesome
-@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "~simple-line-icons/scss/simple-line-icons.scss";

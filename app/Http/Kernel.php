@@ -3,6 +3,9 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Tymon\JWTAuth\Http\Middleware\Authenticate;
+use Tymon\JWTAuth\Http\Middleware\AuthenticateAndRenew;
+use Tymon\JWTAuth\Http\Middleware\RefreshToken;
 
 class Kernel extends HttpKernel
 {
@@ -15,6 +18,7 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+        \Barryvdh\Cors\HandleCors::class,
     ];
 
     /**
@@ -63,5 +67,8 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'navigation' => \Motor\Backend\Http\Middleware\BackendNavigation::class,
         'permission' => \Motor\Backend\Http\Middleware\CheckPermission::class,
+        //'jwt.authenticate-and-renew' => AuthenticateAndRenew::class,
+        //'jwt.authenticate' => Authenticate::class,
+        //'jwt.refresh' => RefreshToken::class,
     ];
 }

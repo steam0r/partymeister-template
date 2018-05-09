@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard'     => 'web',
         'passwords' => 'users',
     ],
 
@@ -36,13 +36,17 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
+        'web'      => [
+            'driver'   => 'session',
             'provider' => 'users',
+        ],
+        'visitor' => [
+            'driver'   => 'session',
+            'provider' => 'visitor',
         ],
 
         'api' => [
-            'driver' => 'token',
+            'driver'   => 'token',
             'provider' => 'users',
         ],
     ],
@@ -65,9 +69,13 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'users'    => [
             'driver' => 'eloquent',
-            'model' => Motor\Backend\Models\User::class
+            'model'  => Motor\Backend\Models\User::class
+        ],
+        'visitor' => [
+            'driver' => 'eloquent',
+            'model'  => Partymeister\Core\Models\Visitor::class
         ],
 
         // 'users' => [
@@ -94,8 +102,13 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
-            'table' => 'password_resets',
-            'expire' => 60,
+            'table'    => 'password_resets',
+            'expire'   => 60,
+        ],
+        'visitors' => [
+            'provider' => 'visitors',
+            'table'    => 'password_resets',
+            'expire'   => 60,
         ],
     ],
 

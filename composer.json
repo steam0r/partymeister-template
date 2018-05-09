@@ -7,19 +7,18 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=5.6.4",
-        "laravel/framework": "5.4.*",
-        "dfox288/motor-backend": "0.2.*",
-        "dfox288/motor-cms": "0.2.*",
-        "dfox288/motor-media": "0.2.*"
+        "php": ">=7.1.3",
+        "motor-cms/motor-backend": "^0.4",
+        "motor-cms/motor-cms": "^0.4",
+        "motor-cms/motor-core": "^0.4",
+        "motor-cms/motor-media": "^0.4",
+        "partymeister/accounting": "^0.1",
+        "partymeister/competitions": "^0.1",
+        "partymeister/core": "^0.1",
+        "partymeister/frontend": "^0.1.1",
+        "partymeister/slides": "^0.1"
     },
     "require-dev": {
-        "fzaninotto/faker": "~1.4",
-        "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0",
-        "symfony/css-selector": "3.2.*",
-        "symfony/dom-crawler": "3.2.*",
-        "orchestra/testbench": "3.4.*"
     },
     "autoload": {
         "classmap": [
@@ -43,16 +42,16 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize",
             "php artisan motor:setpackagedev false"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize",
             "php artisan motor:setpackagedev false"
         ]
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
 }
