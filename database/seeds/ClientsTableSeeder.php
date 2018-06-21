@@ -17,8 +17,6 @@ class ClientsTableSeeder extends Seeder
             'name'       => 'Default',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
-            'created_by' => User::first()->id,
-            'updated_by' => User::first()->id,
         ]);
     }
 }
