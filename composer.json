@@ -8,15 +8,15 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.1.3",
-        "motor-cms/motor-backend": "^0.4",
-        "motor-cms/motor-cms": "^0.4",
-        "motor-cms/motor-core": "^0.4",
-        "motor-cms/motor-media": "^0.4",
-        "partymeister/accounting": "^0.1",
-        "partymeister/competitions": "^0.1",
-        "partymeister/core": "^0.1",
-        "partymeister/frontend": "^0.1.1",
-        "partymeister/slides": "^0.1"
+        "motor-cms/motor-backend": "^0.6",
+        "motor-cms/motor-cms": "^0.6",
+        "motor-cms/motor-core": "^0.6",
+        "motor-cms/motor-media": "^0.6",
+        "partymeister/accounting": "^0.3",
+        "partymeister/competitions": "^0.3",
+        "partymeister/core": "^0.3",
+        "partymeister/frontend": "^0.3",
+        "partymeister/slides": "^0.3"
     },
     "require-dev": {
     },
