@@ -12,6 +12,7 @@ require('motor-cms/resources/assets/js/motor-cms/main');
 require('motor-media/resources/assets/js/motor-media/main');
 require('partymeister-competitions/resources/assets/js/partymeister-competitions/main');
 require('partymeister-slides/resources/assets/js/partymeister-slides/main');
+require('partymeister-core/resources/assets/js/partymeister-core/main');
 
 // Require... something?
 require('partymeister-slides/resources/assets/js/partymeister-slides/partymeister-slides');
