@@ -1,5 +1,5 @@
 {
-	"authHost": "http://pm3.test",
+	"authHost": "http://partymeister.test",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{
