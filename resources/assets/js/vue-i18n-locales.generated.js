@@ -432,11 +432,33 @@ export default {
         },
         "partymeister-core": {
             "component": {
+                "visitor-lists": {
+                    "component": "Visitor list component",
+                    "created": "Visitor list component created",
+                    "updated": "Visitor list component updated",
+                    "deleted": "Visitor list component deleted"
+                },
                 "schedules": {
                     "component": "Schedule component",
                     "created": "Schedule component created",
                     "updated": "Schedule component updated",
                     "deleted": "Schedule component deleted"
+                },
+                "visitor-registrations": {
+                    "component": "Visitor registration component",
+                    "created": "Visitor registration component created",
+                    "updated": "Visitor registration component updated",
+                    "deleted": "Visitor registration component deleted"
+                },
+                "visitor-logins": {
+                    "component": "Visitor login component",
+                    "created": "Visitor login component created",
+                    "updated": "Visitor login component updated",
+                    "deleted": "Visitor login component deleted",
+                    "visitor_registration_page": "Visitor registration page",
+                    "entries_page": "Entries page",
+                    "voting_page": "Voting page",
+                    "comments_page": "Comments page"
                 }
             },
             "backend": {
@@ -694,6 +716,63 @@ export default {
             }
         },
         "partymeister-competitions": {
+            "component": {
+                "entries": {
+                    "component": "Entry component",
+                    "created": "Entry component created",
+                    "updated": "Entry component updated",
+                    "deleted": "Entry component deleted",
+                    "entry_comments_page": "Entry comments page",
+                    "entry_screenshots_page": "Entry screenshots page",
+                    "entry_edit_page": "Entry edit page",
+                    "entry_detail_page": "Entry detail page"
+                },
+                "votings": {
+                    "component": "Voting component",
+                    "created": "Voting component created",
+                    "updated": "Voting component updated",
+                    "deleted": "Voting component deleted",
+                    "live_voting_page": "Live voting page"
+                },
+                "entry-uploads": {
+                    "component": "Entry upload component",
+                    "created": "Entry upload component created",
+                    "updated": "Entry upload component updated",
+                    "deleted": "Entry upload component deleted",
+                    "entries_page": "Entries page"
+                },
+                "entry-screenshots": {
+                    "component": "Entry screenshot component",
+                    "created": "Entry screenshot component created",
+                    "updated": "Entry screenshot component updated",
+                    "deleted": "Entry screenshot component deleted",
+                    "entries_page": "Entries page"
+                },
+                "entry-details": {
+                    "component": "Entry detail component",
+                    "created": "Entry detail component created",
+                    "updated": "Entry detail component updated",
+                    "deleted": "Entry detail component deleted"
+                },
+                "competition-lists": {
+                    "component": "Competition list component",
+                    "created": "Competition list component created",
+                    "updated": "Competition list component updated",
+                    "deleted": "Competition list component deleted"
+                },
+                "live-votings": {
+                    "component": "Live voting component",
+                    "created": "Live voting component created",
+                    "updated": "Live voting component updated",
+                    "deleted": "Live voting component deleted"
+                },
+                "releases": {
+                    "component": "Release component",
+                    "created": "Release component created",
+                    "updated": "Release component updated",
+                    "deleted": "Release component deleted"
+                }
+            },
             "backend": {
                 "entries": {
                     "entries": "Entries",
