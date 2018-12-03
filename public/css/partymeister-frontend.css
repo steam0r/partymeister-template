@@ -11531,3 +11531,8 @@ button.toast-close-button {
   background-image: url(/images/vendor/flag-icon-css/flags/1x1/un.svg?c366cfa86e7874f3155d1a1763b8b46a);
 }
 
+.vertical.menu li a i,
+.vertical.menu li a svg {
+  min-width: 25px;
+}
+
