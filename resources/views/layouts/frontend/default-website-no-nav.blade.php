@@ -76,6 +76,13 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .button.success {
+            background-color: #63c2dc;
+        }
+        .button.success:hover,
+        .button.success:focus {
+            background-color: #48bbdb;
+        }
     </style>
 </head>
 <body>
