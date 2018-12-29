@@ -8,8 +8,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link href="{{ mix('/css/partymeister-frontend.css') }}" rel="stylesheet" type="text/css"/>
-{{--<link href="{{ asset('/css/revision2018.css') }}" rel="stylesheet" type="text/css"/>--}}
-<!-- Custom styles for this template -->
     @yield('view-styles')
     <style type="text/css">
         html {
@@ -21,6 +19,7 @@
             background: url('/images/r2019-bg.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-size: cover;
             z-index: 10;
         }
 
@@ -31,6 +30,7 @@
             font-style: italic;
             text-transform: uppercase;
             text-align: center;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.9);
         }
 
         .header.small div {
@@ -76,9 +76,11 @@
             margin-left: auto;
             margin-right: auto;
         }
+
         .button.success {
             background-color: #63c2dc;
         }
+
         .button.success:hover,
         .button.success:focus {
             background-color: #48bbdb;
@@ -98,6 +100,12 @@
     <div class="grid-x">
         <div class="cell medium-offset-2 large-offset-2 medium-8 large-8 small-12">
             @include('motor-cms::layouts.frontend.partials.template-sections', ['rows' => $template['items']])
+        </div>
+
+        <div class="cell medium-offset-2 large-offset-2 medium-8 large-8 small-12 align-center" data-sticky-container>
+            <div class="sticky" style="text-align: center;" data-sticky data-stick-to="bottom" data-top-anchor="example3" data-btm-anchor="foo2:top">
+                &copy; 2011 &dash; {{date('Y')}} Tastatur und Maus e.V | <a href="https://2018.revision-party.net/contact" target="_blank">Imprint</a>
+            </div>
         </div>
     </div>
 </div>
