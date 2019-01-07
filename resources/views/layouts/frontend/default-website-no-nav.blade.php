@@ -14,19 +14,39 @@
             margin-bottom: 50px;
         }
 
-        @media only screen and (max-width: 600px) {
-            body {
-                background-attachment: scroll !important;
-            }
-        }
+        /*.pagebg-container {*/
+            /*background: url('/images/r2019-bg.jpg');*/
+            /*background-position: center top;*/
+            /*background-repeat: no-repeat;*/
+            /*background-size: cover;*/
+            /*position: fixed;*/
+            /*height: 100vh;*/
+            /*width: 100%;*/
+        /*}*/
 
         body {
             font-family: 'Exo 2', sans-serif;
-            background: url('/images/r2019-bg.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
+            background: transparent;
+            /*background: url('/images/r2019-bg.jpg');*/
+            /*background-repeat: no-repeat;*/
+            /*background-attachment: fixed;*/
+            /*background-size: cover;*/
             z-index: 10;
+        }
+
+        body:after{
+            content:"";
+            position:fixed; /* stretch a fixed position to the whole screen */
+            top:0;
+            height:100vh; /* fix for mobile browser address bar appearing disappearing */
+            left:0;
+            right:0;
+            z-index:-1; /* needed to keep in the background */
+            background: url('/images/r2019-bg.jpg') center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -94,6 +114,7 @@
     </style>
 </head>
 <body>
+<div id="pagebg-container"></div>
 <div class="header">
     <img src="/images/r2019-logo.png">
     <div>
