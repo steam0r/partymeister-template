@@ -14,6 +14,13 @@
             margin-bottom: 50px;
         }
 
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+                background-attachment: scroll;
+            }
+        }
+
         body {
             font-family: 'Exo 2', sans-serif;
             background: url('/images/r2019-bg.jpg');
