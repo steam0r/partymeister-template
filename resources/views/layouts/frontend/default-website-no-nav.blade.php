@@ -129,8 +129,8 @@
             @include('motor-cms::layouts.frontend.partials.template-sections', ['rows' => $template['items']])
         </div>
 
-        <div class="cell medium-offset-2 large-offset-2 medium-8 large-8 small-12 align-center" data-sticky-container>
-            <div class="sticky" style="text-align: center;" data-sticky data-stick-to="bottom" data-top-anchor="example3" data-btm-anchor="foo2:top">
+        <div style="margin-top: 30px;" class="cell medium-offset-2 large-offset-2 medium-8 large-8 small-12 align-center" data-sticky-container>
+            <div class="sticky" style="text-align: center;" data-stick-to="bottom" data-top-anchor="example3" data-btm-anchor="foo2:top">
                 &copy; 2011 &dash; {{date('Y')}} Tastatur und Maus e.V | <a href="https://2018.revision-party.net/contact" target="_blank">Imprint</a>
             </div>
         </div>
