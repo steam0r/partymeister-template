@@ -27,7 +27,6 @@
         "symfony/css-selector": "~4.0",
         "symfony/dom-crawler": "~4.0",
         "orchestra/testbench": "~3.6",
-        "laravel/dusk": "~3.0",
         "nunomaduro/collision": "^2.0"
     },
     "autoload": {
