@@ -27,6 +27,6 @@ return [
         "Z"
     ],
     'length'       => 8,
-    'divider'      => '-',
+    'divider'      => '',
     'divide_every' => 4,
 ];
