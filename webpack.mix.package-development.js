@@ -1,4 +1,4 @@
-const {mix} = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -26,7 +26,6 @@ mix.webpackConfig({
 mix
     .js('resources/assets/js/project.package-development.js', 'public/js/motor-backend.js')
 
-    .js('packages/dfox288/partymeister-accounting/resources/assets/js/partymeister-accounting-pos/main.package-development.js', 'public/js/partymeister-accounting-pos.js')
     .js('packages/dfox288/partymeister-frontend/resources/assets/js/partymeister-livevoting/main.js', 'public/js/partymeister-livevoting.js')
     .js('packages/dfox288/partymeister-slides/resources/assets/js/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
     .js('packages/dfox288/partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
@@ -35,7 +34,6 @@ mix
     .sass('resources/assets/sass/project.package-development.scss', 'public/css/motor-backend.css')
     .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
     .sass('packages/dfox288/partymeister-slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
-    .sass('packages/dfox288/partymeister-accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
     .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-frontend.scss', 'public/css')
     // APP RESOURCES
     .copy('resources/fonts/*.*', 'public/fonts')

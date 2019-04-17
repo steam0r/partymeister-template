@@ -1,27 +1,28 @@
 // Initialize base store
-import store from './modules/motor-backend/store';
+import store from 'motor-backend/resources/assets/js/motor-backend/store';
 
 // Initialize page component store module
-import pageComponentStore from './modules/motor-cms/page-component-store';
+import pageComponentStore from 'motor-cms/resources/assets/js/motor-cms/page-component-store';
 
 store.registerModule('pageComponentStore', pageComponentStore);
 
 // Require modules
-require('./modules/motor-backend/main');
-require('./modules/motor-cms/main');
-require('./modules/motor-media/main');
-require('./modules/partymeister-competitions/main');
-require('./modules/partymeister-slides/main');
+require('motor-backend/resources/assets/js/motor-backend/main');
+require('motor-cms/resources/assets/js/motor-cms/main');
+require('motor-media/resources/assets/js/motor-media/main');
+require('partymeister-competitions/resources/assets/js/partymeister-competitions/main');
+require('partymeister-slides/resources/assets/js/partymeister-slides/main');
+require('partymeister-core/resources/assets/js/partymeister-core/main');
 
 // Require... something?
-require('./modules/partymeister-slides/partymeister-slides');
+require('partymeister-slides/resources/assets/js/partymeister-slides/partymeister-slides');
 
 // Initialize global event hub
 Vue.prototype.$eventHub = new Vue();
 
 // Initialize vue i18n and load generated locale data
 import VueInternationalization from 'vue-i18n';
-import Locale from './vue-i18n-locales.generated';
+import Locale from 'vue-i18n-locales.generated';
 
 Vue.use(VueInternationalization);
 

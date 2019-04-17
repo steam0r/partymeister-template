@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name'        => 'PartyMeister 3.0',
+    'name'        => 'Pardeymeista Revision 2019',
     'name_part_1' => 'PM3',
     'name_part_2' => '',
     'name_short'  => 'PM',
