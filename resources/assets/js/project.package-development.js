@@ -1,8 +1,6 @@
 // Initialize base store
 import store from 'motor-backend/resources/assets/js/motor-backend/store';
 
-store.registerModule('pageComponentStore', pageComponentStore);
-
 // Require modules
 require('motor-backend/resources/assets/js/motor-backend/main');
 require('partymeister-core/resources/assets/js/partymeister-core/main');
