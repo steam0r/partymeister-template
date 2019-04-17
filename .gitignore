@@ -13,3 +13,5 @@ update-dev.sh
 update-production.sh
 install-dev.sh
 install-production.sh
+.DS_Store
+._.DS_Store

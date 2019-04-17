@@ -1,4 +1,4 @@
-const {mix} = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,22 +13,31 @@ const {mix} = require('laravel-mix');
 
 mix.webpackConfig({
     resolve: {
+        modules: [
+            'node_modules',
+            'vendor/tightenco',
+            'vendor/motor-cms',
+            'vendor/partymeister',
+            'resources/assets/js',
+            'packages/dfox288'
+        ],
         extensions: [".webpack.js", ".web.js", ".js", ".json", ".less"]
     }
 });
 
 mix
-    .js('resources/assets/js/project.js', 'public/js/motor-backend.js')
-    .js('resources/assets/js/modules/partymeister-accounting-pos/main.js', 'public/js/partymeister-accounting-pos.js')
-    .js('resources/assets/js/modules/partymeister-livevoting/main.js', 'public/js/partymeister-livevoting.js')
-    .js('resources/assets/js/modules/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
-    .js('resources/assets/js/modules/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
+    .js('resources/assets/js/project.default.js', 'public/js/motor-backend.js')
+
+    .js('partymeister-frontend/resources/assets/js/partymeister-livevoting/main.js', 'public/js/partymeister-livevoting.js')
+    .js('partymeister-slides/resources/assets/js/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
+    .js('partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
+    .js('partymeister-slides/resources/assets/js/partymeister-slides/partymeister-slides-frontend.js', 'public/js/partymeister-slides-frontend.js')
     .sourceMaps()
-    .sass('resources/assets/sass/project.scss', 'public/css/motor-backend.css')
-    .sass('resources/assets/sass/partymeister-livevoting.scss', 'public/css')
-    .sass('resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
-    .sass('resources/assets/sass/partymeister-pos.scss', 'public/css')
-    .sass('resources/assets/sass/partymeister-frontend.scss', 'public/css')
+    .sass('resources/assets/sass/project.default.scss', 'public/css/motor-backend.css')
+    .sass('partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
+    .sass('partymeister-slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
+    .sass('partymeister-accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
+    .sass('partymeister-frontend/resources/assets/sass/partymeister-frontend.scss', 'public/css')
     // APP RESOURCES
     .copy('resources/fonts/*.*', 'public/fonts')
     .copy('resources/assets/images/*.*', 'public/images')
