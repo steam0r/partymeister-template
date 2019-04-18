@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('partymeister:core:check-callbacks')->everyMinute();
         $schedule->command('partymeister:competitions:link-entry-files')->everyMinute();
-        $schedule->command('partymeister:competitions-publish-release-files')->everyMinute();
+        $schedule->command('partymeister:competitions:publish-release-files')->everyMinute();
         $schedule->command('partymeister:frontend:cache-photowall')->everyFiveMinutes();
     }
 

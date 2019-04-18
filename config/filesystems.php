@@ -42,6 +42,10 @@ return [
     */
 
     'disks' => [
+        'photowall' => [
+            'driver' => 'local',
+            'root' => public_path().'/photowall'
+        ],
 
         'media' => [
             'driver' => 'local',
