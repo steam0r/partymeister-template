@@ -2,7 +2,7 @@
 
 return [
     'video_1'             => [
-        'duration'             => 47,
+        'duration'             => 53,
         'transition'           => 0,
         'transition_duration'  => 500,
         'is_advanced_manually' => 0,
