@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-build-classic": "^11.1.1",
-    "@claviska/jquery-minicolors": "^2.3.2",
+    "@claviska/jquery-minicolors": "^2.3.4",
     "@coreui/coreui": "^2.1.1",
     "@fancyapps/fancybox": "^3.5.2",
     "@fortawesome/fontawesome-free": "^5.5.0",

@@ -34,7 +34,8 @@ mix
     .sass('resources/assets/sass/project.package-development.scss', 'public/css/motor-backend.css')
     .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
     .sass('packages/dfox288/partymeister-slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
-    .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-frontend.scss', 'public/css')
+    // .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-frontend.scss', 'public/css')
+    .sass('resources/assets/sass/partymeister-frontend.scss', 'public/css')
     // APP RESOURCES
     .copy('resources/fonts/*.*', 'public/fonts')
     .copy('resources/assets/images/*.*', 'public/images')
