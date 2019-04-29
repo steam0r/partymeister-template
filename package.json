@@ -67,5 +67,8 @@
     "vue-template-compiler": "^2.6.10",
     "vuedraggable": "^2.16.0",
     "vuex": "^3.0.1"
+  },
+  "dependencies": {
+    "dom-to-image-more": "^2.7.7"
   }
 }

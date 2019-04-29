@@ -40,7 +40,7 @@ return [
     ],
     'comingup'            => [
         'slide_type' => 'comingup',
-        'midi_note'  => 0
+        'midi_note'  => 99
     ],
     'now'                 => [
         'slide_type' => 'comingup',

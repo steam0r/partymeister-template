@@ -14,3 +14,8 @@ update-dev.sh
 update-production.sh
 install-dev.sh
 install-production.sh
+.DS_Store
+public/Remix Sample-Pack.zip
+public/paintover2019_yourname_step01.jpg
+releases
+storage/*.png
