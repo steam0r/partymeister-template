@@ -144,7 +144,6 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
 //        Illuminate\View\ViewServiceProvider::class,             <-- we're replacing this so we can use blade templates from strings
-        Wpb\String_Blade_Compiler\ViewServiceProvider::class,
 
         Motor\Backend\Providers\TranslationServiceProvider::class,
 
