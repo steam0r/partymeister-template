@@ -18,7 +18,7 @@
     "@claviska/jquery-minicolors": "^2.3.4",
     "@coreui/coreui": "^2.1.9",
     "@fancyapps/fancybox": "^3.5.7",
-    "@fortawesome/fontawesome-free": "^5.8.1",
+    "@fortawesome/fontawesome-free": "^5.8.2",
     "ajv": "^6.10.0",
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
@@ -31,11 +31,11 @@
     "foundation-sites": "^6.5.3",
     "fs-extra": "^4.0.3",
     "google-fonts-webpack-plugin": "^0.4.4",
-    "jquery": "^3.4.0",
+    "jquery": "^3.4.1",
     "jquery-ui-dist": "^1.12.1",
     "jstree": "^3.3.8",
     "laravel-echo": "^1.5.3",
-    "laravel-echo-server": "^1.5.0",
+    "laravel-echo-server": "^1.5.5",
     "laravel-mix": "^4.0.14",
     "lodash": "^4.17.11",
     "mediaelement": "^4.2.9",
@@ -47,9 +47,8 @@
     "pace-progress": "1.0.2",
     "perfect-scrollbar": "^1.4.0",
     "popper.js": "^1.15.0",
-    "puppeteer": "^1.15.0",
     "resolve-url-loader": "^2.3.2",
-    "sass": "^1.18.0",
+    "sass": "^1.20.1",
     "sass-loader": "^7.1.0",
     "select2": "4.0.6-rc.1",
     "select2-bootstrap-theme": "0.1.0-beta.10",
@@ -62,15 +61,16 @@
     "vue": "^2.6.10",
     "vue-bootstrap-datetimepicker": "^5.0.1",
     "vue-ckeditor5": "^0.4.1",
-    "vue-i18n": "^8.11.1",
+    "vue-i18n": "^8.11.2",
     "vue-resource": "^1.5.1",
     "vue-template-compiler": "^2.6.10",
-    "vuedraggable": "^2.20.0",
-    "vuex": "^3.1.0"
+    "vuedraggable": "^2.21.0",
+    "vuex": "^3.1.1"
   },
   "dependencies": {
-    "dom-to-image-more": "^2.7.7",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1"
+    "dom-to-image-more": "^2.8.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "what-input": "^5.2.1"
   }
 }
