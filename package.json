@@ -58,7 +58,6 @@
     "toastr": "^2.1.4",
     "vue": "^2.6.10",
     "vue-bootstrap-datetimepicker": "^5.0.1",
-    "vue-ckeditor5": "^0.4.1",
     "vue-i18n": "^8.11.2",
     "vue-resource": "^1.5.1",
     "vue-template-compiler": "^2.6.10",
@@ -66,6 +65,7 @@
     "vuex": "^3.1.1"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-vue": "^1.0.0-beta.2",
     "@ttskch/select2-bootstrap4-theme": "^1.2.2",
     "dom-to-image-more": "^2.8.0",
     "webpack": "^4.32.2",
