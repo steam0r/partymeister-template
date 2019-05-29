@@ -29,12 +29,12 @@ h3 {
 }
 
 
-body {
-  background: #c8e4f4;
-}
-.top-bar, .top-bar ul {
-  background: #52b9ef;
-}
+//body {
+//  background: #ccc;
+//}
+//.top-bar, .top-bar ul {
+//  background: #999;
+//}
 
 .top-bar ul li, .top-bar ul li a {
   font-family: 'Poppins', sans-serif;
@@ -47,9 +47,9 @@ body {
   color: #333;
 }
 
-.button.success {
-  background-color: #52b9ef;
-}
+//.button.success {
+//  background-color: #52b9ef;
+//}
 
 table.unstriped tbody, table.unstriped tbody tr {
   background-color: transparent !important;
@@ -87,4 +87,19 @@ ul.vertical.menu li a {
 }
 .button.warning.special-vote-off {
   background-color: red;
+}
+
+.footer {
+  height: 5rem;
+  background: #e6e6e6;
+  //color: #fff;
+  padding: 1rem;
+}
+
+.footer .menu a {
+  margin-top: 0.25rem;
+  color: #333;
+}
+.footer .menu a:hover {
+  text-decoration: underline;
 }

@@ -38,7 +38,7 @@ class VisitorRegisteredEventListener
             case 9: $seatNumber = $maxRows.'J'; break;
             case 0: $seatNumber = $maxRows.'K'; break;
         }
-        $event->visitor->additional_data = ['seat' => $seatNumber, 'boardingpass' => Str::upper(str_random(5))];
+        $event->visitor->additional_data = ['seat' => $seatNumber, 'boardingpass' => Str::upper(Str::random(5))];
         $event->visitor->save();
     }
 }

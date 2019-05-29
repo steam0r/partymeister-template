@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'coming_up' => 'BOARDING',
-    'now'       => 'LAST CALL',
-    'end'       => 'ARRIVED'
+    'coming_up' => 'COMING UP',
+    'now'       => 'NOW',
+    'end'       => 'END'
 ];
