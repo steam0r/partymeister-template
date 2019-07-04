@@ -20,6 +20,7 @@
         "partymeister/slides": "^0.4"
     },
     "require-dev": {
+        "nunomaduro/phpinsights": "^1.7"
     },
     "autoload": {
         "classmap": [

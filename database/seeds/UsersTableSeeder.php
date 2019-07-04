@@ -14,9 +14,9 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('roles')->insert([
-            'name'       => 'SuperAdmin'
-        ]);
+        //DB::table('roles')->insert([
+        //    'name'       => 'SuperAdmin'
+        //]);
 
         DB::table('users')->insert([
             'name'       => 'Motor Admin',
