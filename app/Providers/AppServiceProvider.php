@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Horizon::auth(function ($request) {
+        Horizon::auth(static function ($request) {
             if (Auth::user() != null) {
                 return true;
             }

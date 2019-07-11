@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare( strict_types=1 );
 
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenDefineFunctions;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenFinalClasses;
@@ -42,7 +42,20 @@ return [
     */
 
     'exclude' => [
-        //  'path/to/directory-or-file'
+        //'app',
+        'bootstrap',
+        //'database/migrations',
+        //'packages/dfox288/motor-backend/database/migrations',
+        //'packages/dfox288/motor-cms/database/migrations',
+        //'packages/dfox288/motor-media/database/migrations',
+        'packages/dfox288/partymeister-core',
+        'packages/dfox288/partymeister-competitions',
+        'packages/dfox288/partymeister-slides',
+        'packages/dfox288/partymeister-frontend',
+        'packages/dfox288/partymeister-accounting',
+        'packages/dfox288/motor-core',
+        //'storage',
+        //'resources',
     ],
 
     'add' => [
@@ -59,6 +72,14 @@ return [
         ForbiddenNormalClasses::class,
         ForbiddenTraits::class,
         TypeHintDeclarationSniff::class,
+
+        PHP_CodeSniffer\Standards\Generic\Sniffs\Files\LineLengthSniff::class,
+        PHP_CodeSniffer\Standards\PSR2\Sniffs\Files\EndFileNewlineSniff::class,
+        SlevomatCodingStandard\Sniffs\Commenting\DocCommentSpacingSniff::class,
+        NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits::class,
+        NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses::class,
+        SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff::class,
+
     ],
 
     'config' => [

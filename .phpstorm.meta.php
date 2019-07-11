@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-07-02 23:29:29.
+    * Generated on 2019-07-08 17:37:26.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -13,7 +13,6 @@ namespace PHPSTORM_META {
     override(new \Illuminate\Contracts\Container\Container, map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
-        'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -183,7 +182,6 @@ namespace PHPSTORM_META {
         'stringblade.compiler' => \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
-        'translatable.locales' => \Astrotomic\Translatable\Locales::class,
         'translation.loader' => \Motor\Backend\Translation\Loaders\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
         'tymon.jwt' => \Tymon\JWTAuth\JWT::class,
@@ -210,7 +208,6 @@ namespace PHPSTORM_META {
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
-        'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -380,7 +377,6 @@ namespace PHPSTORM_META {
         'stringblade.compiler' => \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
-        'translatable.locales' => \Astrotomic\Translatable\Locales::class,
         'translation.loader' => \Motor\Backend\Translation\Loaders\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
         'tymon.jwt' => \Tymon\JWTAuth\JWT::class,
@@ -407,7 +403,6 @@ namespace PHPSTORM_META {
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
-        'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -577,7 +572,6 @@ namespace PHPSTORM_META {
         'stringblade.compiler' => \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
-        'translatable.locales' => \Astrotomic\Translatable\Locales::class,
         'translation.loader' => \Motor\Backend\Translation\Loaders\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
         'tymon.jwt' => \Tymon\JWTAuth\JWT::class,
@@ -604,7 +598,6 @@ namespace PHPSTORM_META {
     override(\App::make(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
-        'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -774,7 +767,6 @@ namespace PHPSTORM_META {
         'stringblade.compiler' => \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
-        'translatable.locales' => \Astrotomic\Translatable\Locales::class,
         'translation.loader' => \Motor\Backend\Translation\Loaders\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
         'tymon.jwt' => \Tymon\JWTAuth\JWT::class,
@@ -801,7 +793,6 @@ namespace PHPSTORM_META {
     override(\App::makeWith(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
-        'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -971,7 +962,6 @@ namespace PHPSTORM_META {
         'stringblade.compiler' => \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
-        'translatable.locales' => \Astrotomic\Translatable\Locales::class,
         'translation.loader' => \Motor\Backend\Translation\Loaders\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
         'tymon.jwt' => \Tymon\JWTAuth\JWT::class,
@@ -998,7 +988,6 @@ namespace PHPSTORM_META {
     override(\app(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
-        'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -1168,7 +1157,6 @@ namespace PHPSTORM_META {
         'stringblade.compiler' => \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
-        'translatable.locales' => \Astrotomic\Translatable\Locales::class,
         'translation.loader' => \Motor\Backend\Translation\Loaders\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
         'tymon.jwt' => \Tymon\JWTAuth\JWT::class,
@@ -1195,7 +1183,6 @@ namespace PHPSTORM_META {
     override(\resolve(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
-        'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -1365,7 +1352,6 @@ namespace PHPSTORM_META {
         'stringblade.compiler' => \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
-        'translatable.locales' => \Astrotomic\Translatable\Locales::class,
         'translation.loader' => \Motor\Backend\Translation\Loaders\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
         'tymon.jwt' => \Tymon\JWTAuth\JWT::class,

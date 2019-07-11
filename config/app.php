@@ -179,7 +179,7 @@ return [
         Motor\Media\Providers\MotorServiceProvider::class,
 
         Partymeister\Core\Providers\PartymeisterServiceProvider::class,
-        //Partymeister\Accounting\Providers\PartymeisterServiceProvider::class,
+        Partymeister\Accounting\Providers\PartymeisterServiceProvider::class,
         Partymeister\Competitions\Providers\PartymeisterServiceProvider::class,
         Partymeister\Slides\Providers\PartymeisterServiceProvider::class,
         Partymeister\Competitions\Providers\EventServiceProvider::class,

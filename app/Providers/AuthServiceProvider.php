@@ -25,12 +25,5 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
-
-        Auth::extend('visitor', function ($app, $name, array $config) {
-            // Return an instance of Illuminate\Contracts\Auth\Guard...
-            dd($config);
-
-            return new SessionGuard(Auth::createUserProvider($config['provider']));
-        });
     }
 }

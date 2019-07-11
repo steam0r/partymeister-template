@@ -1,6 +1,6 @@
 <?php
 
-$templates = [
+return [
     'default-website-no-nav' => [
         'meta'  => [
             'name' => 'Default No-Nav',
@@ -15,8 +15,5 @@ $templates = [
                 ],
             ],
         ]
-
     ],
 ];
-
-return $templates;
