@@ -426,7 +426,8 @@ export default {
                     "alt_text": "Alternate text",
                     "description": "Description",
                     "is_global": "Globally available for all clients",
-                    "drop_file_here": "Drop file here"
+                    "drop_file_here": "Drop file here",
+                    "please_select_category": "Please select at least one category"
                 }
             }
         },
@@ -469,7 +470,9 @@ export default {
             },
             "backend": {
                 "global": {
-                    "partymeister": "Partymeister"
+                    "partymeister": "Partymeister",
+                    "latest": "Latest",
+                    "created_at": "Created at"
                 },
                 "event_types": {
                     "event_types": "Event types",
@@ -571,7 +574,8 @@ export default {
                     "scan_tickets": "Scan tickets",
                     "ticket_code_not_found": "Ticket code ({ticket_code}) not found!",
                     "ticket_code_already_scanned": "Ticket code ({ticket_code}) already scanned at {date}!",
-                    "guest_already_arrived": "Guest has already arrived at {date}"
+                    "guest_already_arrived": "Guest was already marked as 'arrived' on {date}",
+                    "arrival_status_updated": "Arrival status updated"
                 },
                 "schedules": {
                     "schedules": "Schedules",
@@ -597,7 +601,8 @@ export default {
                     "updated": "Visitor updated",
                     "deleted": "Visitor deleted",
                     "name": "Handle",
-                    "group": "Group"
+                    "group": "Group",
+                    "latest": "Latest registered visitors"
                 },
                 "message-groups": {
                     "message_groups": "Message groups",
@@ -609,6 +614,130 @@ export default {
                     "updated": "Message group updated",
                     "deleted": "Message group deleted",
                     "name": "Name"
+                }
+            }
+        },
+        "partymeister-accounting": {
+            "component": {
+                "item_lists": {
+                    "component": "Item list component",
+                    "created": "Item list component created",
+                    "updated": "Item list component updated",
+                    "deleted": "Item list component deleted"
+                }
+            },
+            "backend": {
+                "global": {
+                    "accounting": "Accounting"
+                },
+                "items": {
+                    "items": "Items",
+                    "item": "Item",
+                    "new": "Create item",
+                    "edit": "Edit item",
+                    "save": "Save item",
+                    "created": "Item created",
+                    "updated": "Item updated",
+                    "deleted": "Item deleted",
+                    "name": "Name",
+                    "description": "Description",
+                    "internal_description": "Internal description",
+                    "pos_earnings_account": "Shows up in this POS account",
+                    "pos_cost_account": "Book cost price to",
+                    "cost_price_with_vat": "Cost price (with vat)",
+                    "cost_price_without_vat": "Cost price (without vat)",
+                    "can_be_ordered": "Can be ordered",
+                    "is_visible_in_pos": "POS: visible",
+                    "pos_create_booking_for_item": "POS: create additional booking for",
+                    "pos_can_book_negative_quantities": "POS: can be booked with negative quantities",
+                    "pos_sort_position": "POS: sort position",
+                    "pos_do_break": "POS: break after this item",
+                    "sales": "Sales",
+                    "revenue": "Revenue"
+                },
+                "sales": {
+                    "sales": "Sales",
+                    "sale": "Sale",
+                    "new": "Create sale",
+                    "edit": "Edit sale",
+                    "save": "Save sale",
+                    "created": "Sale created",
+                    "updated": "Sale updated",
+                    "deleted": "Sale deleted",
+                    "time": "Sold at",
+                    "quantity": "Quantity"
+                },
+                "item_types": {
+                    "item_types": "Item types",
+                    "item_type": "Item type",
+                    "new": "Create item type",
+                    "edit": "Edit item type",
+                    "save": "Save item type",
+                    "created": "Item type created",
+                    "updated": "Item type updated",
+                    "deleted": "Item type deleted"
+                },
+                "account_types": {
+                    "account_types": "Account types",
+                    "account_type": "Account type",
+                    "new": "Create account type",
+                    "edit": "Edit account type",
+                    "save": "Save account type",
+                    "created": "Account type created",
+                    "updated": "Account type updated",
+                    "deleted": "Account type deleted",
+                    "name": "Name"
+                },
+                "accounts": {
+                    "accounts": "Accounts",
+                    "account": "Account",
+                    "new": "Create account",
+                    "edit": "Edit account",
+                    "save": "Save account",
+                    "created": "Account created",
+                    "updated": "Account updated",
+                    "deleted": "Account deleted",
+                    "currency_iso_4217": "Currency",
+                    "has_pos": "POS",
+                    "last_booking": "Last booking",
+                    "balance": "Balance",
+                    "total_balance": "Total balance",
+                    "show_pos": "Show POS",
+                    "edit_pos": "Edit POS"
+                },
+                "pos": {
+                    "clear": "Clear",
+                    "price": "Price",
+                    "total": "Total",
+                    "book": "BOOK",
+                    "last_booking": "Last booking",
+                    "sum": "Sum",
+                    "back": "Back to account overview",
+                    "current_order": "Current order",
+                    "editor": "POS Editor",
+                    "editor_description": "Drag items from the list to the rows on the left side.",
+                    "separator": "Separator"
+                },
+                "bookings": {
+                    "bookings": "Bookings",
+                    "booking": "Booking",
+                    "new": "Create booking",
+                    "edit": "Edit booking",
+                    "save": "Save booking",
+                    "created": "Booking created",
+                    "updated": "Booking updated",
+                    "deleted": "Booking deleted",
+                    "time": "Booked at",
+                    "description": "Description",
+                    "from_account": "From account",
+                    "to_account": "To account",
+                    "vat_percentage": "VAT percentage",
+                    "price_with_vat": "Price (with VAT)",
+                    "price_without_vat": "Price (without VAT)",
+                    "is_manual_booking": "Manual booking",
+                    "book_in": "Book in (from outside account)",
+                    "book_out": "Book out (to outside account)",
+                    "currency_compatibility_error": "The accounts and the booking have incompatible currencies"
                 }
             }
         },
@@ -735,7 +864,8 @@ export default {
                     "audio": "Audio",
                     "work_stage": "Work stage",
                     "work_stages": "Work stages",
-                    "file": "File"
+                    "file": "File",
+                    "latest": "Latest entries"
                 },
                 "global": {
                     "competitions": "Competitions"
@@ -754,7 +884,8 @@ export default {
                     "generate": "Generate access keys",
                     "export_pdf": "Export access keys (PDF)",
                     "export_csv": "Export access keys (CSV)",
-                    "delete_and_ask_for_quantity": "WARNING: All access keys will be deleted and newly generated. How many do you want to generate?"
+                    "delete_and_ask_for_quantity": "WARNING: All access keys will be deleted and newly generated. How many do you want to generate?",
+                    "generating": "Generating access keys and redirecting you when done"
                 },
                 "competition_types": {
                     "competition_types": "Competition types",
@@ -824,7 +955,8 @@ export default {
                     "updated": "Votes updated",
                     "deleted": "Votes deleted",
                     "name": "Name",
-                    "generate_prizegiving": "Generate Prizegiving slides"
+                    "generate_prizegiving": "Generate Prizegiving slides",
+                    "no_entries_for_this_competition": "There are currently no checked entries for this competition"
                 },
                 "competitions": {
                     "competitions": "Competitions",
@@ -899,7 +1031,9 @@ export default {
                         "compo": "Competition",
                         "comingup": "Coming up \/ End",
                         "end": "End \/ Participants"
-                    }
+                    },
+                    "latest": "Latest slides",
+                    "generating": "Generating slide previews and hiding the ugliness"
                 },
                 "global": {
                     "slides": "Slides"
@@ -954,7 +1088,8 @@ export default {
                     "is_advanced_manually": "Manually advanced",
                     "callback": "Callback",
                     "callback_delay": "Delay",
-                    "transition": "Transition"
+                    "transition": "Transition",
+                    "latest": "Latest playlists"
                 },
                 "callbacks": {
                     "no_callback": "No callback"
