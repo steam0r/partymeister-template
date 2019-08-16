@@ -98,11 +98,21 @@ class Handler extends ExceptionHandler
     {
         $status = $exception->getStatusCode();
 
-        if (view()->exists("motor-backend::errors.{$status}")) {
-            return response()->view("motor-backend::errors.{$status}", [ 'exception' => $exception ], $status,
-                $e->getHeaders());
+        if (strpos(app()->request->getPathInfo(), '/backend') !== false) {
+            if (view()->exists("motor-backend::errors.{$status}")) {
+                return response()->view("motor-backend::errors.{$status}", [ 'exception' => $exception ], $status,
+                    $exception->getHeaders());
+            } else {
+                return $this->convertExceptionToResponse($exception);
+            }
         } else {
-            return $this->convertExceptionToResponse($exception);
+            if (view()->exists("motor-cms::errors.{$status}")) {
+                return response()->view("motor-cms::errors.{$status}", [ 'exception' => $exception ], $status,
+                    $exception->getHeaders());
+            } else {
+                return $this->convertExceptionToResponse($exception);
+            }
         }
+
     }
 }

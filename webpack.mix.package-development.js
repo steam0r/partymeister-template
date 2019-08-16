@@ -49,8 +49,7 @@ mix
     .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
     .sass('packages/dfox288/partymeister-accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
     .sass('packages/dfox288/partymeister-slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
-    // .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-frontend.scss', 'public/css')
-    .sass('resources/assets/sass/partymeister-frontend.scss', 'public/css')
+    .sass('resources/assets/sass/partymeister-frontend.scss', 'public/css/motor-frontend.css')
     // APP RESOURCES
     .copy('resources/fonts/*.*', 'public/fonts')
     .copy('resources/assets/images/*.*', 'public/images')

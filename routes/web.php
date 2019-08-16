@@ -12,5 +12,5 @@
 */
 
 Route::get('/', static function () {
-    return redirect('/f/start');
+    return redirect('/start');
 });
