@@ -183,7 +183,7 @@ return [
         Partymeister\Slides\Providers\EventServiceProvider::class,
         Partymeister\Frontend\Providers\PartymeisterServiceProvider::class,
 
-        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+        //Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         Motor\Core\Providers\MotorServiceProvider::class,
         Motor\Media\Providers\MotorServiceProvider::class,
@@ -244,7 +244,7 @@ return [
         'Menu'        => Lavary\Menu\Facade::class,
         'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
 
-        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        //'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
 
     ],
 
