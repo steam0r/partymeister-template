@@ -162,7 +162,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Motor\Backend\Providers\MotorServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
@@ -186,6 +185,7 @@ return [
         //Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         Motor\Core\Providers\MotorServiceProvider::class,
+        Motor\Backend\Providers\MotorServiceProvider::class,
         Motor\Media\Providers\MotorServiceProvider::class,
         Motor\CMS\Providers\MotorServiceProvider::class,
     ],
