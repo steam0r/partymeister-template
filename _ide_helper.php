@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.8.35 on 2019-09-15 10:15:39.
+ * Generated for Laravel 5.8.35 on 2019-09-28 16:15:44.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -16284,6 +16284,18 @@ namespace Kris\LaravelFormBuilder\Facades {
  
 }
 
+namespace BinaryTorch\LaRecipe { 
+
+    /**
+     * 
+     *
+     */ 
+    class LaRecipe {
+         
+    }
+ 
+}
+
 namespace Laravel\Horizon { 
 
     /**
@@ -20386,6 +20398,8 @@ namespace  {
     class Menu extends \Lavary\Menu\Facade {}
 
     class FormBuilder extends \Kris\LaravelFormBuilder\Facades\FormBuilder {}
+
+    class LaRecipe extends \BinaryTorch\LaRecipe\LaRecipe {}
 
     class Horizon extends \Laravel\Horizon\Horizon {}
 
