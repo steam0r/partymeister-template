@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'party_has_voting' => false,
-    'deadline' => '2019-06-01 23:00:00'
+    'party_has_voting' => true,
+    'deadline' => '2019-12-01 23:00:00'
 ];

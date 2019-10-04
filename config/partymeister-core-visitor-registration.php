@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'require_access_key' => false,
+    'require_access_key' => true,
     'countries'          => [
-        'AF' => 'Afghanistan',
-        'NI' => 'Niger',
-        'VI' => 'U.S. Virgin Islands'
+        //'AF' => 'Afghanistan',
+        //'NI' => 'Niger',
+        //'VI' => 'U.S. Virgin Islands'
     ]
 ];
