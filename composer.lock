@@ -3241,16 +3241,16 @@
         },
         {
             "name": "motor-cms/motor-backend",
-            "version": "0.8.14",
+            "version": "0.8.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-backend.git",
-                "reference": "bedd2bc91db1f50ccd6f36b223d0b8e8e37d4b5b"
+                "reference": "8cf68d54a364e36edb8da04803be2e34fb87b1d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/bedd2bc91db1f50ccd6f36b223d0b8e8e37d4b5b",
-                "reference": "bedd2bc91db1f50ccd6f36b223d0b8e8e37d4b5b",
+                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/8cf68d54a364e36edb8da04803be2e34fb87b1d4",
+                "reference": "8cf68d54a364e36edb8da04803be2e34fb87b1d4",
                 "shasum": ""
             },
             "require": {
@@ -3330,7 +3330,7 @@
             "keywords": [
                 "motor"
             ],
-            "time": "2019-09-06T08:49:13+00:00"
+            "time": "2019-10-05T14:48:21+00:00"
         },
         {
             "name": "motor-cms/motor-cms",
@@ -3380,16 +3380,16 @@
         },
         {
             "name": "motor-cms/motor-core",
-            "version": "0.8.8",
+            "version": "0.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-core.git",
-                "reference": "c41a9bcabba014dd75d5a20666f2622a1af341af"
+                "reference": "3907d3e6932f6c0a2da2c9e9032fbb0e9978b643"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-core/zipball/c41a9bcabba014dd75d5a20666f2622a1af341af",
-                "reference": "c41a9bcabba014dd75d5a20666f2622a1af341af",
+                "url": "https://api.github.com/repos/motor-cms/motor-core/zipball/3907d3e6932f6c0a2da2c9e9032fbb0e9978b643",
+                "reference": "3907d3e6932f6c0a2da2c9e9032fbb0e9978b643",
                 "shasum": ""
             },
             "require": {
@@ -3435,7 +3435,7 @@
             "keywords": [
                 "motor"
             ],
-            "time": "2019-08-12T21:51:59+00:00"
+            "time": "2019-10-02T21:48:29+00:00"
         },
         {
             "name": "motor-cms/motor-media",
@@ -3641,16 +3641,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.24.0",
+            "version": "2.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29"
+                "reference": "b70da677101cca7b584c7489770d2677c2733593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/934459c5ac0658bc765ad1e53512c7c77adcac29",
-                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/b70da677101cca7b584c7489770d2677c2733593",
+                "reference": "b70da677101cca7b584c7489770d2677c2733593",
                 "shasum": ""
             },
             "require": {
@@ -3697,14 +3697,14 @@
                     "homepage": "http://github.com/kylekatarnls"
                 }
             ],
-            "description": "A API extension for DateTime that supports 281 different languages.",
+            "description": "An API extension for DateTime that supports 281 different languages.",
             "homepage": "http://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-31T16:37:55+00:00"
+            "time": "2019-09-30T16:22:22+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -4087,16 +4087,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "0.4.10",
+            "version": "0.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "5087aab52b156624cd5066ae3977c85306a203c3"
+                "reference": "e624609921f32bcf41b73ce1b6070dcb9a90781a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/5087aab52b156624cd5066ae3977c85306a203c3",
-                "reference": "5087aab52b156624cd5066ae3977c85306a203c3",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/e624609921f32bcf41b73ce1b6070dcb9a90781a",
+                "reference": "e624609921f32bcf41b73ce1b6070dcb9a90781a",
                 "shasum": ""
             },
             "require": {
@@ -4133,20 +4133,20 @@
             "keywords": [
                 "motor"
             ],
-            "time": "2019-08-11T22:29:56+00:00"
+            "time": "2019-10-05T14:47:47+00:00"
         },
         {
             "name": "partymeister/core",
-            "version": "0.4.10",
+            "version": "0.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-core.git",
-                "reference": "07ea475ad91d21c96a717ce11ca891c383819bd7"
+                "reference": "85b863ad1b7a5acdbcb2c65033e96ee2c3bfcc83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/07ea475ad91d21c96a717ce11ca891c383819bd7",
-                "reference": "07ea475ad91d21c96a717ce11ca891c383819bd7",
+                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/85b863ad1b7a5acdbcb2c65033e96ee2c3bfcc83",
+                "reference": "85b863ad1b7a5acdbcb2c65033e96ee2c3bfcc83",
                 "shasum": ""
             },
             "require": {
@@ -4179,20 +4179,20 @@
             "keywords": [
                 "motor"
             ],
-            "time": "2019-08-11T22:28:47+00:00"
+            "time": "2019-10-04T13:20:21+00:00"
         },
         {
             "name": "partymeister/frontend",
-            "version": "0.4.6",
+            "version": "0.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-frontend.git",
-                "reference": "5d07b37bca326281c8f3c5f581fe0d2d224d9ed0"
+                "reference": "5e197e60fc1fcfd089be38490cc8c891894e291a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/5d07b37bca326281c8f3c5f581fe0d2d224d9ed0",
-                "reference": "5d07b37bca326281c8f3c5f581fe0d2d224d9ed0",
+                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/5e197e60fc1fcfd089be38490cc8c891894e291a",
+                "reference": "5e197e60fc1fcfd089be38490cc8c891894e291a",
                 "shasum": ""
             },
             "require": {
@@ -4227,20 +4227,20 @@
             "keywords": [
                 "motor"
             ],
-            "time": "2019-09-13T14:43:46+00:00"
+            "time": "2019-10-04T16:03:28+00:00"
         },
         {
             "name": "partymeister/slides",
-            "version": "0.4.11",
+            "version": "0.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "694eb66605c2d81c36b6537753c15aff3a24fa67"
+                "reference": "c6f83790231cdd8da5bfcf71cfc6b45f77c9845f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/694eb66605c2d81c36b6537753c15aff3a24fa67",
-                "reference": "694eb66605c2d81c36b6537753c15aff3a24fa67",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/c6f83790231cdd8da5bfcf71cfc6b45f77c9845f",
+                "reference": "c6f83790231cdd8da5bfcf71cfc6b45f77c9845f",
                 "shasum": ""
             },
             "require": {
@@ -4275,7 +4275,7 @@
             "keywords": [
                 "motor"
             ],
-            "time": "2019-09-28T15:42:28+00:00"
+            "time": "2019-10-04T13:22:24+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -4632,22 +4632,22 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.8.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76"
+                "reference": "f6811d96d97bdf400077a0cc100ae56aa32b9203"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
-                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/f6811d96d97bdf400077a0cc100ae56aa32b9203",
+                "reference": "f6811d96d97bdf400077a0cc100ae56aa32b9203",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
                 "php": "^5.3|^7.0",
-                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
+                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0|^5.0",
                 "sebastian/comparator": "^1.1|^2.0|^3.0",
                 "sebastian/recursion-context": "^1.0|^2.0|^3.0"
             },
@@ -4691,7 +4691,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2019-06-13T12:50:23+00:00"
+            "time": "2019-10-03T11:07:50+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4947,16 +4947,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.3.5",
+            "version": "8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "302faed7059fde575cf3403a78c730c5e3a62750"
+                "reference": "57e5e77b62086033528ee1f4063ae03035f57894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/302faed7059fde575cf3403a78c730c5e3a62750",
-                "reference": "302faed7059fde575cf3403a78c730c5e3a62750",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/57e5e77b62086033528ee1f4063ae03035f57894",
+                "reference": "57e5e77b62086033528ee1f4063ae03035f57894",
                 "shasum": ""
             },
             "require": {
@@ -5000,7 +5000,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "8.3-dev"
+                    "dev-master": "8.4-dev"
                 }
             },
             "autoload": {
@@ -5026,7 +5026,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-09-14T09:12:03+00:00"
+            "time": "2019-10-04T03:12:25+00:00"
         },
         {
             "name": "predis/predis",
