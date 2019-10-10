@@ -52,13 +52,13 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         if ($exception instanceof HttpException) {
-            if ( ! $request->acceptsHtml()) {
+            if (! $request->acceptsHtml()) {
                 return response()->json([ 'error' => 'Access denied.' ], 403);
             }
         }
 
         if ($exception instanceof ModelNotFoundException) {
-            if ( ! $request->acceptsHtml()) {
+            if (! $request->acceptsHtml()) {
                 return response()->json([
                     'message' => 'Record not found',
                 ], 404);
@@ -100,19 +100,26 @@ class Handler extends ExceptionHandler
 
         if (strpos(app()->request->getPathInfo(), '/backend') !== false) {
             if (view()->exists("motor-backend::errors.{$status}")) {
-                return response()->view("motor-backend::errors.{$status}", [ 'exception' => $exception ], $status,
-                    $exception->getHeaders());
+                return response()->view(
+                    "motor-backend::errors.{$status}",
+                    [ 'exception' => $exception ],
+                    $status,
+                    $exception->getHeaders()
+                );
             } else {
                 return $this->convertExceptionToResponse($exception);
             }
         } else {
             if (view()->exists("motor-cms::errors.{$status}")) {
-                return response()->view("motor-cms::errors.{$status}", [ 'exception' => $exception ], $status,
-                    $exception->getHeaders());
+                return response()->view(
+                    "motor-cms::errors.{$status}",
+                    [ 'exception' => $exception ],
+                    $status,
+                    $exception->getHeaders()
+                );
             } else {
                 return $this->convertExceptionToResponse($exception);
             }
         }
-
     }
 }

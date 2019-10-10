@@ -42,13 +42,13 @@ return [
     ],
 
     'remove' => [
-		PHP_CodeSniffer\Standards\Generic\Sniffs\Files\LineLengthSniff::class,
-		PHP_CodeSniffer\Standards\PSR2\Sniffs\Files\EndFileNewlineSniff::class,
-		SlevomatCodingStandard\Sniffs\Commenting\DocCommentSpacingSniff::class,
-		NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits::class,
-		NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses::class,
-		SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff::class,
-				
+        PHP_CodeSniffer\Standards\Generic\Sniffs\Files\LineLengthSniff::class,
+        PHP_CodeSniffer\Standards\PSR2\Sniffs\Files\EndFileNewlineSniff::class,
+        SlevomatCodingStandard\Sniffs\Commenting\DocCommentSpacingSniff::class,
+        NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits::class,
+        NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses::class,
+        SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff::class,
+                
     ],
 
     'config' => [

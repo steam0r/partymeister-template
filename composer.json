@@ -9,15 +9,16 @@
     "require": {
         "php": "^7.1.3",
         "ext-json": "*",
-        "motor-cms/motor-backend": "^0.8",
-        "motor-cms/motor-cms": "^0.8",
-        "motor-cms/motor-core": "^0.8",
-        "motor-cms/motor-media": "^0.8",
-        "partymeister/accounting": "^0.4",
-        "partymeister/competitions": "^0.4",
-        "partymeister/core": "^0.4",
-        "partymeister/frontend": "^0.4",
-        "partymeister/slides": "^0.4"
+        "motor-cms/motor-backend": "^0.9",
+        "motor-cms/motor-cms": "^0.9",
+        "motor-cms/motor-core": "^0.9",
+        "motor-cms/motor-media": "^0.9",
+        "partymeister/accounting": "^0.5",
+        "partymeister/competitions": "^0.5",
+        "partymeister/core": "^0.5",
+        "partymeister/frontend": "^0.5",
+        "partymeister/slides": "^0.5",
+        "stechstudio/laravel-php-cs-fixer": "^2.0"
     },
     "require-dev": {
         "nunomaduro/phpinsights": "^1.7"
