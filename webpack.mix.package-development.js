@@ -44,7 +44,9 @@ mix
     .js('packages/dfox288/partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
     .js('packages/dfox288/partymeister-slides/resources/assets/js/partymeister-slides/partymeister-slides-frontend.js', 'public/js/partymeister-slides-frontend.js')
     .js('packages/dfox288/partymeister-accounting/resources/assets/js/partymeister-accounting-pos.js', 'public/js/partymeister-accounting-pos.js')
+    .js('packages/dfox288/motor-docs/resources/assets/js/motor-docs.js', 'public/js/motor-docs.js')
     .sourceMaps()
+    .sass('packages/dfox288/motor-docs/resources/assets/sass/motor-docs.scss', 'public/css')
     .sass('resources/assets/sass/project.package-development.scss', 'public/css/motor-backend.css')
     .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
     .sass('packages/dfox288/partymeister-accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
@@ -54,6 +56,7 @@ mix
     .copy('resources/fonts/*.*', 'public/fonts')
     .copy('resources/assets/images/*.*', 'public/images')
 ;
+
 if (mix.config.inProduction) {
     mix.version();
 }
