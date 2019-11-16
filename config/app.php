@@ -189,6 +189,8 @@ return [
         Motor\Media\Providers\MotorServiceProvider::class,
         Motor\Docs\Providers\MotorDocsServiceProvider::class,
         Motor\CMS\Providers\MotorServiceProvider::class,
+
+        App\Providers\DuskServiceProvider::class,
     ],
 
     /*

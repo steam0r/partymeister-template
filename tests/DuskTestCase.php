@@ -2,7 +2,8 @@
 
 namespace Tests;
 
-use Laravel\Dusk\TestCase as BaseTestCase;
+//use Laravel\Dusk\TestCase as BaseTestCase;
+use Orchestra\Testbench\Dusk\TestCase as BaseTestCase;
 use Facebook\WebDriver\Chrome\ChromeOptions;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Facebook\WebDriver\Remote\DesiredCapabilities;
@@ -11,6 +12,8 @@ abstract class DuskTestCase extends BaseTestCase
 {
     use CreatesApplication;
 
+    protected static $baseServeHost = '127.0.0.1';
+    protected static $baseServePort = 9000;
     /**
      * Prepare for Dusk test execution.
      *
@@ -27,7 +30,7 @@ abstract class DuskTestCase extends BaseTestCase
      *
      * @return \Facebook\WebDriver\Remote\RemoteWebDriver
      */
-    protected function driver()
+    protected function driver(): RemoteWebDriver
     {
         $options = (new ChromeOptions)->addArguments([
             '--disable-gpu',

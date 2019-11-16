@@ -14,13 +14,13 @@ class ExampleTest extends DuskTestCase
      *
      * @throws \Throwable
      */
-    public function testBasicExample()
-    {
-        $this->browse(function (Browser $browser) {
-            $browser->visit('/backend')
-                    ->assertSee('Login');
-        });
-    }
+//    public function testBasicExample()
+//    {
+//        $this->browse(function (Browser $browser) {
+//            $browser->visit('/backend')
+//                    ->assertSee('Login');
+//        });
+//    }
 
     public function testLogin()
     {
@@ -30,4 +30,12 @@ class ExampleTest extends DuskTestCase
                 ->assertSee('Dashboard');
         });
     }
+
+//    public function testFrontend()
+//    {
+//        $this->browse(function (Browser $browser) {
+//            $browser->visit('/start')
+//                ->assertSee('Outline');
+//        });
+//    }
 }
