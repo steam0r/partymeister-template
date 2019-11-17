@@ -2,9 +2,11 @@
 
 namespace Tests\Browser\Pages;
 
+use Laravel\Dusk\Browser;
 use Laravel\Dusk\Page as BasePage;
+use Tests\Browser\Components\TopBar;
 
-abstract class Page extends BasePage
+class Page extends BasePage
 {
     /**
      * Get the global element shortcuts for the site.
@@ -13,8 +15,20 @@ abstract class Page extends BasePage
      */
     public static function siteElements()
     {
-        return [
-            '@element' => '#selector',
-        ];
+
     }
+
+    public function url()
+    {
+        return '/';
+    }
+
+    public function signOut(Browser $browser)
+    {
+        $browser->within(new TopBar, function ($browser) {
+            $browser->signOut();
+        });
+        return $this;
+    }
+
 }
