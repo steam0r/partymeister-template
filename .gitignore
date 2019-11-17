@@ -20,3 +20,4 @@ public/paintover2019_yourname_step01.jpg
 releases
 storage/*.png
 laravel-echo-server.lock
+.phpunit.result.cache
