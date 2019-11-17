@@ -28,6 +28,7 @@ class ExampleTest extends DuskTestCase
             $browser->loginAs(User::find(2))
                 ->visit('/backend/dashboard')
                 ->assertSee('Dashboard');
+
         });
     }
 
@@ -35,7 +36,7 @@ class ExampleTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/start')
-                ->assertSee('Outline');
+                ->assertSee('OUTLINE');
         });
     }
 }
