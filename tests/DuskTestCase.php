@@ -14,6 +14,7 @@ abstract class DuskTestCase extends BaseTestCase
 
     protected static $baseServeHost = '127.0.0.1';
     protected static $baseServePort = 9000;
+
     /**
      * Prepare for Dusk test execution.
      *
