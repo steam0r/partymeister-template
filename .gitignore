@@ -7,6 +7,7 @@
 Homestead.json
 Homestead.yaml
 .env
+.env*
 packages
 composer-dev.json
 composer-dev.lock
@@ -19,5 +20,7 @@ public/Remix Sample-Pack.zip
 public/paintover2019_yourname_step01.jpg
 releases
 storage/*.png
+storage/bin
+.php_cs.cache
 laravel-echo-server.lock
 .phpunit.result.cache
