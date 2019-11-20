@@ -18,6 +18,8 @@ class Callbacks extends GridPage
     const DESTINATION_ANDROID = 'android';
     const DESTINATION_TESTING = 'testing';
 
+    const CREATE_BUTTON_TEXT = 'Create callback';
+
     /**
      * Get the URL for the page.
      *
@@ -58,8 +60,7 @@ class Callbacks extends GridPage
 
     public function clickCreateCallback(Browser $browser)
     {
-        $browser->clickLink('Create callback')
-                ->assertPathIs('/backend/callbacks/create');
+        $browser->clickCreateButton(self::CREATE_BUTTON_TEXT);
     }
 
 }

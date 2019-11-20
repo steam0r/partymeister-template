@@ -8,7 +8,10 @@ use Laravel\Dusk\Browser;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\Browser\Components\TopBar;
 use Tests\Browser\Pages\Callbacks;
+use Tests\Browser\Pages\Events;
 use Tests\Browser\Pages\GridPage;
+use Tests\Browser\Pages\Schedules;
+use Tests\Browser\Pages\Guests;
 
 class ExampleTest extends DuskTestCase
 {
@@ -22,20 +25,9 @@ class ExampleTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->loginAs(User::find(2))
-                // ->visit('/backend/dashboard')
-                // ->assertSee('Dashboard')
-                // ->within(new TopBar, function ($browser) {
-                //     $browser->assert()
-                //     ->openProfile()
-                //     ->signOut();
-                // }); 
-                ->visit(new Callbacks)
-                ->inputSearchTerm('temp')
-                ->selectPagination(GridPage::PAGINATION_50)
-                // ->selectDestination(Callbacks::DESTINATION_NOWPLAYING)
-                ->submitSearch()
-                ->assertSee('temp_test')
-                ->clickCreateCallback();
+                    ->visit(new Guests)
+                    ->clickHasArrived(1)
+                    ->screenshot('has_arrived');
 
         });
     }
