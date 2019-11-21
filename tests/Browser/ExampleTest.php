@@ -12,6 +12,13 @@ use Tests\Browser\Pages\Events;
 use Tests\Browser\Pages\GridPage;
 use Tests\Browser\Pages\Schedules;
 use Tests\Browser\Pages\Guests;
+use Tests\Browser\Pages\CreateCallback;
+use Tests\Browser\Pages\CreateEvent;
+use Tests\Browser\Pages\CreateEventType;
+use Tests\Browser\Pages\CreateGuest;
+use Tests\Browser\Pages\CreateMessageGroup;
+use Tests\Browser\Pages\CreateSchedule;
+use Tests\Browser\Pages\CreateVisitor;
 
 class ExampleTest extends DuskTestCase
 {
@@ -21,40 +28,75 @@ class ExampleTest extends DuskTestCase
      * @throws \Throwable
      */
 
-    public function testTest()
-    {
-        $this->browse(function (Browser $browser) {
-            $browser->loginAs(User::find(2))
-                    ->visit(new Guests)
-                    ->clickHasArrived(1)
-                    ->screenshot('has_arrived');
-
-        });
-    }
-
-    // public function testBasicExample()
-    // {
-    //     $this->browse(function (Browser $browser) {
-    //         $browser->visit('/backend')
-    //             ->assertSee('Login');
-    //     });
-    // }
-
-    // public function testLogin()
+    // public function testCreateEventType()
     // {
     //     $this->browse(function (Browser $browser) {
     //         $browser->loginAs(User::find(2))
-    //             ->visit('/backend/dashboard')
-    //             ->assertSee('Dashboard');
+    //                 ->visit(new CreateEventType)
+    //                 ->enterName('autotest name')
+    //                 ->enterWebColor('#cae9f4')
+    //                 ->enterSlideColor('#2fa7d6')
+    //                 ->screenshot('create_eventtype_test')
+    //                 ->clickSaveEventType()
+    //                 ->screenshot('create_eventtype_test_saved');
 
     //     });
     // }
 
-    // public function testFrontend()
+    // public function testCreateGuest()
     // {
     //     $this->browse(function (Browser $browser) {
-    //         $browser->visit('/start')
-    //             ->assertSee('OUTLINE');
+    //         $browser->loginAs(User::find(2))
+    //                 ->visit(new CreateGuest)
+    //                 ->enterName('autotest name')
+    //                 ->selectCategory(CreateGuest::CATEGORY_TEST)
+    //                 ->enterHandle('autotest')
+    //                 ->enterCompany('autotest')
+    //                 ->enterEmail('autotest')
+    //                 ->enterCountry('Germany')
+    //                 ->enterTicketCode('123xyz')
+    //                 ->enterTicketType('')
+    //                 ->enterTicketOrderNo('12345')
+    //                 ->enterComment('blabla
+    //                 blablabla
+    //                 blablablabla')
+    //                 ->checkHasBadge()
+    //                 ->checkHasArrived()
+    //                 ->checkTicketCodeScanned()
+    //                 ->screenshot('create_eventtype_test')
+    //                 ->clickSaveGuest()
+    //                 ->screenshot('create_eventtype_test_saved');
+
     //     });
     // }
+
+    // public function testCreateMessageGroup()
+    // {
+    //     $this->browse(function (Browser $browser) {
+    //         $browser->loginAs(User::find(2))
+    //                 ->visit(new CreateMessageGroup)
+    //                 ->enterName('autotest name')
+    //                 ->checkPmAdminCheckbox()
+    //                 ->screenshot('create_eventtype_test')
+    //                 ->clickSaveMessageGroup()
+    //                 ->screenshot('create_eventtype_test_saved');
+
+    //     });
+    // }
+
+    public function testCreateVisitors()
+    {
+        $this->browse(function (Browser $browser) {
+            $browser->loginAs(User::find(2))
+                    ->visit(new CreateVisitor)
+                    ->enterName('autotest name')
+                    ->enterGroup('autotest group')
+                    ->enterEmail('autotest email')
+                    ->enterPassword('autotestpassword')
+                    ->screenshot('create_visitor_test')
+                    ->clickSaveVisitor()
+                    ->screenshot('create_visitor_test_saved');
+
+        });
+    }
 }

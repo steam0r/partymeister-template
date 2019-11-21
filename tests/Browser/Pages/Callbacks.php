@@ -6,9 +6,10 @@ use Laravel\Dusk\Browser;
 
 class Callbacks extends GridPage
 {
+    const DESTINATION_ORGA = 'orga';
     const DESTINATION_NOWPLAYING = 'nowplaying';
     const DESTINATION_GENERAL = 'general';
-    const DESTINATION_COMPETITIONS = 'completitions';
+    const DESTINATION_COMPETITIONS = 'competitions';
     const DESTINATION_SEMINARS = 'seminars';
     const DESTINATION_DEADLINES = 'deadlines';
     const DESTINATION_EVENTS = 'events';

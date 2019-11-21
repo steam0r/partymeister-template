@@ -150,7 +150,7 @@ class Guests extends GridPage
         return '#app > main > div > div.card > div.card-body.table-responsive.no-padding > table > tbody > tr:nth-child('.$elementIndexNumber.') > td:nth-child(7) > button';
     }
 
-    public function getHasArrivedStatus(Browser $browser, $elementIndexNumber)
+    private function getHasArrivedStatus(Browser $browser, $elementIndexNumber)
     {
         if (is_null($browser->element($this->getHasArrivedButtonPrefix($elementIndexNumber).'.btn-success'))) {
             return false;

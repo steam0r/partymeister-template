@@ -4,7 +4,7 @@ namespace Tests\Browser\Pages;
 
 use Laravel\Dusk\Browser;
 
-class CreatePage extends Page
+class CreatePage extends Page //not ready yet
 {
     /**
      * Get the URL for the page.
@@ -32,22 +32,26 @@ class CreatePage extends Page
      *
      * @return array
      */
-    public function elements()
+    public static function siteElements()
     {
         return [
-            '@backButton' => '', //fixme
+            '@nameField' => '#name',
         ];
     }
 
-    public function clickBackButton(Browser $browser)
+    public function clickBackButton(Browser $browser, Page $targetPage)
     {
         $browser->clickLink('back')
-                ->assertPathIs($this->url().'/create'); //fixme
+                ->assertPathIs($targetPage->url());
     }
 
-    public function clickSaveButton(Browser $browser)
-    {
-        $browser->click('@backButton')
-                ->assertPathIs($this->url().'/create'); //fixme
+    public function enterName (Browser $browser, $nameString) {
+        $browser->type('@nameField', $nameString);
     }
+
+    // public function clickSaveButton(Browser $browser)
+    // {
+    //     $browser->clickLink('@backButton')
+    //             ->assertPathIs($this->url().'/create'); //fixme
+    // }
 }
