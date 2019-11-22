@@ -52,12 +52,12 @@ class CreateVisitor extends CreatePage
         $browser->type('@emailField', $fieldString);
     }
 
-    public function enterCountry (Browser $browser, $fieldString) {
-        $browser->click('@countryCombobox')->type('@countryComboboxInput', $fieldString); //FIXME
-    }
+    // public function enterCountry (Browser $browser, $fieldString) {
+    //     $browser->click('@countryCombobox')->type('@countryComboboxInput', $fieldString); //FIXME
+    // }
 
     public function enterPassword (Browser $browser, $fieldString) {
-        $browser->type('@passwordField', $fieldString);
+        $browser->type('@passwordField', $fieldString); // DOESN'T WORK
     }
     
     public function clickSaveVisitor(Browser $browser)

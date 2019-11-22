@@ -63,7 +63,7 @@ class CreateCallback extends CreatePage
             '@saveCallbackButton' => '#app > main > div > form > div:nth-child(4) > div.card-footer > button.competition-submit',
         ];
     }
-
+    
     public function selectAction (Browser $browser, $actionOption) {
         $browser->select('@actionDropdown', $actionOption);
     }

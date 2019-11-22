@@ -35,8 +35,8 @@ class CreateEventType extends CreatePage
     public function elements()
     {
         return [
-            '@webColorInput' => '#app > main > div > form > div > div.card-body > div:nth-child(2) > div > input', //fixme
-            '@slideColorInput' => '#app > main > div > form > div > div.card-body > div:nth-child(3) > div > input', //fixme
+            '@webColorInput' => '#app > main > div > form > div > div.card-body > div:nth-child(2) > div > input[name=web_color]', //fixme
+            '@slideColorInput' => '#app > main > div > form > div > div.card-body > div:nth-child(3) > div > input[name=slide_color]', //fixme
             '@saveEventTypeButton' => '#app > main > div > form > div > div.card-footer > button.btn-primary'
         ];
     }
