@@ -28,10 +28,12 @@ return [
     ],
     'siegmeister_bars'    => [
         'slide_type' => 'siegmeister_bars',
+        'transition' => 1,
         'midi_note'  => 0
     ],
     'siegmeister_winners' => [
         'slide_type' => 'siegmeister_winners',
+        'transition' => 6,
         'midi_note'  => 0
     ],
     'entry'               => [
