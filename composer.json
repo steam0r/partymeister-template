@@ -10,6 +10,7 @@
         "php": "^7.2",
         "ext-json": "*",
         "motor-cms/motor-backend": "^0.9",
+        "motor-cms/motor-docs": "^1.0",
         "motor-cms/motor-cms": "^0.9",
         "motor-cms/motor-core": "^0.9",
         "motor-cms/motor-media": "^0.9",
