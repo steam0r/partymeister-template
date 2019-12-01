@@ -43,7 +43,6 @@ mix
     .js('packages/dfox288/partymeister-slides/resources/assets/js/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
     .js('packages/dfox288/partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
     .js('packages/dfox288/partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/motor-frontend.js')
-    .js('packages/dfox288/partymeister-slides/resources/assets/js/partymeister-slides/partymeister-slides-frontend.js', 'public/js/partymeister-slides-frontend.js')
     .js('packages/dfox288/partymeister-accounting/resources/assets/js/partymeister-accounting-pos.js', 'public/js/partymeister-accounting-pos.js')
     .js('packages/dfox288/motor-docs/resources/assets/js/motor-docs.js', 'public/js/motor-docs.js')
     .sourceMaps()

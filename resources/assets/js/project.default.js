@@ -14,9 +14,6 @@ require('partymeister-competitions/resources/assets/js/partymeister-competitions
 require('partymeister-slides/resources/assets/js/partymeister-slides/main');
 require('partymeister-core/resources/assets/js/partymeister-core/main');
 
-// Require... something?
-require('partymeister-slides/resources/assets/js/partymeister-slides/partymeister-slides');
-
 // Initialize global event hub
 Vue.prototype.$eventHub = new Vue();
 

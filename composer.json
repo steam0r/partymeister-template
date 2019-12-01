@@ -7,7 +7,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.1.3",
+        "php": "^7.2",
         "ext-json": "*",
         "motor-cms/motor-backend": "^0.9",
         "motor-cms/motor-cms": "^0.9",
@@ -17,18 +17,15 @@
         "partymeister/competitions": "^0.5",
         "partymeister/core": "^0.5",
         "partymeister/frontend": "^0.5",
-        "partymeister/slides": "^0.5",
-        "stechstudio/laravel-php-cs-fixer": "^2.0"
-    },
-    "require-dev": {
-        "nunomaduro/phpinsights": "^1.7"
+        "partymeister/slides": "^0.5"
     },
     "autoload": {
         "classmap": [
             "database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Tests\\": "tests/"
         }
     },
     "autoload-dev": {
