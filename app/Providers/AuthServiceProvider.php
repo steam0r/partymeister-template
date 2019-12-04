@@ -2,12 +2,12 @@
 
 namespace App\Providers;
 
-use Illuminate\Auth\SessionGuard;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
+
     /**
      * The policy mappings for the application.
      *
@@ -17,6 +17,7 @@ class AuthServiceProvider extends ServiceProvider
         'App\Model' => 'App\Policies\ModelPolicy',
     ];
 
+
     /**
      * Register any authentication / authorization services.
      *
@@ -25,5 +26,12 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+
+        Gate::define('viewWebSocketsDashboard', function ($user = null) {
+            return in_array($user->email, [
+                'motor@esmaili.info',
+                'admin@partymeister.org'
+            ]);
+        });
     }
 }

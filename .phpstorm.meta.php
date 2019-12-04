@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-12-04 13:36:42.
+    * Generated on 2019-12-04 16:22:20.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -14,6 +14,8 @@ namespace PHPSTORM_META {
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -203,11 +205,14 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
     override(\Illuminate\Container\Container::makeWith(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -397,11 +402,14 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -591,11 +599,14 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -785,11 +796,14 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
     override(\App::make(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -979,11 +993,14 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
     override(\App::makeWith(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -1173,11 +1190,14 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
     override(\app(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -1367,11 +1387,14 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
     override(\resolve(0), map([
         '' => '@',
         'Asm89\Stack\CorsService' => \Asm89\Stack\CorsService::class,
         'Astrotomic\Translatable\Locales' => \Astrotomic\Translatable\Locales::class,
+        'BeyondCode\LaravelWebSockets\Apps\AppProvider' => \BeyondCode\LaravelWebSockets\Apps\ConfigAppProvider::class,
+        'BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
         'Facade\IgnitionContracts\SolutionProviderRepository' => \Facade\Ignition\SolutionProviders\SolutionProviderRepository::class,
         'Facade\Ignition\DumpRecorder\DumpRecorder' => \Facade\Ignition\DumpRecorder\DumpRecorder::class,
         'Facade\Ignition\ErrorPage\Renderer' => \Facade\Ignition\ErrorPage\Renderer::class,
@@ -1561,6 +1584,7 @@ namespace PHPSTORM_META {
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
+        'websockets.router' => \BeyondCode\LaravelWebSockets\Server\Router::class,
     ]));
 
 
