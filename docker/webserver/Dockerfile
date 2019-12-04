@@ -8,13 +8,13 @@ ENV PATH ./vendor/bin:/composer/vendor/bin:$PATH
 ENV COMPOSER_ALLOW_SUPERUSER 1
 RUN curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
-RUN apt install -y nodejs
+#RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+#RUN apt install -y nodejs
 
 RUN apt install -y procps
 RUN apt install -y redis-server
 
-RUN npm install -g laravel-echo-server
+#RUN npm install -g laravel-echo-server
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
 RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
@@ -30,7 +30,7 @@ RUN unzip $CHROMEDRIVER_DIR/chromedriver* -d $CHROMEDRIVER_DIR
 
 COPY ./webserver/config/nginx.conf /opt/docker/etc/nginx/vhost.conf
 COPY ./webserver/config/php.ini /opt/docker/etc/php/php.ini
-COPY ./webserver/config/laravel-echo-server.conf /opt/docker/etc/supervisor.d/laravel-echo-server.conf
+COPY ./webserver/config/laravel-websockets.conf /opt/docker/etc/supervisor.d/laravel-websockets.conf
 COPY ./webserver/config/redis.conf /opt/docker/etc/supervisor.d/redis.conf
 
 COPY ./webserver/config/redis-conf-addendum.txt /tmp/redis-conf-addendum.txt
