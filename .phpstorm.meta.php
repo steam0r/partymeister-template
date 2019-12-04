@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-12-02 01:20:20.
+    * Generated on 2019-12-03 22:41:55.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -1562,6 +1562,7 @@ namespace PHPSTORM_META {
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'vue-i18n.generate' => \MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude::class,
     ]));
+
 
     override(\Illuminate\Support\Arr::add(0), type(0));
     override(\Illuminate\Support\Arr::except(0), type(0));
