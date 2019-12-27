@@ -24,3 +24,5 @@ storage/bin
 .php_cs.cache
 laravel-echo-server.lock
 .phpunit.result.cache
+public/models/
+public/vendor/fonts

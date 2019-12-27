@@ -12,5 +12,10 @@ return [
             'path'   => '/fonts/ticketing.css',
             'family' => '\'Ticketing\''
         ],
+        [
+            'name'   => 'lelo',
+            'path'   => '/vendor/fonts/Lelo.css',
+            'family' => '\'Lelo\''
+        ],
     ],
 ];
