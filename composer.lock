@@ -4481,16 +4481,16 @@
         },
         {
             "name": "partymeister/core",
-            "version": "0.5.6",
+            "version": "0.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-core.git",
-                "reference": "0db56bdac6501a5589c52b0af1d83aae89e430fa"
+                "reference": "4814462b696f4f3149b4878c6af7fb72608bd4a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/0db56bdac6501a5589c52b0af1d83aae89e430fa",
-                "reference": "0db56bdac6501a5589c52b0af1d83aae89e430fa",
+                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/4814462b696f4f3149b4878c6af7fb72608bd4a2",
+                "reference": "4814462b696f4f3149b4878c6af7fb72608bd4a2",
                 "shasum": ""
             },
             "require": {
@@ -4527,7 +4527,7 @@
             "keywords": [
                 "motor"
             ],
-            "time": "2020-01-07T02:47:16+00:00"
+            "time": "2020-01-16T19:35:31+00:00"
         },
         {
             "name": "partymeister/frontend",
