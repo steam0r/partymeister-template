@@ -14,6 +14,9 @@
             background: transparent;
             font-family: 'Roboto Condensed', sans-serif;
         }
+        a, li {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
         p, h1, h2, h3, h4, h5, h6 {
             font-family: 'Roboto Condensed', sans-serif !important;
         }
@@ -77,7 +80,9 @@
     </style>
 </head>
 <body>
-<img src="/images/frontend/revision-2020-headline.png" id="headline">
+<a href="/">
+    <img src="/images/frontend/revision-2020-headline.png" id="headline">
+</a>
 <p id="subline">
     Revision - April 10th to 13th 2020<br>
 </p>
@@ -87,9 +92,8 @@
 </div>
 <div class="columns shrink footer text-center" style="position: fixed; bottom: 0; width: 100%;">
     <ul class="menu align-center">
-        <li><a href="https://2019.revision-party.net/privacy_policy">Privacy policy</a></li>
-        <li><a href="https://2019.revision-party.net/privacy_policy">Contact</a></li>
-        <li><a href="https://2019.revision-party.net/privacy_policy">Imprint</a></li>
+        <li><a href="/privacy">Privacy policy</a></li>
+        <li><a href="/contact">Contact and Imprint</a></li>
     </ul>
 </div>
 <script src="{{mix('js/partymeister-frontend.js')}}"></script>
