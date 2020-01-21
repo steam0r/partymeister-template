@@ -96,6 +96,7 @@
 </a>
 <p id="subline">
     Revision - April 10th to 13th 2020<br>
+    E Werk Saarbrücken, Germany
 </p>
 {{--@include('motor-cms::layouts.frontend.partials.navigation')--}}
 <div class="grid-container" style="margin-bottom: 8rem;">
