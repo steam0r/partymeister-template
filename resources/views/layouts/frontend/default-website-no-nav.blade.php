@@ -77,6 +77,17 @@
         .callout.primary {
             background-color: #c2cfd4;
         }
+        @media only screen
+        and (max-device-width: 667px) {
+            #headline {
+                top: 3%;
+            }
+            #subline {
+                top: 16%;
+                font-size: 20px;
+            }
+
+        }
     </style>
 </head>
 <body>
