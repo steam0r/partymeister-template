@@ -52,7 +52,7 @@
             width: 22%;
             min-width: 180px;
             position: fixed;
-            top: 5%;
+            top: 75px;
             left: 5%;
         }
 

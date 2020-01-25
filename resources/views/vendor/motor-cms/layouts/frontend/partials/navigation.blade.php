@@ -3,6 +3,8 @@
     <div class="title-bar-title">Menu</div>
 </div>
 
+<div class="top-bar-container" data-sticky-container>
+    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
 <div class="top-bar" id="responsive-menu">
     <div class="top-bar">
         <ul class="dropdown menu" data-dropdown-menu>
@@ -26,5 +28,7 @@
                 @endif
             @endforeach
         </ul>
+    </div>
+</div>
     </div>
 </div>
