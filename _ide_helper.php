@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 6.11.0 on 2020-01-16 20:37:55.
+ * Generated for Laravel 6.12.0 on 2020-01-25 15:54:19.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -2760,6 +2760,18 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
+         * Re-set the event dispatcher on all resolved cache repositories.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function refreshEventDispatcher()
+        {
+                        /** @var \Illuminate\Cache\CacheManager $instance */
+                        $instance->refreshEventDispatcher();
+        }
+        
+        /**
          * Get the default cache driver name.
          *
          * @return string 
@@ -3169,6 +3181,18 @@ namespace Illuminate\Support\Facades {
         {
                         /** @var \Illuminate\Cache\Repository $instance */
                         return $instance->getStore();
+        }
+        
+        /**
+         * Get the event dispatcher instance.
+         *
+         * @return \Illuminate\Contracts\Events\Dispatcher 
+         * @static 
+         */ 
+        public static function getEventDispatcher()
+        {
+                        /** @var \Illuminate\Cache\Repository $instance */
+                        return $instance->getEventDispatcher();
         }
         
         /**
@@ -5277,7 +5301,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Create a hard link to the target file or directory.
+         * Create a symlink to the target file or directory. On Windows, a hard link is created if the target is a file.
          *
          * @param string $target
          * @param string $link
@@ -10209,6 +10233,22 @@ namespace Illuminate\Support\Facades {
         {
                         /** @var \Illuminate\Http\Request $instance */
                         return $instance->input($key, $default);
+        }
+        
+        /**
+         * Retrieve input as a boolean value.
+         * 
+         * Returns true when value is "1", "true", "on", and "yes". Otherwise, returns false.
+         *
+         * @param string|null $key
+         * @param bool $default
+         * @return bool 
+         * @static 
+         */ 
+        public static function boolean($key = null, $default = false)
+        {
+                        /** @var \Illuminate\Http\Request $instance */
+                        return $instance->boolean($key, $default);
         }
         
         /**
@@ -16477,6 +16517,271 @@ namespace Kris\LaravelFormBuilder\Facades {
  
 }
 
+namespace Facade\Ignition\Facades { 
+
+    /**
+     * Class Flare.
+     *
+     * @see \Facade\FlareClient\Flare
+     */ 
+    class Flare {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function register($apiKey, $apiSecret = null, $contextDetector = null, $container = null)
+        {
+                        return \Facade\FlareClient\Flare::register($apiKey, $apiSecret, $contextDetector, $container);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getMiddleware()
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->getMiddleware();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function registerFlareHandlers()
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->registerFlareHandlers();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function registerExceptionHandler()
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->registerExceptionHandler();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function registerErrorHandler()
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->registerErrorHandler();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function registerMiddleware($callable)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->registerMiddleware($callable);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getMiddlewares()
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->getMiddlewares();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function glow($name, $messageLevel = 'info', $metaData = [])
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->glow($name, $messageLevel, $metaData);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function handleException($throwable)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->handleException($throwable);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function handleError($code, $message, $file = '', $line = 0)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->handleError($code, $message, $file, $line);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function applicationPath($applicationPath)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->applicationPath($applicationPath);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function report($throwable, $callback = null)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->report($throwable, $callback);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function reportMessage($message, $logLevel, $callback = null)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->reportMessage($message, $logLevel, $callback);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function sendTestReport($throwable)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->sendTestReport($throwable);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function reset()
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->reset();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function anonymizeIp()
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->anonymizeIp();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function createReport($throwable)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->createReport($throwable);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function createReportFromMessage($message, $logLevel)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->createReportFromMessage($message, $logLevel);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function stage($stage)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->stage($stage);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function messageLevel($messageLevel)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->messageLevel($messageLevel);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getGroup($groupName = 'context', $default = [])
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->getGroup($groupName, $default);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function context($key, $value)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->context($key, $value);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function group($groupName, $properties)
+        {
+                        /** @var \Facade\FlareClient\Flare $instance */
+                        return $instance->group($groupName, $properties);
+        }
+         
+    }
+ 
+}
+
 namespace Laravel\Horizon { 
 
     /**
@@ -20105,6 +20410,8 @@ namespace  {
     class Menu extends \Lavary\Menu\Facade {}
 
     class FormBuilder extends \Kris\LaravelFormBuilder\Facades\FormBuilder {}
+
+    class Flare extends \Facade\Ignition\Facades\Flare {}
 
     class Horizon extends \Laravel\Horizon\Horizon {}
 

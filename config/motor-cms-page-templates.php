@@ -16,4 +16,25 @@ return [
             ],
         ]
     ],
+    'default-website' => [
+        'meta'  => [
+            'name' => 'Default',
+        ],
+        'items' => [
+            [
+                [
+                    'alias'     => 'content-full',
+                    'class'     => 'full-content',
+                    'container' => 'first-row-content',
+                    'width'     => 8
+                ],
+                [
+                    'alias'     => 'content-sidebar',
+                    'class'     => 'content-sidebar',
+                    'container' => 'first-row-content',
+                    'width'     => 4
+                ],
+            ],
+        ]
+    ],
 ];
