@@ -31,7 +31,7 @@ return [
                 [
                     'alias'     => 'content-sidebar',
                     'class'     => 'content-sidebar',
-                    'container' => 'first-row-content',
+                    'container' => 'first-row-sidebar',
                     'width'     => 4
                 ],
             ],
