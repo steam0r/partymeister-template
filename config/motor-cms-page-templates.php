@@ -37,4 +37,31 @@ return [
             ],
         ]
     ],
+    'default-three-col' => [
+        'meta'  => [
+            'name' => 'Default 3 columns',
+        ],
+        'items' => [
+            [
+                [
+                    'alias'     => 'content-left',
+                    'class'     => 'content-left',
+                    'container' => 'first-row-left',
+                    'width'     => 4
+                ],
+                [
+                    'alias'     => 'content-center',
+                    'class'     => 'content-center',
+                    'container' => 'first-row-center',
+                    'width'     => 4
+                ],
+                [
+                    'alias'     => 'content-right',
+                    'class'     => 'content-right',
+                    'container' => 'first-row-right',
+                    'width'     => 4
+                ],
+            ],
+        ]
+    ],
 ];
