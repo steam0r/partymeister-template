@@ -27,11 +27,8 @@
             text-align: center;
         }
 
-        .grid-container {
-            opacity: 0.95;
-        }
-
         .full-content, .content-sidebar {
+            opacity: 0.95;
             border-radius: 20px;
             background: #faf4e7;
             position: relative;
@@ -40,7 +37,17 @@
             margin-bottom: 6.5rem;
             box-shadow: 5px 5px 5px #353739;
             border: 1px solid #353739;
+        }
+        .full-content {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+        }
 
+        .content-sidebar {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: 1px solid #dedede;
         }
 
         html {
@@ -60,9 +67,10 @@
             position: fixed;
             right: 5%;
             text-align: right;
-            top: 10%;
+            top: 110px;
             font-size: 30px;
             color: #f6e9d1;
+            line-height: 40px;
             font-family: 'Roboto Condensed', sans-serif;
         }
 
@@ -72,17 +80,19 @@
 
         .footer, .top-bar {
             background: #fcf9f3;
-            opacity: 0.95;
+            opacity: 1;
             height: 3rem;
             padding: 0;
         }
         .top-bar {
             justify-content: center;
             opacity: 1;
+            z-index: 10000;
         }
 
         .top-bar ul {
             background: #fcf9f3;
+            z-index: 10000;
         }
 
         .footer ul.menu a {
