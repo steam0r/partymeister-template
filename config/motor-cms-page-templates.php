@@ -47,19 +47,19 @@ return [
                     'alias'     => 'content-left',
                     'class'     => 'content-left',
                     'container' => 'first-row-left',
-                    'width'     => 4
+                    'width'     => 3
                 ],
                 [
                     'alias'     => 'content-center',
                     'class'     => 'content-center',
                     'container' => 'first-row-center',
-                    'width'     => 4
+                    'width'     => 6
                 ],
                 [
                     'alias'     => 'content-right',
                     'class'     => 'content-right',
                     'container' => 'first-row-right',
-                    'width'     => 4
+                    'width'     => 3
                 ],
             ],
         ]

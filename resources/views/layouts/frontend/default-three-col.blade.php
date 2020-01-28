@@ -27,7 +27,7 @@
             text-align: center;
         }
 
-        .content-left, .content-centerm, .content-right {
+        .content-left, .content-center, .content-right {
             opacity: 0.95;
             border-radius: 20px;
             background: #faf4e7;
