@@ -177,7 +177,7 @@
         <li><a href="/contact">Contact and Imprint</a></li>
     </ul>
 </div>
-<script src="{{mix('js/partymeister-frontend.js')}}"></script>
+<script src="{{mix('js/motor-frontend.js')}}"></script>
 @yield('view-scripts')
 <script>
     $(document).foundation();
