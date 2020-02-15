@@ -80,11 +80,13 @@
     "what-input": "^5.2.4"
   },
   "dependencies": {
+    "cropperjs": "^1.5.6",
     "foundation-datepicker": "^1.5.6",
     "rematrix": "^0.4.1",
     "three-fbx-loader": "^1.0.3",
     "three-gltf-loader": "^1.111.0",
     "three-obj-loader": "^1.1.3",
+    "vue-advanced-cropper": "^0.16.0",
     "webfontloader": "^1.6.28",
     "webmidi": "^2.5.1"
   }
