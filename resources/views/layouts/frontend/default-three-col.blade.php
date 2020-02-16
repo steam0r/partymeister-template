@@ -145,6 +145,10 @@
             width: 100vw;
         }
 
+        h2 {
+            text-align: left;
+        }
+
         .thumbnail.float-right, .thumbnail.float-left {
             max-width: 35%;
             margin-bottom: 1rem;

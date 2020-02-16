@@ -88,6 +88,10 @@
             }
         }
 
+        h2 {
+            text-align: left;
+        }
+
         .thumbnail img {
             width: 100vw;
         }
