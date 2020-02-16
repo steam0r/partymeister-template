@@ -86,7 +86,23 @@
                 top: 16%;
                 font-size: 20px;
             }
+        }
 
+        .thumbnail img {
+            width: 100vw;
+        }
+
+        .thumbnail.float-right, .thumbnail.float-left {
+            max-width: 35%;
+            margin-bottom: 1rem;
+        }
+
+        .thumbnail.float-right {
+            margin-left: 1rem;
+        }
+
+        .thumbnail.float-left {
+            margin-right: 1rem;
         }
     </style>
 </head>

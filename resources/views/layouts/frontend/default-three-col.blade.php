@@ -146,7 +146,7 @@
         }
 
         .thumbnail.float-right, .thumbnail.float-left {
-            max-width: 50%;
+            max-width: 35%;
             margin-bottom: 1rem;
         }
 
