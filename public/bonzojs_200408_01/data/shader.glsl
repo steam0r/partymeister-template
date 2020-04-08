@@ -147,7 +147,7 @@ void main(void)
     fade *= smoothstep(1.005,0.995,abs(uv.y));
       
     uv /= vec2(v2Resolution.y / v2Resolution.x, 1);
-    vec3 col = vec3(76./255., 169./255., 221./255.);   
+    vec3 col = vec3(42./255., 146./255., 220./255.);
     col += fallingstuff(uv);    
     vec4 logo = revisionlogo(uv) * logoFade;
     col = col*(1.-logo.w)+logo.xyz;
