@@ -143,8 +143,8 @@ void main(void)
 
     // vignette    
     float fade = 1.-(r*0.2);
-    fade *= smoothstep(1.005,0.995,abs(uv.x));
-    fade *= smoothstep(1.005,0.995,abs(uv.y));
+//    fade *= smoothstep(1.005,0.995,abs(uv.x));
+//    fade *= smoothstep(1.005,0.995,abs(uv.y));
       
     uv /= vec2(v2Resolution.y / v2Resolution.x, 1);
     vec3 col = vec3(42./255., 146./255., 220./255.);
