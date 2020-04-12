@@ -16,7 +16,7 @@ return [
             ],
         ]
     ],
-    'default-website' => [
+    'default-website'        => [
         'meta'  => [
             'name' => 'Default',
         ],
@@ -37,7 +37,7 @@ return [
             ],
         ]
     ],
-    'default-one-col' => [
+    'default-one-col'        => [
         'meta'  => [
             'name' => 'Default one column',
         ],
@@ -49,10 +49,16 @@ return [
                     'container' => 'first-row-content',
                     'width'     => 12
                 ],
+                [
+                    'alias'     => 'content-sidebar',
+                    'class'     => 'content-sidebar',
+                    'container' => 'first-row-sidebar',
+                    'width'     => 0
+                ],
             ],
         ]
     ],
-    'default-three-col' => [
+    'default-three-col'      => [
         'meta'  => [
             'name' => 'Default 3 columns',
         ],
