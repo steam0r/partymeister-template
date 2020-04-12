@@ -87,6 +87,7 @@
     "three-gltf-loader": "^1.111.0",
     "three-obj-loader": "^1.1.3",
     "vue-advanced-cropper": "^0.16.1",
+    "vue-agile": "^1.0.12",
     "webfontloader": "^1.6.28",
     "webmidi": "^2.5.1"
   }
