@@ -39,7 +39,7 @@ return [
     ],
     'default-one-col' => [
         'meta'  => [
-            'name' => 'Default',
+            'name' => 'Default one column',
         ],
         'items' => [
             [
