@@ -43,10 +43,12 @@ return [
         ],
         'items' => [
             [
-                'alias'     => 'content-full',
-                'class'     => 'full-content',
-                'container' => 'first-row-content',
-                'width'     => 12
+                [
+                    'alias'     => 'content-full',
+                    'class'     => 'full-content',
+                    'container' => 'first-row-content',
+                    'width'     => 12
+                ],
             ],
         ]
     ],
