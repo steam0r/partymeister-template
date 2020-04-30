@@ -170,7 +170,6 @@ return [
         Culpa\CulpaServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
-        Barryvdh\Cors\ServiceProvider::class,
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
 
