@@ -42,7 +42,7 @@ return [
                 'host'      => env('PUSHER_HOST'),
                 'port'      => env('PUSHER_PORT'),
                 'path'      => env('PUSHER_PATH'),
-                'scheme'    => 'http'
+                'scheme'    => 'https'
             ],
         ],
 
