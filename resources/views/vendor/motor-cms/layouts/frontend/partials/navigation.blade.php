@@ -8,7 +8,7 @@
 <div class="top-bar" id="responsive-menu">
     <div class="top-bar">
         <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">Revision 2020 PARTYNET</li>
+            <li class="menu-text">{{config('motor-cms-frontend.name')}}</li>
             @foreach($navigationItems as $item)
                 @if ($item->is_visible && $item->is_active)
                     <li class="@if($activeNavigationSlugs[0] == $item->full_slug)active @endif">
