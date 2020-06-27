@@ -119,7 +119,7 @@
     On a sofa near you
 </p>
 {{--@include('motor-cms::layouts.frontend.partials.navigation')--}}
-<div class="grid-container" id="app" style="margin-bottom: 8rem;">
+<div class="grid-container" id="app" style="margin-bottom: 8rem; margin-top: 2rem;">
     @include('motor-cms::layouts.frontend.partials.template-sections', ['rows' => $template['items']])
 </div>
 <div class="columns shrink footer text-center" style="position: fixed; bottom: 0; width: 100%;">
