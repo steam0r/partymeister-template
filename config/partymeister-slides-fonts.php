@@ -19,7 +19,7 @@ return [
         ],
         [
             'name'   => 'norwester',
-            'path'   => '/vendor/fonts/Norwester.css',
+            'path'   => '/fonts/Norwester.css',
             'family' => '\'Norwester\''
         ],
         [
