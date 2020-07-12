@@ -7,7 +7,6 @@ use HttpException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Throwable;
 
@@ -34,17 +33,10 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-<<<<<<< HEAD
      * @param Throwable $exception
      * @throws Exception
      */
     public function report(Throwable $exception)
-=======
-     * @param  \Throwable  $exception
-     * @throws Exception
-     */
-    public function report(\Throwable $exception)
->>>>>>> master
     {
         parent::report($exception);
     }
@@ -53,21 +45,12 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      *
-<<<<<<< HEAD
      * @param \Illuminate\Http\Request $request
      * @param Throwable $exception
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response|\Symfony\Component\HttpFoundation\Response
      * @throws Throwable
      */
     public function render($request, Throwable $exception)
-=======
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Throwable  $exception
-     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response|\Symfony\Component\HttpFoundation\Response
-     * @throws \Throwable
-     */
-    public function render($request, \Throwable $exception)
->>>>>>> master
     {
         if ($exception instanceof HttpException) {
             if ( ! $request->acceptsHtml()) {
@@ -90,13 +73,8 @@ class Handler extends ExceptionHandler
     /**
      * Convert an authentication exception into an unauthenticated response.
      *
-<<<<<<< HEAD
      * @param \Illuminate\Http\Request $request
      * @param AuthenticationException $exception
-=======
-     * @param  \Illuminate\Http\Request  $request
-     * @param  AuthenticationException  $exception
->>>>>>> master
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     protected function unauthenticated($request, AuthenticationException $exception)
