@@ -1,143 +1,134 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>REVISION 2019 – 19. - 22. APRIL 2019 – E WERK SAARBRÜCKEN, GERMANY</title>
+    <title>{{$version->name}} | {{config('motor-backend-project.name_frontend')}}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <link href="{{ mix('/css/partymeister-frontend.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ mix('/css/motor-frontend.css') }}" rel="stylesheet" type="text/css"/>
     @yield('view-styles')
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style type="text/css">
-        html {
-            margin-bottom: 50px;
-        }
-
-        /*.pagebg-container {*/
-            /*background: url('/images/r2019-bg.jpg');*/
-            /*background-position: center top;*/
-            /*background-repeat: no-repeat;*/
-            /*background-size: cover;*/
-            /*position: fixed;*/
-            /*height: 100vh;*/
-            /*width: 100%;*/
-        /*}*/
-
         body {
-            font-family: 'Exo 2', sans-serif;
             background: transparent;
-            /*background: url('/images/r2019-bg.jpg');*/
-            /*background-repeat: no-repeat;*/
-            /*background-attachment: fixed;*/
-            /*background-size: cover;*/
-            z-index: 10;
+            font-family: 'Roboto Condensed', sans-serif;
         }
+        a, li {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        p, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto Condensed', sans-serif !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+        .grid-container {
+            opacity: 0.95;
+            max-width: 600px;
+        }
+        .full-content {
+            border-radius: 20px;
+            background: #faf4e7;
+            position: relative;
+            top: 200px;
+            padding: 1.5rem;
+            margin-bottom: 6.5rem;
+            box-shadow: 5px 5px 5px #353739;
+            border: 1px solid #353739;
 
-        body:after{
-            content:"";
-            position:fixed; /* stretch a fixed position to the whole screen */
-            top:0;
-            height:100vh; /* fix for mobile browser address bar appearing disappearing */
-            left:0;
-            right:0;
-            z-index:-1; /* needed to keep in the background */
-            background: url('/images/r2019-bg.jpg') center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
+        }
+        html {
+            background: url(/images/frontend/revision-2020-bg.jpg) no-repeat center center fixed;
             background-size: cover;
         }
-
-        h1, h2, h3, h4, h5, h6 {
-            color: white;
-            font-family: 'Exo 2', sans-serif;
-            font-weight: 600;
-            font-style: italic;
-            text-transform: uppercase;
-            text-align: center;
-            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.9);
-        }
-
-        .header.small div {
+        #headline {
+            width: 25%;
+            min-width: 200px;
             position: fixed;
-            margin: 5% auto;
-            left: 0;
-            right: 0;
-            top: 150px;
+            top: 5%;
+            left: 5%;
         }
-
-        .header.small img {
+        #subline {
             position: fixed;
-            width: 150px;
-            height: auto;
-            margin: 5% auto;
-            left: 0;
-            right: 0;
+            right: 5%;
+            text-align: right;
+            top: 10%;
+            font-size: 30px;
+            color: #f6e9d1;
+            font-family: 'Roboto Condensed', sans-serif;
         }
-
-        .header.small h1 {
-            font-size: 2rem;
+        #subline small {
+            font-size: 20px;
         }
-
-        .header.small h2 {
-            font-size: 1.5rem;
+        .footer {
+            background: #fcf9f3;
+            opacity: 0.95;
+            height: 3rem;
+            padding: 0;
         }
-
-        .header.small h4 {
-            font-size: 1rem;
+        .footer ul.menu a {
+            font-family: 'Roboto Condensed', sans-serif !important;
         }
-
-        .header div {
-            /*position: fixed;*/
-            margin: 1rem auto 3rem;
-            top: 250px;
-        }
-
-        .header img {
-            margin-top: 50px;
-            display: block;
-            width: 250px;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
         .button.success {
-            background-color: #63c2dc;
+            background-color: #71854d;
+            color: white;
+        }
+        .callout.primary {
+            background-color: #c2cfd4;
+        }
+        @media only screen
+        and (max-device-width: 667px) {
+            #headline {
+                top: 3%;
+            }
+            #subline {
+                top: 16%;
+                font-size: 20px;
+            }
         }
 
-        .button.success:hover,
-        .button.success:focus {
-            background-color: #48bbdb;
+        h2 {
+            text-align: left;
+        }
+
+        .thumbnail img {
+            width: 100vw;
+        }
+
+        .thumbnail.float-right, .thumbnail.float-left {
+            max-width: 35%;
+            margin-bottom: 1rem;
+        }
+
+        .thumbnail.float-right {
+            margin-left: 1rem;
+        }
+
+        .thumbnail.float-left {
+            margin-right: 1rem;
         }
     </style>
 </head>
 <body>
-<div id="pagebg-container"></div>
-<div class="header">
-    <img src="/images/r2019-logo.png">
-    <div>
-        <h1>Stay tuned</h1>
-        <h2>we apologize for any inconvenience caused</h2>
-        <h4>Revision 2019 &ndash; 19. - 22. April 2019 &ndash; E Werk Saarbrücken, Germany</h4>
-    </div>
+<a href="/">
+    <img src="/images/frontend/revision-2020-headline.png" id="headline">
+</a>
+<p id="subline">
+    Revision - April 10th to 13th 2020<br>
+    On a sofa near you
+</p>
+{{--@include('motor-cms::layouts.frontend.partials.navigation')--}}
+<div class="grid-container" id="app" style="margin-bottom: 8rem; margin-top: 2rem;">
+    @include('motor-cms::layouts.frontend.partials.template-sections', ['rows' => $template['items']])
 </div>
-<div class="grid-container">
-    <div class="grid-x">
-        <div class="cell medium-offset-2 large-offset-2 medium-8 large-8 small-12">
-            @include('motor-cms::layouts.frontend.partials.template-sections', ['rows' => $template['items']])
-        </div>
-
-        <div style="margin-top: 30px;" class="cell medium-offset-2 large-offset-2 medium-8 large-8 small-12 align-center" data-sticky-container>
-            <div class="sticky" style="text-align: center;" data-stick-to="bottom" data-top-anchor="example3" data-btm-anchor="foo2:top">
-                &copy; 2011 &dash; {{date('Y')}} Tastatur und Maus e.V | <a href="https://2018.revision-party.net/contact" target="_blank">Imprint</a>
-            </div>
-        </div>
-    </div>
+<div class="columns shrink footer text-center" style="position: fixed; bottom: 0; width: 100%;">
+    <ul class="menu align-center">
+        <li><a href="/privacy">Privacy policy</a></li>
+        <li><a href="/contact">Contact and Imprint</a></li>
+    </ul>
 </div>
-
-<script src="{{mix('js/partymeister-frontend.js')}}"></script>
+<script src="{{mix('js/motor-frontend.js')}}"></script>
 @yield('view-scripts')
 <script>
     $(document).foundation();

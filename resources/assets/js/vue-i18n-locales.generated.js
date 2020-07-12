@@ -108,329 +108,6 @@ export default {
             },
             "attributes": []
         },
-        "motor-backend": {
-            "backend": {
-                "category_trees": {
-                    "category_trees": "Category trees",
-                    "category_tree": "Category tree",
-                    "new": "Create category tree",
-                    "edit": "Edit category tree",
-                    "save": "Save category tree",
-                    "created": "Category tree created",
-                    "updated": "Category tree updated",
-                    "deleted": "Category tree deleted",
-                    "scope": "Scope",
-                    "show_nodes": "Show categories"
-                },
-                "global": {
-                    "administration": "Admin",
-                    "home": "Home",
-                    "back": "back",
-                    "delete_question": "Really delete?",
-                    "edit": "Edit",
-                    "duplicate": "Duplicate",
-                    "delete": "Delete",
-                    "show": "Show",
-                    "actions": "Actions",
-                    "images": "Images",
-                    "teaser_image": "Teaser image",
-                    "body_image": "Image",
-                    "image": "Image",
-                    "files": "Files",
-                    "file": "File",
-                    "video": "Video",
-                    "dashboard": "Dashboard",
-                    "yes": "Yes",
-                    "no": "No",
-                    "visibility": "Visibility",
-                    "is_visible": "Visible",
-                    "search": "Search",
-                    "no_records": "No records found",
-                    "base_info": "Basic information",
-                    "name": "Name",
-                    "please_choose": "-- Please choose --",
-                    "longitude": "Longitude",
-                    "latitude": "Latitude",
-                    "sort_position": "Position",
-                    "all": "All",
-                    "access_denied": "Access denied",
-                    "uploaded": "Uploaded",
-                    "address": {
-                        "address_1": "Address",
-                        "address_2": "Address supplemental",
-                        "zip": "Zip code",
-                        "city": "City",
-                        "country": "Country"
-                    },
-                    "contact": {
-                        "salutations": {
-                            "m": "Mr",
-                            "f": "Ms",
-                            "c": "Company",
-                            "n": "-"
-                        },
-                        "full_salutations": {
-                            "m": "Dear Mr",
-                            "f": "Dear Ms",
-                            "c": "Dear",
-                            "n": ""
-                        },
-                        "salutation": "Salutation",
-                        "title": "Title",
-                        "first_name": "First name",
-                        "last_name": "Last name",
-                        "date_of_birth": "Date of birth",
-                        "email": "Email",
-                        "phone_home": "Phone (home)",
-                        "phone_mobile": "Phone (mobile)",
-                        "phone_work": "Phone (work)",
-                        "website": "Website",
-                        "contact": "Contact",
-                        "phone": "Phone"
-                    },
-                    "flash": {
-                        "warning": "Warning",
-                        "info": "Information",
-                        "error": "Error",
-                        "success": "Success"
-                    },
-                    "are_you_sure": "Are you sure?"
-                },
-                "login": {
-                    "sign_out": "Sign out",
-                    "sign_in": "Sign in",
-                    "sign_in_text": "Please sign in",
-                    "remember": "Remember me",
-                    "errors": "There are some problems with your input",
-                    "password_forgotten_text": "Password forgotten?",
-                    "send_password_reset_link": "Send reset password link"
-                },
-                "roles": {
-                    "roles": "Roles",
-                    "role": "Role",
-                    "new": "Create role",
-                    "edit": "Edit role",
-                    "save": "Save role",
-                    "created": "Role created",
-                    "updated": "Role updated",
-                    "deleted": "Role deleted",
-                    "name": "Name",
-                    "guard_name": "Zone"
-                },
-                "languages": {
-                    "languages": "Languages",
-                    "language": "Language",
-                    "new": "Create language",
-                    "edit": "Edit language",
-                    "save": "Save language",
-                    "created": "Language created",
-                    "updated": "Language updated",
-                    "deleted": "Language deleted",
-                    "iso_639_1": "ISO 639-1",
-                    "native_name": "Native name",
-                    "english_name": "English name"
-                },
-                "permissions": {
-                    "permissions": "Permissions",
-                    "permission": "Permission",
-                    "new": "Create permission",
-                    "edit": "Edit permission",
-                    "save": "Save permission",
-                    "created": "Permission created",
-                    "updated": "Permission updated",
-                    "deleted": "Permission deleted",
-                    "name": "Name",
-                    "group": "Group",
-                    "guard_name": "Zone"
-                },
-                "email_templates": {
-                    "email_templates": "Email templates",
-                    "email_template": "Email template",
-                    "new": "Create email template",
-                    "edit": "Edit email template",
-                    "save": "Save email template",
-                    "created": "Email template created",
-                    "updated": "Email template updated",
-                    "deleted": "Email template deleted",
-                    "template_info": "Template information",
-                    "subject": "Subject",
-                    "default_sender_name": "Default sender name",
-                    "default_sender_email": "Default sender email address",
-                    "default_recipient_name": "Default recipient name",
-                    "default_recipient_email": "Default recipient email address",
-                    "default_cc_email": "Default cc email addresses (separated by ;)",
-                    "default_bcc_email": "Default bcc email addresses (separated by ;)",
-                    "body_text": "Body (text)",
-                    "body_html": "Body (html)"
-                },
-                "users": {
-                    "users": "Users",
-                    "user": "User",
-                    "new": "Create user",
-                    "edit": "Edit user",
-                    "save": "Save user",
-                    "created": "User created",
-                    "updated": "User updated",
-                    "deleted": "User deleted",
-                    "name": "Name",
-                    "email": "Email",
-                    "password": "Password",
-                    "password_confirm": "Confirm password",
-                    "profile": {
-                        "edit": "Edit profile",
-                        "save": "Save profile",
-                        "updated": "Profile updated"
-                    }
-                },
-                "config_variables": {
-                    "config_variables": "Config variables",
-                    "config_variable": "Config variable",
-                    "new": "Create config variable",
-                    "edit": "Edit config variable",
-                    "save": "Save config variable",
-                    "created": "Config variable created",
-                    "updated": "Config variable updated",
-                    "deleted": "Config variable deleted",
-                    "package": "Package",
-                    "group": "Group",
-                    "name": "Name",
-                    "value": "Value"
-                },
-                "categories": {
-                    "categories": "Categories",
-                    "category": "Category",
-                    "new": "Create category",
-                    "edit": "Edit category",
-                    "save": "Save category",
-                    "created": "Category created",
-                    "updated": "Category updated",
-                    "deleted": "Category deleted",
-                    "name": "Name",
-                    "new_category": "New category",
-                    "all_categories": "All categories",
-                    "items_for": "Categories for: {name}"
-                },
-                "clients": {
-                    "clients": "Clients",
-                    "client": "Client",
-                    "new": "Create client",
-                    "edit": "Edit client",
-                    "save": "Save client",
-                    "created": "Client created",
-                    "updated": "Client updated",
-                    "deleted": "Client deleted",
-                    "name": "Name",
-                    "slug": "Slug",
-                    "is_active": "Active",
-                    "description": "Description",
-                    "contact": "Contact",
-                    "address_info": "Address information",
-                    "contact_info": "Contact information",
-                    "additional_info": "Additional information"
-                }
-            }
-        },
-        "motor-cms": {
-            "component": {
-                "global": {
-                    "save": "Save component",
-                    "created": "{name} component created",
-                    "deleted": "{name} component deleted"
-                },
-                "navigation-sidebars": {
-                    "component": "Navigation sidebar component",
-                    "created": "Navigation sidebar component created",
-                    "updated": "Navigation sidebar component updated",
-                    "deleted": "Navigation sidebar component deleted"
-                },
-                "texts": {
-                    "component": "Text component",
-                    "created": "Text component created",
-                    "updated": "Text component updated",
-                    "deleted": "Text component deleted",
-                    "headline": "Headline",
-                    "body": "Body"
-                }
-            },
-            "backend": {
-                "global": {
-                    "cms": "CMS"
-                },
-                "navigations": {
-                    "navigations": "Navigation items",
-                    "navigation": "Navigation item",
-                    "new": "Create navigation item",
-                    "edit": "Edit navigation item",
-                    "save": "Save navigation item",
-                    "created": "Navigation item created",
-                    "updated": "Navigation item updated",
-                    "deleted": "Navigation item deleted",
-                    "new_navigation_item": "New item",
-                    "items_for": "Navigation items for: {name}",
-                    "name": "Name",
-                    "is_visible": "Visible",
-                    "is_active": "Active"
-                },
-                "navigation_trees": {
-                    "navigation_trees": "Navigation trees",
-                    "navigation_tree": "Navigation tree",
-                    "new": "Create navigation tree",
-                    "edit": "Edit navigation tree",
-                    "save": "Save navigation tree",
-                    "created": "Navigation tree created",
-                    "updated": "Navigation tree updated",
-                    "deleted": "Navigation tree deleted",
-                    "show_nodes": "Show navigation items",
-                    "scope": "Scope"
-                },
-                "pages": {
-                    "pages": "Pages",
-                    "page": "Page",
-                    "new": "Create page",
-                    "edit": "Edit page",
-                    "save": "Save page",
-                    "save_and_publish": "Save page and publish",
-                    "created": "Page created",
-                    "updated": "Page updated",
-                    "deleted": "Page deleted",
-                    "name": "Name",
-                    "meta_description": "Meta description",
-                    "meta_keywords": "Meta keywords",
-                    "template": "Template",
-                    "is_active": "Active",
-                    "delete_component_question": "Really delete component?"
-                }
-            }
-        },
-        "motor-media": {
-            "backend": {
-                "global": {
-                    "media": "Media",
-                    "no_file": "No file"
-                },
-                "mediapool": {
-                    "mediapool": "Mediapool"
-                },
-                "files": {
-                    "files": "Files",
-                    "file": "File",
-                    "new": "Create file",
-                    "edit": "Edit file",
-                    "save": "Save file",
-                    "created": "File created",
-                    "updated": "File updated",
-                    "deleted": "File deleted",
-                    "file_info": "File information",
-                    "author": "Author",
-                    "source": "Source",
-                    "alt_text": "Alternate text",
-                    "description": "Description",
-                    "is_global": "Globally available for all clients",
-                    "drop_file_here": "Drop file here",
-                    "please_select_category": "Please select at least one category"
-                }
-            }
-        },
         "partymeister-core": {
             "component": {
                 "visitor-website-registrations": {
@@ -500,7 +177,8 @@ export default {
                     "starts_at": "Date and time",
                     "is_visible": "Visible",
                     "is_organizer_only": "Organizer only",
-                    "sort_position": "Sort position"
+                    "sort_position": "Sort position",
+                    "sort_position_updated": "Event sort position updated"
                 },
                 "callbacks": {
                     "callbacks": "Callbacks",
@@ -865,7 +543,20 @@ export default {
                     "work_stage": "Work stage",
                     "work_stages": "Work stages",
                     "file": "File",
-                    "latest": "Latest entries"
+                    "latest": "Latest entries",
+                    "sort_position_updated": "Entry position updated",
+                    "entry_prepared": "Entry marked as prepared",
+                    "entry_not_prepared": "Entry marked as not prepared yet",
+                    "entry_recorded": "Entry marked as recorded",
+                    "entry_not_recorded": "Entry marked as not recorded yet",
+                    "gema_checked": "Entry marked as GEMA checked",
+                    "gema_not_checked": "Entry marked as NOT GEMA checked yet",
+                    "status_unchecked": "Entry marked as unchecked",
+                    "status_checked": "Entry marked as checked",
+                    "status_needs_feedback": "Entry marked as needs feedback",
+                    "status_disqualified": "Entry marked as disqualified",
+                    "status_not_preselected": "Entry marked as not preselected",
+                    "comment_created": "Entry comment created"
                 },
                 "global": {
                     "competitions": "Competitions"
@@ -949,14 +640,16 @@ export default {
                     "votes": "Votes",
                     "vote": "Vote",
                     "new": "Create votes",
-                    "edit": "Edit votes",
+                    "edit": "Add votes",
                     "save": "Save votes",
                     "created": "Votes created",
                     "updated": "Votes updated",
                     "deleted": "Votes deleted",
                     "name": "Name",
                     "generate_prizegiving": "Generate Prizegiving slides",
-                    "no_entries_for_this_competition": "There are currently no checked entries for this competition"
+                    "no_entries_for_this_competition": "There are currently no checked entries for this competition",
+                    "deadline": "Deadline",
+                    "deadline_over": "Deadline is over"
                 },
                 "competitions": {
                     "competitions": "Competitions",
@@ -976,6 +669,8 @@ export default {
                     "prizegiving_sort_position_short": "PG Pos.",
                     "upload_enabled": "Upload enabled",
                     "voting_enabled": "Voting enabled",
+                    "upload_disabled": "Upload disabled",
+                    "voting_disabled": "Voting disabled",
                     "actions": "Actions",
                     "status": "Status",
                     "generate_playlist": "Generate playlist",
@@ -988,7 +683,9 @@ export default {
                     "videos": "Videos",
                     "video_1": "Video 1 (plays after 'Coming up')",
                     "video_2": "Video 1 (plays after video 1)",
-                    "video_3": "Video 1 (plays after video 2)"
+                    "video_3": "Video 1 (plays after video 2)",
+                    "sort_position_updated": "Competition position updated",
+                    "prizegiving_sort_position_updated": "Prizegiving position updated"
                 },
                 "option_groups": {
                     "option_groups": "Option groups",
@@ -1011,6 +708,14 @@ export default {
             }
         },
         "partymeister-slides": {
+            "component": {
+                "playlist-viewers": {
+                    "component": "Playlist viewer component",
+                    "created": "Playlist viewer component created",
+                    "updated": "Playlist viewer component updated",
+                    "deleted": "Playlist viewer component deleted"
+                }
+            },
             "backend": {
                 "slides": {
                     "slides": "Slides",
@@ -1029,7 +734,7 @@ export default {
                         "announce": "Default",
                         "announce_important": "Warning",
                         "compo": "Competition",
-                        "comingup": "Coming up \/ End",
+                        "coming_up_now": "Coming up \/ Now",
                         "end": "End \/ Participants"
                     },
                     "latest": "Latest slides",
@@ -1052,6 +757,7 @@ export default {
                     "template_for_types": {
                         "basic": "Basic template",
                         "coming_up": "Coming up",
+                        "now": "Now",
                         "end": "End of compo",
                         "competition_entry_1": "Competition (Entry 1)",
                         "competition": "Competition",
@@ -1123,7 +829,12 @@ export default {
                         "screens": "Screens",
                         "slidemeister-web": "Slidemeister-Web"
                     },
-                    "open_client": "Open client window"
+                    "open_client": "Open client window",
+                    "jingle": "Jingle",
+                    "jingle_midi_note": "Jingle midi note",
+                    "prizegiving_bar_color": "Prizegiving bar color",
+                    "prizegiving_bar_blink_color": "Prizegiving bar blink color",
+                    "fragment": "Fragment shader for {type}"
                 },
                 "transitions": {
                     "transitions": "Transitions",
@@ -1147,6 +858,564 @@ export default {
                     "created": "Photowall component created",
                     "updated": "Photowall component updated",
                     "deleted": "Photowall component deleted"
+                }
+            }
+        },
+        "motor-backend": {
+            "backend": {
+                "category_trees": {
+                    "category_trees": "Category trees",
+                    "category_tree": "Category tree",
+                    "new": "Create category tree",
+                    "edit": "Edit category tree",
+                    "save": "Save category tree",
+                    "created": "Category tree created",
+                    "updated": "Category tree updated",
+                    "deleted": "Category tree deleted",
+                    "scope": "Scope",
+                    "show_nodes": "Show categories"
+                },
+                "global": {
+                    "administration": "Admin",
+                    "home": "Home",
+                    "back": "back",
+                    "delete_question": "Really delete?",
+                    "edit": "Edit",
+                    "duplicate": "Duplicate",
+                    "delete": "Delete",
+                    "show": "Show",
+                    "actions": "Actions",
+                    "images": "Images",
+                    "teaser_image": "Teaser image",
+                    "body_image": "Image",
+                    "image": "Image",
+                    "files": "Files",
+                    "file": "File",
+                    "video": "Video",
+                    "dashboard": "Dashboard",
+                    "yes": "Yes",
+                    "no": "No",
+                    "visibility": "Visibility",
+                    "is_visible": "Visible",
+                    "search": "Search",
+                    "no_records": "No records found",
+                    "base_info": "Basic information",
+                    "name": "Name",
+                    "please_choose": "-- Please choose --",
+                    "longitude": "Longitude",
+                    "latitude": "Latitude",
+                    "sort_position": "Position",
+                    "all": "All",
+                    "access_denied": "Access denied",
+                    "uploaded": "Uploaded",
+                    "address": {
+                        "address_1": "Address",
+                        "address_2": "Address supplemental",
+                        "zip": "Zip code",
+                        "city": "City",
+                        "country": "Country"
+                    },
+                    "contact": {
+                        "salutations": {
+                            "m": "Mr",
+                            "f": "Ms",
+                            "c": "Company",
+                            "n": "-"
+                        },
+                        "full_salutations": {
+                            "m": "Dear Mr",
+                            "f": "Dear Ms",
+                            "c": "Dear",
+                            "n": ""
+                        },
+                        "salutation": "Salutation",
+                        "title": "Title",
+                        "first_name": "First name",
+                        "last_name": "Last name",
+                        "date_of_birth": "Date of birth",
+                        "email": "Email",
+                        "phone_home": "Phone (home)",
+                        "phone_mobile": "Phone (mobile)",
+                        "phone_work": "Phone (work)",
+                        "website": "Website",
+                        "contact": "Contact",
+                        "phone": "Phone"
+                    },
+                    "flash": {
+                        "warning": "Warning",
+                        "info": "Information",
+                        "error": "Error",
+                        "success": "Success"
+                    },
+                    "are_you_sure": "Are you sure?"
+                },
+                "login": {
+                    "sign_out": "Sign out",
+                    "sign_in": "Sign in",
+                    "sign_in_text": "Please sign in",
+                    "remember": "Remember me",
+                    "errors": "There are some problems with your input",
+                    "password_forgotten_text": "Password forgotten?",
+                    "send_password_reset_link": "Send reset password link"
+                },
+                "roles": {
+                    "roles": "Roles",
+                    "role": "Role",
+                    "new": "Create role",
+                    "edit": "Edit role",
+                    "save": "Save role",
+                    "created": "Role created",
+                    "updated": "Role updated",
+                    "deleted": "Role deleted",
+                    "name": "Name",
+                    "guard_name": "Zone"
+                },
+                "languages": {
+                    "languages": "Languages",
+                    "language": "Language",
+                    "new": "Create language",
+                    "edit": "Edit language",
+                    "save": "Save language",
+                    "created": "Language created",
+                    "updated": "Language updated",
+                    "deleted": "Language deleted",
+                    "iso_639_1": "ISO 639-1",
+                    "native_name": "Native name",
+                    "english_name": "English name"
+                },
+                "permissions": {
+                    "permissions": "Permissions",
+                    "permission": "Permission",
+                    "new": "Create permission",
+                    "edit": "Edit permission",
+                    "save": "Save permission",
+                    "created": "Permission created",
+                    "updated": "Permission updated",
+                    "deleted": "Permission deleted",
+                    "name": "Name",
+                    "group": "Group",
+                    "guard_name": "Zone"
+                },
+                "email_templates": {
+                    "email_templates": "Email templates",
+                    "email_template": "Email template",
+                    "new": "Create email template",
+                    "edit": "Edit email template",
+                    "save": "Save email template",
+                    "created": "Email template created",
+                    "updated": "Email template updated",
+                    "deleted": "Email template deleted",
+                    "template_info": "Template information",
+                    "subject": "Subject",
+                    "default_sender_name": "Default sender name",
+                    "default_sender_email": "Default sender email address",
+                    "default_recipient_name": "Default recipient name",
+                    "default_recipient_email": "Default recipient email address",
+                    "default_cc_email": "Default cc email addresses (separated by ;)",
+                    "default_bcc_email": "Default bcc email addresses (separated by ;)",
+                    "body_text": "Body (text)",
+                    "body_html": "Body (html)"
+                },
+                "users": {
+                    "users": "Users",
+                    "user": "User",
+                    "new": "Create user",
+                    "edit": "Edit user",
+                    "save": "Save user",
+                    "created": "User created",
+                    "updated": "User updated",
+                    "deleted": "User deleted",
+                    "name": "Name",
+                    "email": "Email",
+                    "password": "Password",
+                    "password_confirm": "Confirm password",
+                    "profile": {
+                        "edit": "Edit profile",
+                        "save": "Save profile",
+                        "updated": "Profile updated"
+                    }
+                },
+                "config_variables": {
+                    "config_variables": "Config variables",
+                    "config_variable": "Config variable",
+                    "new": "Create config variable",
+                    "edit": "Edit config variable",
+                    "save": "Save config variable",
+                    "created": "Config variable created",
+                    "updated": "Config variable updated",
+                    "deleted": "Config variable deleted",
+                    "package": "Package",
+                    "group": "Group",
+                    "name": "Name",
+                    "value": "Value"
+                },
+                "categories": {
+                    "categories": "Categories",
+                    "category": "Category",
+                    "new": "Create category",
+                    "edit": "Edit category",
+                    "save": "Save category",
+                    "created": "Category created",
+                    "updated": "Category updated",
+                    "deleted": "Category deleted",
+                    "name": "Name",
+                    "new_category": "New category",
+                    "all_categories": "All categories",
+                    "items_for": "Categories for: {name}"
+                },
+                "clients": {
+                    "clients": "Clients",
+                    "client": "Client",
+                    "new": "Create client",
+                    "edit": "Edit client",
+                    "save": "Save client",
+                    "created": "Client created",
+                    "updated": "Client updated",
+                    "deleted": "Client deleted",
+                    "name": "Name",
+                    "slug": "Slug",
+                    "is_active": "Active",
+                    "description": "Description",
+                    "contact": "Contact",
+                    "address_info": "Address information",
+                    "contact_info": "Contact information",
+                    "additional_info": "Additional information"
+                }
+            }
+        },
+        "motor-media": {
+            "backend": {
+                "global": {
+                    "media": "Media",
+                    "no_file": "No file"
+                },
+                "mediapool": {
+                    "mediapool": "Mediapool"
+                },
+                "files": {
+                    "files": "Files",
+                    "file": "File",
+                    "new": "Create file",
+                    "edit": "Edit file",
+                    "save": "Save file",
+                    "created": "File created",
+                    "updated": "File updated",
+                    "deleted": "File deleted",
+                    "file_info": "File information",
+                    "author": "Author",
+                    "source": "Source",
+                    "alt_text": "Alternate text",
+                    "description": "Description",
+                    "is_global": "Globally available for all clients",
+                    "drop_file_here": "Drop file here",
+                    "please_select_category": "Please select at least one category"
+                }
+            }
+        },
+        "motor-revision": {
+            "component": {
+                "shuttle-lists": {
+                    "component": "Shuttle list component",
+                    "created": "Shuttle list component created",
+                    "updated": "Shuttle list component updated",
+                    "deleted": "Shuttle list component deleted"
+                },
+                "shuttle-registrations": {
+                    "component": "Shuttle registration component",
+                    "created": "Shuttle registration component created",
+                    "updated": "Shuttle registration component updated",
+                    "deleted": "Shuttle registration component deleted",
+                    "registration_successful": "Your shuttle registration was saved. Thank you!",
+                    "shuttle_to_party": "I need a shuttle TO Revision",
+                    "shuttle_to_airport": "I need a shuttle FROM Revision",
+                    "sign_up": "Sign up!",
+                    "arrival_flight_time": "Flight arrives at",
+                    "departure_flight_time": "Flight departs at"
+                },
+                "sponsor-footers": {
+                    "component": "Sponsor footer component",
+                    "created": "Sponsor footer component created",
+                    "updated": "Sponsor footer component updated",
+                    "deleted": "Sponsor footer component deleted"
+                },
+                "sponsor-lists": {
+                    "component": "Sponsor list component",
+                    "created": "Sponsor list component created",
+                    "updated": "Sponsor list component updated",
+                    "deleted": "Sponsor list component deleted"
+                },
+                "tickets": {
+                    "component": "Ticket component",
+                    "created": "Ticket component created",
+                    "updated": "Ticket component updated",
+                    "deleted": "Ticket component deleted",
+                    "at_home_successful": "Your request for the \"I <3 Revision but I can't be there ticket\" was successfully sent",
+                    "supporter_successful": "Your request for the supporter ticket was successfully sent",
+                    "subsidized_successful": "Your request for the subsidized ticket was successfully sent",
+                    "at_home_save": "Request \"I <3 Revision but I can't be there ticket\" ticket",
+                    "supporter_save": "Request supporter ticket",
+                    "subsidized_save": "Apply for a subsidized ticket"
+                }
+            },
+            "backend": {
+                "travelers": {
+                    "travelers": "Travelers",
+                    "traveler": "Traveler",
+                    "new": "Create traveler",
+                    "edit": "Edit traveler",
+                    "save": "Save traveler",
+                    "created": "Traveler created",
+                    "updated": "Traveler updated",
+                    "deleted": "Traveler deleted",
+                    "name": "Name",
+                    "email": "Email",
+                    "mobile_phone": "Mobile phone",
+                    "mobile": "Mobile",
+                    "number_of_people": "Number of people",
+                    "flight_time": "Flight time",
+                    "flight_number": "Flight number",
+                    "flight": "Flight"
+                },
+                "global": {
+                    "revision": "Revision"
+                },
+                "shuttles": {
+                    "shuttles": "Shuttles",
+                    "shuttle": "Shuttle",
+                    "new": "Create shuttle",
+                    "edit": "Edit shuttle",
+                    "save": "Save shuttle",
+                    "created": "Shuttle created",
+                    "updated": "Shuttle updated",
+                    "deleted": "Shuttle deleted",
+                    "name": "Name",
+                    "direction": "Direction",
+                    "directions": {
+                        "party": "To the partyplace",
+                        "airport": "To the airport"
+                    },
+                    "is_active": "Is confirmed",
+                    "price": "Price",
+                    "seats": "Seats",
+                    "travel_time": "Travel time in Minutes",
+                    "arrives_at": "Arrival",
+                    "departs_at": "Departure",
+                    "times": "Times",
+                    "free": "Free"
+                },
+                "sponsors": {
+                    "sponsors": "Sponsors",
+                    "sponsor": "Sponsor",
+                    "new": "Create sponsor",
+                    "edit": "Edit sponsor",
+                    "save": "Save sponsor",
+                    "created": "Sponsor created",
+                    "updated": "Sponsor updated",
+                    "deleted": "Sponsor deleted",
+                    "name": "Name",
+                    "level": "Level",
+                    "sort_position": "Position",
+                    "url": "URL",
+                    "text": "Text",
+                    "is_active": "Active",
+                    "logo_big": "Logo (big)",
+                    "logo_small": "Logo (small)",
+                    "levels": {
+                        "4": "Corporate",
+                        "3": "Silver",
+                        "2": "Gold",
+                        "1": "Platinum"
+                    }
+                },
+                "airports": {
+                    "airports": "Airports",
+                    "airport": "Airport",
+                    "new": "Create airport",
+                    "edit": "Edit airport",
+                    "save": "Save airport",
+                    "created": "Airport created",
+                    "updated": "Airport updated",
+                    "deleted": "Airport deleted",
+                    "name": "Name",
+                    "code": "Airport code",
+                    "sort_position": "Sort position",
+                    "is_active": "Is active"
+                },
+                "tickets": {
+                    "tickets": "Tickets",
+                    "ticket": "Ticket",
+                    "new": "Create ticket",
+                    "edit": "Edit ticket",
+                    "save": "Save ticket",
+                    "created": "Ticket created",
+                    "updated": "Ticket updated",
+                    "deleted": "Ticket deleted",
+                    "choose": "Please choose",
+                    "handle": "Handle",
+                    "name": "Name",
+                    "company": "Company",
+                    "vat_id": "VAT ID",
+                    "address": "Address",
+                    "zip": "ZIP code",
+                    "city": "City",
+                    "country": "Country",
+                    "type": "Type",
+                    "email": "Email",
+                    "comment": "Comment",
+                    "internal_comment": "Internal comment",
+                    "access_key": "Access key",
+                    "shirt_size": "Shirt size",
+                    "status": "Status",
+                    "amount": "Amount",
+                    "is_anonymous": "Anonymous",
+                    "reason": "Reason",
+                    "means_of_transportation": "Means of transportation",
+                    "status_changed": "Status changed",
+                    "amounts": {
+                        "250": "250 EUR",
+                        "500": "500 EUR",
+                        "750": "750 EUR",
+                        "1000": "1000 EUR"
+                    },
+                    "types": {
+                        "at_home": "At Home",
+                        "supporter": "Supporter",
+                        "subsidized": "Subsidized"
+                    },
+                    "at_home_stati": [
+                        "Pending",
+                        "Invoiced",
+                        "Payed",
+                        "Package sent"
+                    ],
+                    "subsidized_stati": [
+                        "Pending",
+                        "Confirmed",
+                        "Rejected"
+                    ],
+                    "supporter_stati": [
+                        "Pending",
+                        "Invoiced",
+                        "Payed"
+                    ],
+                    "shirt_sizes": {
+                        "": "",
+                        "s": "S",
+                        "m": "M",
+                        "l": "L",
+                        "xl": "XL",
+                        "2xl": "2XL",
+                        "3xl": "3XL",
+                        "4xl": "4XL",
+                        "5xl": "5XL",
+                        "girly_s": "Girly S",
+                        "girly_m": "Girly M",
+                        "girly_l": "Girly L",
+                        "girly_xl": "Girly XL"
+                    }
+                },
+                "hotels": {
+                    "hotels": "Hotels",
+                    "hotel": "Hotel",
+                    "new": "Create hotel",
+                    "edit": "Edit hotel",
+                    "save": "Save hotel",
+                    "created": "Hotel created",
+                    "updated": "Hotel updated",
+                    "deleted": "Hotel deleted",
+                    "name": "Name"
+                },
+                "rides": {
+                    "rides": "Rides",
+                    "ride": "Ride",
+                    "new": "Create ride",
+                    "edit": "Edit ride",
+                    "save": "Save ride",
+                    "created": "Ride created",
+                    "updated": "Ride updated",
+                    "deleted": "Ride deleted",
+                    "name": "Name"
+                }
+            }
+        },
+        "motor-cms": {
+            "component": {
+                "global": {
+                    "save": "Save component",
+                    "created": "{name} component created",
+                    "deleted": "{name} component deleted",
+                    "image_orientation": "Image orientation",
+                    "image_enlarge": "Enlarge image",
+                    "orientations": {
+                        "top": "Top",
+                        "right": "Right",
+                        "bottom": "Bottom",
+                        "left": "Left"
+                    }
+                },
+                "navigation-sidebars": {
+                    "component": "Navigation sidebar component",
+                    "created": "Navigation sidebar component created",
+                    "updated": "Navigation sidebar component updated",
+                    "deleted": "Navigation sidebar component deleted"
+                },
+                "texts": {
+                    "component": "Text component",
+                    "created": "Text component created",
+                    "updated": "Text component updated",
+                    "deleted": "Text component deleted",
+                    "headline": "Headline",
+                    "body": "Body",
+                    "anchor": "Anchor"
+                }
+            },
+            "backend": {
+                "global": {
+                    "cms": "CMS"
+                },
+                "navigations": {
+                    "navigations": "Navigation items",
+                    "navigation": "Navigation item",
+                    "new": "Create navigation item",
+                    "edit": "Edit navigation item",
+                    "save": "Save navigation item",
+                    "created": "Navigation item created",
+                    "updated": "Navigation item updated",
+                    "deleted": "Navigation item deleted",
+                    "new_navigation_item": "New item",
+                    "items_for": "Navigation items for: {name}",
+                    "name": "Name",
+                    "is_visible": "Visible",
+                    "is_active": "Active"
+                },
+                "navigation_trees": {
+                    "navigation_trees": "Navigation trees",
+                    "navigation_tree": "Navigation tree",
+                    "new": "Create navigation tree",
+                    "edit": "Edit navigation tree",
+                    "save": "Save navigation tree",
+                    "created": "Navigation tree created",
+                    "updated": "Navigation tree updated",
+                    "deleted": "Navigation tree deleted",
+                    "show_nodes": "Show navigation items",
+                    "scope": "Scope"
+                },
+                "pages": {
+                    "pages": "Pages",
+                    "page": "Page",
+                    "new": "Create page",
+                    "edit": "Edit page",
+                    "save": "Save page",
+                    "save_and_publish": "Save page and publish",
+                    "created": "Page created",
+                    "updated": "Page updated",
+                    "deleted": "Page deleted",
+                    "name": "Name",
+                    "meta_description": "Meta description",
+                    "meta_keywords": "Meta keywords",
+                    "template": "Template",
+                    "is_active": "Active",
+                    "delete_component_question": "Really delete component?"
                 }
             }
         }

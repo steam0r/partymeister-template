@@ -13,6 +13,7 @@ RUN curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/
 
 RUN apt install -y procps
 RUN apt install -y redis-server
+RUN apt install -y ffmpeg
 
 #RUN npm install -g laravel-echo-server
 
