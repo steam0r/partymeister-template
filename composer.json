@@ -9,16 +9,16 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
-        "motor-cms/motor-backend": "^0.9",
+        "motor-cms/motor-backend": "^0.10",
         "motor-cms/motor-docs": "^1.0",
-        "motor-cms/motor-cms": "^0.9",
-        "motor-cms/motor-core": "^0.9",
-        "motor-cms/motor-media": "^0.9",
-        "partymeister/accounting": "^0.5",
-        "partymeister/competitions": "^0.5",
-        "partymeister/core": "^0.5",
-        "partymeister/frontend": "^0.5",
-        "partymeister/slides": "^0.5"
+        "motor-cms/motor-cms": "^0.10",
+        "motor-cms/motor-core": "^0.10",
+        "motor-cms/motor-media": "^0.10",
+        "partymeister/accounting": "^0.6",
+        "partymeister/competitions": "^0.6",
+        "partymeister/core": "^0.6",
+        "partymeister/frontend": "^0.6",
+        "partymeister/slides": "^0.6"
     },
     "autoload": {
         "classmap": [

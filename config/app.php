@@ -170,7 +170,6 @@ return [
         Culpa\CulpaServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
-        Barryvdh\Cors\ServiceProvider::class,
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
 
@@ -181,8 +180,6 @@ return [
         Partymeister\Competitions\Providers\EventServiceProvider::class,
         Partymeister\Slides\Providers\EventServiceProvider::class,
         Partymeister\Frontend\Providers\PartymeisterServiceProvider::class,
-
-        //Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         Motor\Core\Providers\MotorServiceProvider::class,
         Motor\Backend\Providers\MotorServiceProvider::class,
