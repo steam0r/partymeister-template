@@ -15,7 +15,6 @@
     "laravel/framework": "^7.0",
     "laravel/tinker": "^2.0",
     "predis/predis": "^1.1",
-    "motor-cms/motor-core": "0.10.*",
     "enbit/string-blade-compiler": "^4.0",
     "doctrine/dbal": "^2.10",
     "php-console/php-console": "^3.1",
