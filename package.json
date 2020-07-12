@@ -89,6 +89,7 @@
     "vue-advanced-cropper": "^0.16.1",
     "vue-agile": "^1.0.12",
     "webfontloader": "^1.6.28",
-    "webmidi": "^2.5.1"
+    "webmidi": "^2.5.1",
+    "ziggy-js": "^0.9.4"
   }
 }

@@ -30,7 +30,7 @@ mix.webpackConfig({
             'node_modules',
             'vendor/tightenco',
             'resources/assets/js',
-            'packages/dfox288'
+            'packages'
         ],
         extensions: [".webpack.js", ".web.js", ".js", ".json", ".less"]
     }
@@ -39,20 +39,20 @@ mix.webpackConfig({
 mix
     .js('resources/assets/js/project.package-development.js', 'public/js/motor-backend.js')
 
-    .js('packages/dfox288/partymeister-frontend/resources/assets/js/partymeister-livevoting/main.js', 'public/js/partymeister-livevoting.js')
-    .js('packages/dfox288/partymeister-slides/resources/assets/js/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
-    .js('packages/dfox288/partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
+    .js('packages/partymeister-frontend/resources/assets/js/partymeister-livevoting/main.js', 'public/js/partymeister-livevoting.js')
+    .js('packages/partymeister-slides/resources/assets/js/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
+    .js('packages/partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
     .js('resources/assets/js/frontend.js', 'public/js/motor-frontend.js')
-    .js('packages/dfox288/partymeister-slides/resources/assets/js/slidemeister/frontend.js', 'public/js/slidemeister.js')
-    .js('packages/dfox288/partymeister-slides/resources/assets/js/font-loader.js', 'public/js/slidemeister-font-loader.js')
-    .js('packages/dfox288/partymeister-accounting/resources/assets/js/partymeister-accounting-pos.js', 'public/js/partymeister-accounting-pos.js')
-    .js('packages/dfox288/motor-docs/resources/assets/js/motor-docs.js', 'public/js/motor-docs.js')
+    .js('packages/partymeister-slides/resources/assets/js/slidemeister/frontend.js', 'public/js/slidemeister.js')
+    .js('packages/partymeister-slides/resources/assets/js/font-loader.js', 'public/js/slidemeister-font-loader.js')
+    .js('packages/partymeister-accounting/resources/assets/js/partymeister-accounting-pos.js', 'public/js/partymeister-accounting-pos.js')
+    .js('packages/motor-docs/resources/assets/js/motor-docs.js', 'public/js/motor-docs.js')
     .sourceMaps()
-    .sass('packages/dfox288/motor-docs/resources/assets/sass/motor-docs.scss', 'public/css')
+    .sass('packages/motor-docs/resources/assets/sass/motor-docs.scss', 'public/css')
     .sass('resources/assets/sass/project.package-development.scss', 'public/css/motor-backend.css')
-    .sass('packages/dfox288/partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
-    .sass('packages/dfox288/partymeister-accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
-    .sass('packages/dfox288/partymeister-slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
+    .sass('packages/partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
+    .sass('packages/partymeister-accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
+    .sass('packages/partymeister-slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
     .sass('resources/assets/sass/partymeister-frontend.scss', 'public/css/motor-frontend.css')
     // APP RESOURCES
     .copy('resources/fonts/*.*', 'public/fonts')

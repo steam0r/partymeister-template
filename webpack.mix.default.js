@@ -32,7 +32,7 @@ mix.webpackConfig({
             'vendor/motor-cms',
             'vendor/partymeister',
             'resources/assets/js',
-            'packages/dfox288'
+            'packages'
         ],
         extensions: [".webpack.js", ".web.js", ".js", ".json", ".less"]
     }
