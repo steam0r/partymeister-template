@@ -17,5 +17,15 @@ return [
             'path'   => '/vendor/fonts/Lelo.css',
             'family' => '\'Lelo\''
         ],
+        [
+            'name'   => 'norwester',
+            'path'   => '/fonts/Norwester.css',
+            'family' => '\'Norwester\''
+        ],
+        [
+            'name' => 'pacifico',
+            'path' => '',
+            'family' => '\'Pacifico\''
+        ]
     ],
 ];

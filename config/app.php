@@ -181,8 +181,6 @@ return [
         Partymeister\Slides\Providers\EventServiceProvider::class,
         Partymeister\Frontend\Providers\PartymeisterServiceProvider::class,
 
-        //Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-
         Motor\Core\Providers\MotorServiceProvider::class,
         Motor\Backend\Providers\MotorServiceProvider::class,
         Motor\Media\Providers\MotorServiceProvider::class,
