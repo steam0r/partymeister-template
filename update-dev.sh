@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-COMPOSER=composer-dev.json php -d memory_limit=8096M /usr/local/bin/composer -vvvv update $1
+COMPOSER=composer-dev.json php -d memory_limit=8096M ./composer.phar  -vvvv install $1

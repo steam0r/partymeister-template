@@ -97,7 +97,8 @@
       "Tests\\Partymeister\\Accounting\\": "packages/partymeister-accounting/tests/",
       "Partymeister\\Core\\": "packages/partymeister-core/src",
       "Tests\\Partymeister\\Core\\": "packages/partymeister-core/tests/",
-      "Spatie\\Glide\\": "packages/motor-backend/src/Spatie/Glide"
+      "Spatie\\Glide\\": "packages/motor-backend/src/Spatie/Glide",
+      "SceneOrg\\SceneId\\": "packages/partymeister-core/sceneid"
     },
     "files": [
       "packages/motor-backend/helpers/motor_backend_helpers.php",

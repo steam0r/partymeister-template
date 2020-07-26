@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'name' => 'Edison 2020 Partynet',
+    'name' => 'Novoque 2020',
 ];
