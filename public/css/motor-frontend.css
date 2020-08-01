@@ -11356,10 +11356,6 @@ h3 {
   color: #7381ff !important;
 }
 
-.menu.dropdown {
-  display: table;
-}
-
 .menu .menu-text {
   width: 200px;
   height: 100%;
