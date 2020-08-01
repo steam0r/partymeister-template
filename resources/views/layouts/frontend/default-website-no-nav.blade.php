@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>{{$version->name}} | {{config('motor-backend-project.name_frontend')}}</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png">
 
     <link href="{{ mix('/css/motor-frontend.css') }}" rel="stylesheet" type="text/css"/>
     @yield('view-styles')
@@ -124,8 +125,8 @@
 </div>
 <div class="columns shrink footer text-center" style="position: fixed; bottom: 0; width: 100%;">
     <ul class="menu align-center">
-        <li><a href="/privacy">Privacy policy</a></li>
-        <li><a href="/contact">Contact and Imprint</a></li>
+        <li><a href="https://www.novoque.eu/contact/">Privacy policy</a></li>
+        <li><a href="https://www.novoque.eu/privacy-policy/">Contact and Imprint</a></li>
     </ul>
 </div>
 <script src="{{mix('js/motor-frontend.js')}}"></script>

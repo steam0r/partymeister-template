@@ -34,6 +34,10 @@ mix.webpackConfig({
             'resources/assets/js',
             'packages'
         ],
+        alias: {
+            "ziggy": path.resolve('resources/assets/js/ziggy.js'),
+            "ziggy-route": path.resolve('vendor/tightenco/ziggy/src/js/route.js'),
+        },
         extensions: [".webpack.js", ".web.js", ".js", ".json", ".less"]
     }
 });

@@ -1,19 +1,69 @@
 @import '~partymeister-frontend/resources/assets/sass/partymeister-frontend';
 
 // Revision 2019
-@import url(//fonts.googleapis.com/css?family=Poppins:400,700);
-
-@import url(//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+@import url("//use.typekit.net/gsc8zsi.css");
+@import url("//fonts.googleapis.com/css2?family=Work+Sans");
 
 body, p, li, a {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #7381ff;
+  background-color: black;
+}
+
+label {
+  color: #7381ff !important
+}
+
+.medium-12, .medium-6 {
+  margin-top: 20px;
+}
+
+.card {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Work Sans", sans-serif !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+  .button {
+    background-color: black !important;
+    border: 1px solid #7381ff;
+    color: #7381ff !important;
+  }
+  .button:hover {
+    background-color: white !important;
+    color: black;
+  }
+  background-color: black;
+  border: 5px solid #7381ff;
+}
+
+input, select, textarea, button {
+  background-color: black !important;
+  border: 1px solid #7381ff !important;
+  color: #7381ff !important;
+}
+
+select option:hover,
+select option:focus,
+select option:active,
+select option:checked {
+  background: white;
+  color: black !important;
+  border: 1px solid #7381ff !important;
+}
+
+a:hover {
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  font-family: 'trasandina', sans-serif;
   text-transform: uppercase;
-  color: #333 !important;
+  font-weight: 900;
+  font-style: normal;
+  color: #7381ff !important;
 }
 
 h1 {
@@ -27,20 +77,125 @@ h2 {
 h3 {
   font-size: 20px;
 }
+.grid-container {
+  padding-top: 50px;
+}
 
+.main-content {
+  padding-right: 50px;
+}
 
-//body {
-//  background: #ccc;
-//}
-//.top-bar, .top-bar ul {
-//  background: #999;
-//}
+.dropdown {
+  background-color: black;
+}
 
-.top-bar ul li, .top-bar ul li a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #333;
+.title-bar {
+  color: #7381ff !important;
+}
+
+.menu {
+  &.dropdown {
+    display: table;
+  }
+  .menu-text {
+    width: 200px;
+    height: 100%;
+    padding: unset;
+    padding-right: 20px;
+    padding-top: 8px;
+    margin-left: 20px;
+  }
+  .active {
+    a {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+input[type="checkbox"] + label::before {
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 5px;
+  border: 1px solid #7381ff;
+  margin-top: 4px;
+}
+
+input[type="checkbox"]:checked+label::before {
+  background-color: white;
+  border-color: white;
+}
+
+.form-control-upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.form-control-upload::before {
+  content: "Select some files";
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 10pt;
+}
+.form-control-upload:hover::before {
+  border-color: black;
+}
+
+.form-control-upload:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.callout.primary {
+  background-color: black;
+}
+
+.callout.warning {
+  background-color: black;
+  color: #7381ff;
+}
+
+.button {
+  font-family: "Work Sans", sans-serif;
+  background-color: white !important;
+  font-weight: 500;
+  color: black !important;
+}
+
+.top-bar {
+  padding: unset !important;
+  background-color: black;
+  ul {
+    background-color: black;
+    li {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #7381ff;
+      a {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #7381ff;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: black;
+  color: #7381ff;
 }
 
 .breadcrumbs .disabled {
@@ -91,14 +246,12 @@ ul.vertical.menu li a {
 
 .footer {
   height: 5rem;
-  background: #e6e6e6;
   //color: #fff;
   padding: 1rem;
 }
 
 .footer .menu a {
   margin-top: 0.25rem;
-  color: #333;
 }
 .footer .menu a:hover {
   text-decoration: underline;
