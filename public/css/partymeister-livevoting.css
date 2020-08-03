@@ -11,6 +11,9 @@
   Browsers resets and base typography.
 */
 
+@import url("//use.typekit.net/gsc8zsi.css");
+@import url("//fonts.googleapis.com/css2?family=Work+Sans");
+
 /* Core module CSS variable definitions */
 
 :root {
@@ -49,7 +52,7 @@ u {
 
 html,
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
@@ -60,7 +63,7 @@ html,
 
 body {
   margin: 0;
-  color: var(--fore-color);
+  color: #7381ff;
   background: var(--back-color);
 }
 
@@ -173,7 +176,7 @@ blockquote:before {
   position: absolute;
   top: calc(0rem - var(--universal-padding));
   left: 0;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   content: "\201C";
@@ -749,7 +752,7 @@ a:focus {
   width: 100%;
   background: var(--card-back-color);
   color: var(--card-fore-color);
-  border: 0.0625rem solid var(--card-border-color);
+  border: 5px solid #7381ff !important;
   border-radius: var(--universal-border-radius);
   margin: var(--universal-margin);
   overflow: hidden;
@@ -757,7 +760,7 @@ a:focus {
 
 @media screen and (min-width: 320px) {
   .card {
-    max-width: 320px;
+    max-width: 98%;
   }
 }
 
@@ -870,7 +873,7 @@ legend {
   display: table;
   max-width: 100%;
   white-space: normal;
-  font-weight: 700;
+  font-weight: 900;
   padding: calc(var(--universal-padding) / 2);
 }
 
@@ -1005,7 +1008,7 @@ option {
 
 [type=checkbox]:checked:before {
   content: "\2713";
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: calc(1rem + var(--universal-padding) / 2);
   top: calc(0rem - var(--universal-padding));
   left: calc(var(--universal-padding) / 4);
@@ -1444,7 +1447,7 @@ footer.sticky {
   position: relative;
   vertical-align: bottom;
   content: "\A0\2261\A0";
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1.5em;
 }
 
@@ -1501,7 +1504,7 @@ footer.sticky {
   content: "\D7";
   color: var(--drawer-close-color);
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 2rem;
   line-height: 1;
   text-align: center;
@@ -1993,7 +1996,7 @@ mark.inline-block {
   content: "\D7";
   color: var(--modal-close-color);
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1.75rem;
   line-height: 1;
   text-align: center;
@@ -2515,7 +2518,7 @@ span.icon-user {
   width: 40px;
   height: 35px;
   background-repeat: no-repeat;
-  background-color: #d3d4d5;
+  background-color: #7381ff;
 }
 
 .partymeister-rating-cancel-on {

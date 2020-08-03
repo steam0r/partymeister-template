@@ -11267,7 +11267,7 @@ label {
 
 .card {
   background-color: black;
-  border: 5px solid #7381ff;
+  border: 5px solid #7381ff !important;
 }
 
 .card h1,
