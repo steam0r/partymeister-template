@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(//use.typekit.net/gsc8zsi.css);@import url(//fonts.googleapis.com/css2?family=Work+Sans);@charset "UTF-8";
 
 /*
   Flavor name: Dark (mini-dark)
@@ -10,9 +10,6 @@
 /*
   Browsers resets and base typography.
 */
-
-@import url("//use.typekit.net/gsc8zsi.css");
-@import url("//fonts.googleapis.com/css2?family=Work+Sans");
 
 /* Core module CSS variable definitions */
 
@@ -52,7 +49,7 @@ u {
 
 html,
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
@@ -63,7 +60,7 @@ html,
 
 body {
   margin: 0;
-  color: #7381ff;
+  color: var(--fore-color);
   background: var(--back-color);
 }
 
@@ -176,7 +173,7 @@ blockquote:before {
   position: absolute;
   top: calc(0rem - var(--universal-padding));
   left: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 3rem;
   font-weight: 700;
   content: "\201C";
@@ -752,7 +749,7 @@ a:focus {
   width: 100%;
   background: var(--card-back-color);
   color: var(--card-fore-color);
-  border: 5px solid #7381ff !important;
+  border: 0.0625rem solid var(--card-border-color);
   border-radius: var(--universal-border-radius);
   margin: var(--universal-margin);
   overflow: hidden;
@@ -760,7 +757,7 @@ a:focus {
 
 @media screen and (min-width: 320px) {
   .card {
-    max-width: 98%;
+    max-width: 320px;
   }
 }
 
@@ -873,7 +870,7 @@ legend {
   display: table;
   max-width: 100%;
   white-space: normal;
-  font-weight: 900;
+  font-weight: 700;
   padding: calc(var(--universal-padding) / 2);
 }
 
@@ -1008,7 +1005,7 @@ option {
 
 [type=checkbox]:checked:before {
   content: "\2713";
-  font-family: 'Work Sans', sans-serif;
+  font-family: sans-serif;
   font-size: calc(1rem + var(--universal-padding) / 2);
   top: calc(0rem - var(--universal-padding));
   left: calc(var(--universal-padding) / 4);
@@ -1447,7 +1444,7 @@ footer.sticky {
   position: relative;
   vertical-align: bottom;
   content: "\A0\2261\A0";
-  font-family: 'Work Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 1.5em;
 }
 
@@ -1504,7 +1501,7 @@ footer.sticky {
   content: "\D7";
   color: var(--drawer-close-color);
   position: relative;
-  font-family: 'Work Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 2rem;
   line-height: 1;
   text-align: center;
@@ -1996,7 +1993,7 @@ mark.inline-block {
   content: "\D7";
   color: var(--modal-close-color);
   position: relative;
-  font-family: 'Work Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 1.75rem;
   line-height: 1;
   text-align: center;
@@ -2518,7 +2515,7 @@ span.icon-user {
   width: 40px;
   height: 35px;
   background-repeat: no-repeat;
-  background-color: #7381ff;
+  background-color: #d3d4d5;
 }
 
 .partymeister-rating-cancel-on {
@@ -2561,6 +2558,99 @@ span.icon-user {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"/></svg>');
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html,
+* {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: #7381ff;
+  background: var(--back-color);
+}
+
+blockquote:before {
+  position: absolute;
+  top: calc(0rem - var(--universal-padding));
+  left: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  content: "\201C";
+  color: var(--blockquote-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  position: relative;
+  width: 100%;
+  background: var(--card-back-color);
+  color: #7381ff;
+  border: 5px solid #7381ff !important;
+  border-radius: var(--universal-border-radius);
+  margin: var(--universal-margin);
+  overflow: hidden;
+}
+
+legend {
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+  font-weight: 900;
+  padding: calc(var(--universal-padding) / 2);
+}
+
+[type=checkbox]:checked:before {
+  content: "\2713";
+  font-family: "Work Sans", sans-serif;
+  font-size: calc(1rem + var(--universal-padding) / 2);
+  top: calc(0rem - var(--universal-padding));
+  left: calc(var(--universal-padding) / 4);
+}
+
+.drawer-toggle:before {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  content: "\A0\2261\A0";
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+[type=checkbox].drawer + * .drawer-close:before {
+  display: block;
+  content: "\D7";
+  color: var(--drawer-close-color);
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+}
+
+[type=checkbox].modal + div .card .modal-close:before {
+  display: block;
+  content: "\D7";
+  color: var(--modal-close-color);
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.75rem;
+  line-height: 1;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .card {
+    max-width: 90%;
+  }
 }
 
 .special {

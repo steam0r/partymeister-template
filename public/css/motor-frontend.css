@@ -11260,9 +11260,21 @@ label {
   color: #7381ff !important;
 }
 
+label.control-label.required {
+  color: white !important;
+}
+
 .medium-12,
 .medium-6 {
   margin-top: 20px;
+}
+
+.component-entry-upload .card.box-primary {
+  padding: 5px;
+}
+
+.title-bar {
+  display: none;
 }
 
 .card {
@@ -11283,14 +11295,18 @@ label {
 }
 
 .card .button {
-  background-color: black !important;
+  background-color: white !important;
   border: 1px solid #7381ff;
-  color: #7381ff !important;
+  color: black !important;
 }
 
 .card .button:hover {
-  background-color: white !important;
-  color: black;
+  background-color: black !important;
+  color: white !important;
+}
+
+.card .success.button.expanded {
+  margin-top: 15px;
 }
 
 input,
@@ -11300,6 +11316,13 @@ button {
   background-color: black !important;
   border: 1px solid #7381ff !important;
   color: #7381ff !important;
+}
+
+input[required=required],
+select[required=required],
+textarea[required=required],
+button[required=required] {
+  border: 1px solid white !important;
 }
 
 select option:hover,
@@ -11464,6 +11487,16 @@ input[type=checkbox]:checked + label::before {
   color: #333;
 }
 
+#live-voting {
+  background-color: red;
+}
+
+.callout.success {
+  background-color: black !important;
+  border: 1px solid #7381ff !important;
+  color: #7381ff !important;
+}
+
 table.unstriped tbody,
 table.unstriped tbody tr {
   background-color: transparent !important;
@@ -11476,7 +11509,12 @@ table.inner-table tbody td {
 }
 
 table.inner-table tbody td {
+  width: 80% !important;
   padding-top: 0 !important;
+}
+
+table.inner-table tbody td:first-child {
+  width: 20% !important;
 }
 
 table.inner-table {
