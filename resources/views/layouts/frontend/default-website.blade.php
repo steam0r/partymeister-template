@@ -169,8 +169,8 @@
 </div>
 <div class="columns shrink footer text-center" style="position: fixed; bottom: 0; width: 100%;">
     <ul class="menu align-center">
-        <li><a href="https://www.novoque.eu/contact/" target="_blank">Privacy policy</a></li>
-        <li><a href="https://www.novoque.eu/privacy-policy/" target="_blank">Contact and Imprint</a></li>
+      <li><a href="https://www.novoque.eu/privacy-policy/" target="_blank">Privacy policy</a></li>
+      <li><a href="https://www.novoque.eu/contact/" target="_blank">Contact and Imprint</a></li>
     </ul>
 </div>
 <script src="{{mix('js/motor-frontend.js')}}"></script>
