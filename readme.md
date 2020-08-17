@@ -37,7 +37,7 @@ partymeister:
 	# ./installation.sh
 	./update-dev.sh
 	
-	im container:
+	in container:
 		su application
 		cd /app
 		php artisan migrate:fresh
