@@ -49,6 +49,7 @@ partymeister:
 		mkdir /app/entries
 		make cronjob run in docker
 			echo "* * * * * php /app/artisan schedule:run >> /tmp/partymeister-cron.log" >> /etc/cron.d/partymeister
-			/etc/init.d/cron restart```
+			/etc/init.d/cron restart
+```
 
 ## License
