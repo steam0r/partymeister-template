@@ -7,23 +7,20 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.2.5",
+        "php": "^7.3",
         "ext-json": "*",
-        "motor-cms/motor-backend": "^0.10",
+        "motor-cms/motor-backend": "^1.0",
         "motor-cms/motor-docs": "^1.0",
-        "motor-cms/motor-cms": "^0.10",
-        "motor-cms/motor-core": "^0.10",
-        "motor-cms/motor-media": "^0.10",
-        "partymeister/accounting": "^0.6",
-        "partymeister/competitions": "^0.6",
-        "partymeister/core": "^0.6",
-        "partymeister/frontend": "^0.6",
-        "partymeister/slides": "^0.6"
+        "motor-cms/motor-cms": "^1.0",
+        "motor-cms/motor-core": "^1.0",
+        "motor-cms/motor-media": "^1.0",
+        "partymeister/accounting": "^1.0",
+        "partymeister/competitions": "^1.0",
+        "partymeister/core": "^1.0",
+        "partymeister/frontend": "^1.0",
+        "partymeister/slides": "^1.0"
     },
     "autoload": {
-        "classmap": [
-            "database"
-        ],
         "psr-4": {
             "App\\": "app/",
             "Tests\\": "tests/"
