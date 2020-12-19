@@ -11,6 +11,11 @@ mix.webpackConfig({
     devServer: {
         port: '8079'
     },
+    resolve: {
+        alias: {
+            ziggy: path.resolve('vendor/tightenco/ziggy/dist'),
+        },
+    },
 });
 
 /*

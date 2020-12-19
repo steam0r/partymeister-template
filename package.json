@@ -90,6 +90,6 @@
     "vue-agile": "^1.0.12",
     "webfontloader": "^1.6.28",
     "webmidi": "^2.5.1",
-    "ziggy-js": "^0.9.4"
+    "ziggy-js": "^1.0.4"
   }
 }
