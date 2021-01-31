@@ -61,5 +61,8 @@
                 "motor-cms/motor-cms"
             ]
         }
+    },
+    "require-dev": {
+        "laravel/sail": "^1.3"
     }
 }
