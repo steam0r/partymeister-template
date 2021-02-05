@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
 .grid-x {
 }
 
+label {
+    color: white !important;
+}
+
 .full-content, .content-sidebar, .main-content, .sidebar-content, .content-left, .content-center, .content-right {
     opacity: 0.85;
     /*border-radius: 20px;*/
