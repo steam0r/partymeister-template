@@ -14,6 +14,7 @@
         "motor-cms/motor-cms": "^1.0",
         "motor-cms/motor-core": "^1.0",
         "motor-cms/motor-media": "^1.0",
+        "motor-cms/motor-revision": "*",
         "partymeister/accounting": "^1.0",
         "partymeister/competitions": "^1.0",
         "partymeister/core": "^1.0",
