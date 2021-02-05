@@ -1,0 +1,187 @@
+body {
+    background: transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div.header h1, div.hero h1 {
+    text-align: center;
+    position: relative;
+
+}
+div.header h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 8em;
+    color: white !important;
+    text-transform: none !important;
+}
+div.header h1 span {
+    position: absolute;
+    left: 50%;
+    margin-top: 11em;
+    font-family: 'Exo', sans-serif;
+    font-size: 0.1em;
+    color: white !important;
+    text-transform: none !important;
+}
+
+div.hero h1 {
+    padding-top: 8%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Exo', sans-serif;
+    font-size: 12em;
+    color: white !important;
+    text-transform: none !important;
+    position: relative;
+}
+div.hero h1 span {
+    position: absolute;
+    left: 50%;
+    margin-top: 11em;
+    font-family: 'Exo', sans-serif;
+    font-size: 0.1em;
+    color: white !important;
+    text-transform: none !important;
+}
+div.hero h1 button {
+    position: relative;
+    margin-top: -8em;
+    font-size: 0.1em;
+}
+
+
+a, li {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+    /*text-align: center;*/
+}
+.grid-x {
+}
+
+.full-content, .content-sidebar, .main-content, .sidebar-content {
+    opacity: 0.85;
+    /*border-radius: 20px;*/
+    /*background: #acb2bb;*/
+    background: #183867;
+    position: relative;
+    top: 100px;
+    padding: 1.5rem;
+    margin-bottom: 6.5rem;
+    /*border: 1px solid black;*/
+    min-height: 70vh;
+    color: white;
+    /*border: 1px solid #6c88b3;*/
+    /*box-shadow: 0 0 5px 2px black;*/
+}
+.full-content {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.content-sidebar {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    /*border-left: 1px solid #9bb2aa;*/
+}
+
+html {
+    background: url(/images/frontend/revision-2021-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.footer, .top-bar {
+    background: #acb2bb;
+    height: 3rem;
+    padding: 0;
+    opacity: 0.9;
+}
+.top-bar {
+    justify-content: center;
+    opacity: 1;
+    z-index: 10000;
+}
+
+.top-bar ul {
+    background: #acb2bb;
+    z-index: 10000;
+}
+
+.footer ul.menu a {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.menu .active > a {
+    background: #082651;
+}
+
+.dropdown.menu > li.is-active > a {
+    color: #082651;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: #082651 transparent transparent;
+}
+a {
+    color: #da6414;
+}
+
+.button.success {
+    background-color: #da6414 !important;
+    color: white;
+}
+
+.callout.primary {
+    background-color: #da9a6e;
+}
+
+@media only screen
+and (max-device-width: 667px) {
+    #headline {
+        top: 3%;
+    }
+
+    #subline {
+        top: 16%;
+        font-size: 20px;
+    }
+}
+
+h2 {
+    text-align: left;
+}
+
+.thumbnail img {
+    width: 100vw;
+}
+
+.thumbnail.float-right, .thumbnail.float-left {
+    max-width: 35%;
+    margin-bottom: 1rem;
+}
+
+.thumbnail.float-right {
+    margin-left: 1rem;
+}
+
+.thumbnail.float-left {
+    margin-right: 1rem;
+}
+
+#footer {
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+    font-size: 30px;
+    color: #f6e9d1;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#footer small {
+    font-size: 20px;
+}

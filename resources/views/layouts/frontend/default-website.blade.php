@@ -8,165 +8,27 @@
 
     <link href="{{ mix('/css/motor-frontend.css') }}" rel="stylesheet" type="text/css"/>
     @yield('view-styles')
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <style type="text/css">
-        body {
-            background: transparent;
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-
-        a, li {
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-
-        p, h1, h2, h3, h4, h5, h6 {
-            font-family: 'Roboto Condensed', sans-serif !important;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            text-align: center;
-        }
-
-        .full-content, .content-sidebar {
-            opacity: 0.95;
-            border-radius: 20px;
-            background: #faf4e7;
-            position: relative;
-            top: 220px;
-            padding: 1.5rem;
-            margin-bottom: 6.5rem;
-            box-shadow: 5px 5px 5px #353739;
-            border: 1px solid #353739;
-        }
-        .full-content {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            border-right: none;
-        }
-
-        .content-sidebar {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            border-left: 1px solid #dedede;
-        }
-
-        html {
-            background: url(/images/frontend/revision-2020-bg.jpg) no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        #headline {
-            width: 22%;
-            min-width: 180px;
-            position: fixed;
-            top: 75px;
-            left: 5%;
-        }
-
-        #subline {
-            position: fixed;
-            right: 5%;
-            text-align: right;
-            top: 110px;
-            font-size: 30px;
-            color: #f6e9d1;
-            line-height: 40px;
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-
-        #subline small {
-            font-size: 20px;
-        }
-
-        .footer, .top-bar {
-            background: #fcf9f3;
-            opacity: 1;
-            height: 3rem;
-            padding: 0;
-        }
-        .top-bar {
-            justify-content: center;
-            opacity: 1;
-            z-index: 10000;
-        }
-
-        .top-bar ul {
-            background: #fcf9f3;
-            z-index: 10000;
-        }
-
-        .footer ul.menu a {
-            font-family: 'Roboto Condensed', sans-serif !important;
-        }
-
-        .menu .active > a {
-            background: #71854d;
-        }
-
-        .dropdown.menu > li.is-active > a {
-            color: #71854d;
-        }
-
-        .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-            border-color: #71854d transparent transparent;
-        }
-
-        .button.success {
-            background-color: #71854d;
-            color: white;
-        }
-
-        .callout.primary {
-            background-color: #c2cfd4;
-        }
-
-        @media only screen
-        and (max-device-width: 667px) {
-            #headline {
-                top: 3%;
-            }
-
-            #subline {
-                top: 16%;
-                font-size: 20px;
-            }
-        }
-
-        h2 {
-            text-align: left;
-        }
-
-        .thumbnail img {
-            width: 100vw;
-        }
-
-        .thumbnail.float-right, .thumbnail.float-left {
-            max-width: 35%;
-            margin-bottom: 1rem;
-        }
-
-        .thumbnail.float-right {
-            margin-left: 1rem;
-        }
-
-        .thumbnail.float-left {
-            margin-right: 1rem;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap" rel="stylesheet">
+    <link href="/css/revision-2021.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<a href="/">
-    <img src="/images/frontend/revision-2020-headline.png" id="headline">
-</a>
-<p id="subline">
-    Revision - April 10th to 13th 2020<br>
-    On a sofa near you
-</p>
+
 @include('motor-cms::layouts.frontend.partials.navigation')
-<div class="grid-container" id="app" style="margin-bottom: 8rem; margin-top: 2rem;">
+<div class="header" style="width: 100vw; height: 100px;">
+    <h1>
+        Together
+        <span>Revision 2021 - on a sofa near you</span><br>
+    </h1>
+</div>
+<div class="grid-container" style="margin-bottom: 8rem;">
     @include('motor-cms::layouts.frontend.partials.template-sections', ['rows' => $template['items']])
 </div>
 <div class="columns shrink footer text-center" style="position: fixed; bottom: 0; width: 100%;">
+    @foreach (\Motor\Revision\Models\Sponsor::where('is_active', true)->orderBy('level', 'ASC')->orderBy('sort_position', 'ASC')->get() as $sponsor)
+        <a href="{{$sponsor->url}}"><img src="{{$sponsor->file_associations()->where('identifier', 'logo_small')->first()->file->getFirstMedia('file')->getUrl('thumb')}}" style="max-height: 50px; max-width: 200px;"></a>
+    @endforeach
     <ul class="menu align-center">
         <li><a href="/privacy">Privacy policy</a></li>
         <li><a href="/contact">Contact and Imprint</a></li>
@@ -176,6 +38,13 @@
 @yield('view-scripts')
 <script>
     $(document).foundation();
+    $('.scroll-to-content').on('click', function(e) {
+        $('html, body').animate({
+            scrollTop: ($('.header').offset().top-50),
+        }, 1000, function() {
+            $('.hero').css('display', 'none');
+        });
+        e.preventDefault();    });
 </script>
 </body>
 </html>
