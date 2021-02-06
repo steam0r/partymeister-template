@@ -48,6 +48,54 @@ div.hero h1 button {
     font-size: 0.1em;
 }
 
+@media screen and (max-width: 39.9375em) {
+    div.header h1, div.hero h1 {
+        text-align: center;
+        z-index: 1 !important;
+
+    }
+    div.header h1 {
+        font-family: 'Exo', sans-serif;
+        font-size: 5em;
+        color: white !important;
+        text-transform: none !important;
+    }
+    div.header h1 span {
+        position: absolute;
+        left: 50%;
+        margin-top: 11em;
+        font-family: 'Exo', sans-serif;
+        font-size: 0.1em;
+        color: white !important;
+        text-transform: none !important;
+    }
+
+    div.hero h1 {
+        padding-top: 8%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-family: 'Exo', sans-serif;
+        font-size: 6em;
+        color: white !important;
+        text-transform: none !important;
+        position: relative;
+    }
+    div.hero h1 span {
+        position: absolute;
+        left: 50%;
+        margin-top: 11em;
+        font-family: 'Exo', sans-serif;
+        font-size: 0.1em;
+        color: white !important;
+        text-transform: none !important;
+    }
+    div.hero h1 button {
+        position: relative;
+        margin-top: -8em;
+        font-size: 0.1em;
+    }
+
+}
 
 a, li {
     font-family: 'Roboto Condensed', sans-serif;
