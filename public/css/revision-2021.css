@@ -1,7 +1,10 @@
 body {
     background: transparent;
     font-family: 'Roboto Condensed', sans-serif;
+    background: url(/images/frontend/revision-2021-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
+
 div.header h1, div.hero h1 {
     text-align: center;
     z-index: 1 !important;
@@ -49,6 +52,13 @@ div.hero h1 button {
 }
 
 @media screen and (max-width: 39.9375em) {
+    body:after {
+        position: fixed;
+        height: 100vh;
+    }
+    div.hero {
+        display: none;
+    }
     div.header h1, div.hero h1 {
         text-align: center;
         z-index: 1 !important;
@@ -141,11 +151,6 @@ label {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     /*border-left: 1px solid #9bb2aa;*/
-}
-
-html {
-    background: url(/images/frontend/revision-2021-bg.jpg) no-repeat center center fixed;
-    background-size: cover;
 }
 
 .footer, .top-bar {
