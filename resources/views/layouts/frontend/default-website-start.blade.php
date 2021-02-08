@@ -14,14 +14,14 @@
     <link href="/css/revision-2021.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div class="hero" style="width: 100vw; height: 100vh;">
+<div class="hero" style="width: 100%; height: 100vh;">
     <h1>Together
         <span>Revision 2021 - on a sofa near you</span><br>
         <button class="button success scroll-to-content">Take me there!</button>
     </h1>
 </div>
 @include('motor-cms::layouts.frontend.partials.navigation')
-<div class="header" style="width: 100vw; height: 100px;">
+<div class="header" style="width: 100%; height: 100px;">
     <h1>
         Together
         <span>Revision 2021 - on a sofa near you</span><br>
