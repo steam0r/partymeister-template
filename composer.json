@@ -19,7 +19,8 @@
         "partymeister/competitions": "^1.0",
         "partymeister/core": "^1.0",
         "partymeister/frontend": "^1.0",
-        "partymeister/slides": "^1.0"
+        "partymeister/slides": "^1.0",
+        "lavary/laravel-menu": "1.8.1"
     },
     "autoload": {
         "psr-4": {
