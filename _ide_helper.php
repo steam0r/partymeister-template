@@ -8092,10 +8092,6 @@
             /**
      * 
      *
-     * @method static \Illuminate\Redis\Limiters\ConcurrencyLimiterBuilder funnel(string $name)
-     * @method static \Illuminate\Redis\Limiters\DurationLimiterBuilder throttle(string $name)
-     * @see \Illuminate\Redis\RedisManager
-     * @see \Illuminate\Contracts\Redis\Factory
      */ 
         class Redis {
                     /**
@@ -15809,14 +15805,13 @@
          *
          * @param string $name
          * @param callable $callback
-         * @param array $options (optional, it will be combined with the options to be applied)
          * @return \Lavary\Menu\Builder 
          * @static 
          */ 
-        public static function make($name, $callback, $options = [])
+        public static function make($name, $callback)
         {
                         /** @var \Lavary\Menu\Menu $instance */
-                        return $instance->make($name, $callback, $options);
+                        return $instance->make($name, $callback);
         }
                     /**
          * Loads and merges configuration data.

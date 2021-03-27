@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0f86366ef577306db650c5b6fdadc03",
+    "content-hash": "2bb7bf5c8e2a5871defab26224c2ac61",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -890,16 +890,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4"
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f28d44c286812c714741478d968104c5e604a1d4",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f27e06cd9675801df441b3656569b328e04aa37c",
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c",
                 "shasum": ""
             },
             "require": {
@@ -907,7 +907,8 @@
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+                "phpstan/phpstan": "^0.12.55",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -933,7 +934,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/xdebug-handler/issues",
-                "source": "https://github.com/composer/xdebug-handler/tree/1.4.5"
+                "source": "https://github.com/composer/xdebug-handler/tree/1.4.6"
             },
             "funding": [
                 {
@@ -949,7 +950,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-13T08:04:11+00:00"
+            "time": "2021-03-25T17:01:18+00:00"
         },
         {
             "name": "dfox288/culpa",
@@ -1993,6 +1994,61 @@
                 }
             ],
             "time": "2020-10-22T13:57:20+00:00"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
+                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^2.9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "support": {
+                "issues": "https://github.com/fzaninotto/Faker/issues",
+                "source": "https://github.com/fzaninotto/Faker/tree/v1.9.2"
+            },
+            "abandoned": true,
+            "time": "2020-12-11T09:56:16+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -3260,16 +3316,16 @@
         },
         {
             "name": "lavary/laravel-menu",
-            "version": "v1.8.3",
+            "version": "v1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lavary/laravel-menu.git",
-                "reference": "4f14cb9b11cfcd9839d1d87c806632c84a94d3be"
+                "reference": "8c57284c30e533f46a68dd1b3726cdc096204ceb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lavary/laravel-menu/zipball/4f14cb9b11cfcd9839d1d87c806632c84a94d3be",
-                "reference": "4f14cb9b11cfcd9839d1d87c806632c84a94d3be",
+                "url": "https://api.github.com/repos/lavary/laravel-menu/zipball/8c57284c30e533f46a68dd1b3726cdc096204ceb",
+                "reference": "8c57284c30e533f46a68dd1b3726cdc096204ceb",
                 "shasum": ""
             },
             "require": {
@@ -3310,9 +3366,9 @@
             ],
             "support": {
                 "issues": "https://github.com/lavary/laravel-menu/issues",
-                "source": "https://github.com/lavary/laravel-menu/tree/v1.8.3"
+                "source": "https://github.com/lavary/laravel-menu/tree/v1.8.1"
             },
-            "time": "2021-02-22T16:41:26+00:00"
+            "time": "2021-01-19T16:24:30+00:00"
         },
         {
             "name": "league/commonmark",
@@ -4885,16 +4941,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "c136ac554587481e7863fbb57045e055b744603b"
+                "reference": "6e0e0224e5815b699a6061f78a4e4eabe3ab9ab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/c136ac554587481e7863fbb57045e055b744603b",
-                "reference": "c136ac554587481e7863fbb57045e055b744603b",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/6e0e0224e5815b699a6061f78a4e4eabe3ab9ab8",
+                "reference": "6e0e0224e5815b699a6061f78a4e4eabe3ab9ab8",
                 "shasum": ""
             },
             "require": {
@@ -4936,9 +4992,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.0.2"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.0.3"
             },
-            "time": "2020-12-19T16:47:22+00:00"
+            "time": "2021-03-27T11:07:54+00:00"
         },
         {
             "name": "partymeister/core",
@@ -4995,16 +5051,16 @@
         },
         {
             "name": "partymeister/frontend",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-frontend.git",
-                "reference": "1d155ba92d15e56a3fe9a70c291f2dbf81ea3247"
+                "reference": "e730fdaba1ce19ecf279f00af914685dcf21e76d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/1d155ba92d15e56a3fe9a70c291f2dbf81ea3247",
-                "reference": "1d155ba92d15e56a3fe9a70c291f2dbf81ea3247",
+                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/e730fdaba1ce19ecf279f00af914685dcf21e76d",
+                "reference": "e730fdaba1ce19ecf279f00af914685dcf21e76d",
                 "shasum": ""
             },
             "require": {
@@ -5043,9 +5099,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-frontend/issues",
-                "source": "https://github.com/partymeister/partymeister-frontend/tree/1.0.1"
+                "source": "https://github.com/partymeister/partymeister-frontend/tree/1.0.3"
             },
-            "time": "2020-12-17T16:55:28+00:00"
+            "time": "2021-03-27T11:22:33+00:00"
         },
         {
             "name": "partymeister/slides",

@@ -9,18 +9,19 @@
     "require": {
         "php": "^7.3",
         "ext-json": "*",
+        "fzaninotto/faker": "^1.9",
+        "lavary/laravel-menu": "1.8.1",
         "motor-cms/motor-backend": "^1.0",
-        "motor-cms/motor-docs": "^1.0",
         "motor-cms/motor-cms": "^1.0",
         "motor-cms/motor-core": "^1.0",
+        "motor-cms/motor-docs": "^1.0",
         "motor-cms/motor-media": "^1.0",
         "motor-cms/motor-revision": "*",
         "partymeister/accounting": "^1.0",
         "partymeister/competitions": "^1.0",
         "partymeister/core": "^1.0",
         "partymeister/frontend": "^1.0",
-        "partymeister/slides": "^1.0",
-        "lavary/laravel-menu": "1.8.1"
+        "partymeister/slides": "^1.0"
     },
     "autoload": {
         "psr-4": {
