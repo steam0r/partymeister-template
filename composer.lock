@@ -4941,16 +4941,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.0.3",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "6e0e0224e5815b699a6061f78a4e4eabe3ab9ab8"
+                "reference": "6a591d66409c115e79e207f15681d5703fb8e578"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/6e0e0224e5815b699a6061f78a4e4eabe3ab9ab8",
-                "reference": "6e0e0224e5815b699a6061f78a4e4eabe3ab9ab8",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/6a591d66409c115e79e207f15681d5703fb8e578",
+                "reference": "6a591d66409c115e79e207f15681d5703fb8e578",
                 "shasum": ""
             },
             "require": {
@@ -4992,9 +4992,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.0.3"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.0.6"
             },
-            "time": "2021-03-27T11:07:54+00:00"
+            "time": "2021-03-27T18:52:06+00:00"
         },
         {
             "name": "partymeister/core",
@@ -5105,16 +5105,16 @@
         },
         {
             "name": "partymeister/slides",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "8b219b49cfed3fa5bd86cbc4dc8ec93b0c421cdb"
+                "reference": "5d16c316bf68fb83e9a937582e1026a4fe290c5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/8b219b49cfed3fa5bd86cbc4dc8ec93b0c421cdb",
-                "reference": "8b219b49cfed3fa5bd86cbc4dc8ec93b0c421cdb",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/5d16c316bf68fb83e9a937582e1026a4fe290c5f",
+                "reference": "5d16c316bf68fb83e9a937582e1026a4fe290c5f",
                 "shasum": ""
             },
             "require": {
@@ -5155,9 +5155,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.0.3"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.0.4"
             },
-            "time": "2021-02-01T09:26:39+00:00"
+            "time": "2021-03-27T18:01:48+00:00"
         },
         {
             "name": "php-console/php-console",
@@ -10340,16 +10340,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.3.5",
+            "version": "6.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "19a535eaa7fb1c1cac499109deeb1a7a201b4549"
+                "reference": "5ba838befdb37ef06a16d9f716f35eb03cb1b329"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/19a535eaa7fb1c1cac499109deeb1a7a201b4549",
-                "reference": "19a535eaa7fb1c1cac499109deeb1a7a201b4549",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/5ba838befdb37ef06a16d9f716f35eb03cb1b329",
+                "reference": "5ba838befdb37ef06a16d9f716f35eb03cb1b329",
                 "shasum": ""
             },
             "require": {
@@ -10400,9 +10400,15 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.3.5"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.4.1"
             },
-            "time": "2020-02-14T14:20:12+00:00"
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&currency_code=GBP&business=paypal@tecnick.com&item_name=donation%20for%20tcpdf%20project",
+                    "type": "custom"
+                }
+            ],
+            "time": "2021-03-27T16:00:33+00:00"
         },
         {
             "name": "tightenco/ziggy",

@@ -13,11 +13,6 @@ return [
             'family' => '\'Ticketing\''
         ],
         [
-            'name'   => 'lelo',
-            'path'   => '/vendor/fonts/Lelo.css',
-            'family' => '\'Lelo\''
-        ],
-        [
             'name'   => 'norwester',
             'path'   => '/fonts/Norwester.css',
             'family' => '\'Norwester\''
