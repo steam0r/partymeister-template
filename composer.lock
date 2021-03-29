@@ -4071,16 +4071,16 @@
         },
         {
             "name": "motor-cms/motor-backend",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-backend.git",
-                "reference": "4e6bc2ed672a3c926581a21bcd674971c2023f68"
+                "reference": "3f6aeb5dc186f4bec764d6ea2a48ef7a94a182cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/4e6bc2ed672a3c926581a21bcd674971c2023f68",
-                "reference": "4e6bc2ed672a3c926581a21bcd674971c2023f68",
+                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/3f6aeb5dc186f4bec764d6ea2a48ef7a94a182cb",
+                "reference": "3f6aeb5dc186f4bec764d6ea2a48ef7a94a182cb",
                 "shasum": ""
             },
             "require": {
@@ -4151,9 +4151,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-backend/issues",
-                "source": "https://github.com/motor-cms/motor-backend/tree/1.0.6"
+                "source": "https://github.com/motor-cms/motor-backend/tree/1.0.7"
             },
-            "time": "2021-01-31T19:25:59+00:00"
+            "time": "2021-03-29T16:17:45+00:00"
         },
         {
             "name": "motor-cms/motor-cms",
@@ -5147,16 +5147,16 @@
         },
         {
             "name": "partymeister/slides",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "b1b1f3e8ac4cceea1af02e3e3394e2a8329bd278"
+                "reference": "bf5c417e8a2724f3c7ac82efabe9e0cc1f8db242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/b1b1f3e8ac4cceea1af02e3e3394e2a8329bd278",
-                "reference": "b1b1f3e8ac4cceea1af02e3e3394e2a8329bd278",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/bf5c417e8a2724f3c7ac82efabe9e0cc1f8db242",
+                "reference": "bf5c417e8a2724f3c7ac82efabe9e0cc1f8db242",
                 "shasum": ""
             },
             "require": {
@@ -5197,9 +5197,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.0.6"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.0.7"
             },
-            "time": "2021-03-29T16:09:16+00:00"
+            "time": "2021-03-29T18:37:50+00:00"
         },
         {
             "name": "php-console/php-console",
