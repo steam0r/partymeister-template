@@ -26,7 +26,6 @@
     "spatie/laravel-fractal": "^5.7",
     "intervention/imagecache": "^2.4",
     "league/glide-laravel": "^1.0",
-    "lavary/laravel-menu": "^1.7",
     "dfox288/culpa": "^8.0",
     "symfony/intl": "^5.0",
     "kris/laravel-form-builder": "^1.30",
@@ -46,7 +45,9 @@
     "tecnickcom/tcpdf": "^6.3",
     "pusher/pusher-php-server": "^4.1",
     "php-webdriver/webdriver": "^1.8",
-    "beyondcode/laravel-websockets": "^1.4"
+    "beyondcode/laravel-websockets": "^1.4",
+    "fzaninotto/faker": "^1.9",
+    "lavary/laravel-menu": "1.8.1"
   },
   "repositories": [
   ],

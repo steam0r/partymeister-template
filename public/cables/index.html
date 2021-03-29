@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Revision Online 2021 Slide Background</title>
+   
+    <style>
+        body {
+            margin: 0;
+			user-select: none;            
+            background-color: black;
+        }
+
+        #container {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+        <canvas id="glcanvas" />
+
+    <script type="text/javascript" src="js/patch.js" async="true">
+    </script>
+
+    <script>
+
+		setTimeout(() => {
+			CABLES.patch = new CABLES.Patch(
+				{
+					patch: CABLES.exportedPatch,
+					prefixAssetPath: '',
+					glCanvasId: 'glcanvas',
+					glCanvasResizeToParent: true,
+					onError: err => alert(err),
+				});
+
+		}, 100);
+
+    </script>
+
+</body>
+
+</html>
