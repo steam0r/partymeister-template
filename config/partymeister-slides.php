@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'webdriver' => env('CHROMEDRIVER')
+    'webdriver' => env('CHROMEDRIVER'),
+    'screenshots' => env('CHROMEDRIVER_SCREENSHOTS')
 ];

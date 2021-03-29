@@ -7,20 +7,5 @@ return [
             'path'   => '/fonts/exo2.css',
             'family' => '\'Exo 2\''
         ],
-        [
-            'name'   => 'ticketing',
-            'path'   => '/fonts/ticketing.css',
-            'family' => '\'Ticketing\''
-        ],
-        [
-            'name'   => 'norwester',
-            'path'   => '/fonts/Norwester.css',
-            'family' => '\'Norwester\''
-        ],
-        [
-            'name' => 'pacifico',
-            'path' => '',
-            'family' => '\'Pacifico\''
-        ]
     ],
 ];
