@@ -101,6 +101,7 @@ export default {
             "unique": "The {attribute} has already been taken.",
             "uploaded": "The {attribute} failed to upload.",
             "url": "The {attribute} format is invalid.",
+            "password": "Something is wrong with your credentials",
             "custom": {
                 "attribute-name": {
                     "rule-name": "custom-message"
@@ -516,6 +517,8 @@ export default {
                     "final_file_media_id": "Final file",
                     "choose": "=== Select final file for release ===",
                     "config_file": "Config (not to be released, for compo only)",
+                    "discord_name": "Discord name so we can easily reach you (e.g D.Fox#7589)",
+                    "discord_name_short": "Discord name",
                     "name": "Name",
                     "email": "Email",
                     "phone": "Phone",
@@ -764,7 +767,8 @@ export default {
                         "timetable": "Timetable",
                         "participants": "Participants",
                         "prizegiving": "Prizegiving",
-                        "comments": "Competition comments"
+                        "comments": "Competition comments",
+                        "end_of_pg": "End of prizegiving"
                     }
                 },
                 "playlists": {
@@ -1112,6 +1116,87 @@ export default {
                 }
             }
         },
+        "motor-cms": {
+            "component": {
+                "global": {
+                    "save": "Save component",
+                    "created": "{name} component created",
+                    "deleted": "{name} component deleted",
+                    "image_orientation": "Image orientation",
+                    "image_enlarge": "Enlarge image",
+                    "orientations": {
+                        "top": "Top",
+                        "right": "Right",
+                        "bottom": "Bottom",
+                        "left": "Left"
+                    }
+                },
+                "navigation-sidebars": {
+                    "component": "Navigation sidebar component",
+                    "created": "Navigation sidebar component created",
+                    "updated": "Navigation sidebar component updated",
+                    "deleted": "Navigation sidebar component deleted"
+                },
+                "texts": {
+                    "component": "Text component",
+                    "created": "Text component created",
+                    "updated": "Text component updated",
+                    "deleted": "Text component deleted",
+                    "headline": "Headline",
+                    "body": "Body",
+                    "anchor": "Anchor"
+                }
+            },
+            "backend": {
+                "global": {
+                    "cms": "CMS"
+                },
+                "navigations": {
+                    "navigations": "Navigation items",
+                    "navigation": "Navigation item",
+                    "new": "Create navigation item",
+                    "edit": "Edit navigation item",
+                    "save": "Save navigation item",
+                    "created": "Navigation item created",
+                    "updated": "Navigation item updated",
+                    "deleted": "Navigation item deleted",
+                    "new_navigation_item": "New item",
+                    "items_for": "Navigation items for: {name}",
+                    "name": "Name",
+                    "is_visible": "Visible",
+                    "is_active": "Active"
+                },
+                "navigation_trees": {
+                    "navigation_trees": "Navigation trees",
+                    "navigation_tree": "Navigation tree",
+                    "new": "Create navigation tree",
+                    "edit": "Edit navigation tree",
+                    "save": "Save navigation tree",
+                    "created": "Navigation tree created",
+                    "updated": "Navigation tree updated",
+                    "deleted": "Navigation tree deleted",
+                    "show_nodes": "Show navigation items",
+                    "scope": "Scope"
+                },
+                "pages": {
+                    "pages": "Pages",
+                    "page": "Page",
+                    "new": "Create page",
+                    "edit": "Edit page",
+                    "save": "Save page",
+                    "save_and_publish": "Save page and publish",
+                    "created": "Page created",
+                    "updated": "Page updated",
+                    "deleted": "Page deleted",
+                    "name": "Name",
+                    "meta_description": "Meta description",
+                    "meta_keywords": "Meta keywords",
+                    "template": "Template",
+                    "is_active": "Active",
+                    "delete_component_question": "Really delete component?"
+                }
+            }
+        },
         "motor-revision": {
             "component": {
                 "shuttle-lists": {
@@ -1335,87 +1420,6 @@ export default {
                     "updated": "Ride updated",
                     "deleted": "Ride deleted",
                     "name": "Name"
-                }
-            }
-        },
-        "motor-cms": {
-            "component": {
-                "global": {
-                    "save": "Save component",
-                    "created": "{name} component created",
-                    "deleted": "{name} component deleted",
-                    "image_orientation": "Image orientation",
-                    "image_enlarge": "Enlarge image",
-                    "orientations": {
-                        "top": "Top",
-                        "right": "Right",
-                        "bottom": "Bottom",
-                        "left": "Left"
-                    }
-                },
-                "navigation-sidebars": {
-                    "component": "Navigation sidebar component",
-                    "created": "Navigation sidebar component created",
-                    "updated": "Navigation sidebar component updated",
-                    "deleted": "Navigation sidebar component deleted"
-                },
-                "texts": {
-                    "component": "Text component",
-                    "created": "Text component created",
-                    "updated": "Text component updated",
-                    "deleted": "Text component deleted",
-                    "headline": "Headline",
-                    "body": "Body",
-                    "anchor": "Anchor"
-                }
-            },
-            "backend": {
-                "global": {
-                    "cms": "CMS"
-                },
-                "navigations": {
-                    "navigations": "Navigation items",
-                    "navigation": "Navigation item",
-                    "new": "Create navigation item",
-                    "edit": "Edit navigation item",
-                    "save": "Save navigation item",
-                    "created": "Navigation item created",
-                    "updated": "Navigation item updated",
-                    "deleted": "Navigation item deleted",
-                    "new_navigation_item": "New item",
-                    "items_for": "Navigation items for: {name}",
-                    "name": "Name",
-                    "is_visible": "Visible",
-                    "is_active": "Active"
-                },
-                "navigation_trees": {
-                    "navigation_trees": "Navigation trees",
-                    "navigation_tree": "Navigation tree",
-                    "new": "Create navigation tree",
-                    "edit": "Edit navigation tree",
-                    "save": "Save navigation tree",
-                    "created": "Navigation tree created",
-                    "updated": "Navigation tree updated",
-                    "deleted": "Navigation tree deleted",
-                    "show_nodes": "Show navigation items",
-                    "scope": "Scope"
-                },
-                "pages": {
-                    "pages": "Pages",
-                    "page": "Page",
-                    "new": "Create page",
-                    "edit": "Edit page",
-                    "save": "Save page",
-                    "save_and_publish": "Save page and publish",
-                    "created": "Page created",
-                    "updated": "Page updated",
-                    "deleted": "Page deleted",
-                    "name": "Name",
-                    "meta_description": "Meta description",
-                    "meta_keywords": "Meta keywords",
-                    "template": "Template",
-                    "is_active": "Active",
-                    "delete_component_question": "Really delete component?"
                 }
             }
         }

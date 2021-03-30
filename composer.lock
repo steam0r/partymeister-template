@@ -4983,16 +4983,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "6a591d66409c115e79e207f15681d5703fb8e578"
+                "reference": "9ac42114bd92f1c4f85debf258396d10ceb875b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/6a591d66409c115e79e207f15681d5703fb8e578",
-                "reference": "6a591d66409c115e79e207f15681d5703fb8e578",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/9ac42114bd92f1c4f85debf258396d10ceb875b0",
+                "reference": "9ac42114bd92f1c4f85debf258396d10ceb875b0",
                 "shasum": ""
             },
             "require": {
@@ -5034,22 +5034,22 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.0.6"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.0.7"
             },
-            "time": "2021-03-27T18:52:06+00:00"
+            "time": "2021-03-30T11:04:22+00:00"
         },
         {
             "name": "partymeister/core",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-core.git",
-                "reference": "b458ab19a3cf7c80e75d2aa0f1be0db46a1374e6"
+                "reference": "264f26d780bbc19fb33363fab897ff63c95c7022"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/b458ab19a3cf7c80e75d2aa0f1be0db46a1374e6",
-                "reference": "b458ab19a3cf7c80e75d2aa0f1be0db46a1374e6",
+                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/264f26d780bbc19fb33363fab897ff63c95c7022",
+                "reference": "264f26d780bbc19fb33363fab897ff63c95c7022",
                 "shasum": ""
             },
             "require": {
@@ -5087,9 +5087,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-core/issues",
-                "source": "https://github.com/partymeister/partymeister-core/tree/1.0.7"
+                "source": "https://github.com/partymeister/partymeister-core/tree/1.0.8"
             },
-            "time": "2021-03-29T12:31:26+00:00"
+            "time": "2021-03-30T11:03:40+00:00"
         },
         {
             "name": "partymeister/frontend",
