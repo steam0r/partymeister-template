@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Partymeister\Core\Services\StuhlService;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,12 @@ use Illuminate\Http\Request;
 Route::get('/user', static function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
+
+
+/*
+Route::post('callback/announcement', function() {
+
+	$status = StuhlService::send('This is a test of the Revision Broadcast System', '', '', 'BORING', 'discord');
+        return response($status);
+}); 
+ */
