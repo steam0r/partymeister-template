@@ -1,19 +1,16 @@
 const mix = require('laravel-mix');
 const { env } = require('minimist')(process.argv.slice(2));
 
-mix.options({
-    hmrOptions: {
-        host: 'localhost',
-        port: '8079'
-    },
-});
-
-mix.webpackConfig({
-    devServer: {
-        port: '8079'
-    },
-});
-
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel applications. By default, we are compiling the CSS
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
 
 /* do stuff with mix that's common to all sites, like maybe mix.options() */
 

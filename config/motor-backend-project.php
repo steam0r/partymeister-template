@@ -10,5 +10,5 @@ return [
     'logo-small'    => 'images/pm-logo-small.png',
     'logo-white'    => 'images/pm-logo-small-white.png',
     'logo-white-cropped' => 'images/pm-logo-small-white-cropped.png',
-    'name_frontend' => 'Revision 2021 PARTYNET',
+    'name_frontend' => 'Partymeister',
 ];

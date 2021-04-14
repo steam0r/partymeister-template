@@ -32,29 +32,28 @@ mix.webpackConfig({
             'vendor/motor-cms',
             'vendor/partymeister',
             'resources/assets/js',
-            'packages'
+            // 'packages'
         ],
-        extensions: [".webpack.js", ".web.js", ".js", ".json", ".less"]
+        extensions: [".webpack.js", ".web.js", ".js", ".json", ".less", ".vue"]
     }
 });
 
 mix
     .js('resources/assets/js/project.default.js', 'public/js/motor-backend.js')
-
-    .js('@partymeister-frontend/resources/assets/js/partymeister-livevoting/main.js', 'public/js/partymeister-livevoting.js')
-    .js('@partymeister-slides/resources/assets/js/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
-    .js('@partymeister-frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
-    .js('@partymeister-slides/resources/assets/js/partymeister-slides/partymeister-slides-frontend.js', 'public/js/partymeister-slides-frontend.js')
+    .js('./vendor/partymeister/frontend/resources/assets/js/partymeister-livevoting/main.js', 'public/js/partymeister-livevoting.js')
+    .js('./vendor/partymeister/slides/resources/assets/js/partymeister-slidemeister-web/main.js', 'public/js/partymeister-slidemeister-web.js')
+    .js('./vendor/partymeister/frontend/resources/assets/js/partymeister-frontend/main.js', 'public/js/partymeister-frontend.js')
+    .vue()
     .sourceMaps()
     .sass('resources/assets/sass/project.default.scss', 'public/css/motor-backend.css')
-    .sass('@partymeister-frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
-    .sass('@partymeister-slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
-    .sass('@partymeister-accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
-    .sass('@partymeister-frontend/resources/assets/sass/partymeister-frontend.scss', 'public/css')
+    .sass('./vendor/partymeister/frontend/resources/assets/sass/partymeister-livevoting.scss', 'public/css')
+    .sass('./vendor/partymeister/slides/resources/assets/sass/partymeister-slidemeister-web.scss', 'public/css')
+    .sass('./vendor/partymeister/accounting/resources/assets/sass/partymeister-accounting-pos.scss', 'public/css')
+    .sass('resources/assets/sass/partymeister-frontend.scss', 'public/css/motor-frontend.css')
     // APP RESOURCES
     .copy('resources/fonts/*.*', 'public/fonts')
     .copy('resources/assets/images/*.*', 'public/images')
 ;
-if (mix.config.inProduction) {
+if (mix.inProduction()) {
     mix.version();
 }

@@ -10,11 +10,13 @@ store.registerModule('pageComponentStore', pageComponentStore);
 require('motor-backend/resources/assets/js/motor-backend/main');
 require('motor-cms/resources/assets/js/motor-cms/main');
 require('motor-media/resources/assets/js/motor-media/main');
-require('partymeister-competitions/resources/assets/js/partymeister-competitions/main');
-require('partymeister-slides/resources/assets/js/partymeister-slides/main');
-require('partymeister-slides/resources/assets/js/slidemeister/main');
-require('partymeister-core/resources/assets/js/partymeister-core/main');
+require('competitions/resources/assets/js/partymeister-competitions/main');
+require('slides/resources/assets/js/partymeister-slides/main');
+require('slides/resources/assets/js/slidemeister/main');
+require('core/resources/assets/js/partymeister-core/main');
 
+
+require('vue');
 Vue.mixin({ methods: { route }});
 
 // Initialize global event hub

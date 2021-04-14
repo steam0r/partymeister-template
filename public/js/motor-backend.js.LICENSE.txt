@@ -69,7 +69,7 @@
  */
 
 /*!
- * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -86,14 +86,22 @@
  */
 
 /*!
- * Sizzle CSS Selector Engine v2.3.5
+ * Select2 4.0.13
+ * https://select2.github.io
+ *
+ * Released under the MIT license
+ * https://github.com/select2/select2/blob/master/LICENSE.md
+ */
+
+/*!
+ * Sizzle CSS Selector Engine v2.3.6
  * https://sizzlejs.com/
  *
  * Copyright JS Foundation and other contributors
  * Released under the MIT license
  * https://js.foundation/
  *
- * Date: 2020-03-14
+ * Date: 2021-02-16
  */
 
 /*!
@@ -119,17 +127,17 @@
  */
 
 /*!
- * jQuery JavaScript Library v3.5.1
+ * jQuery JavaScript Library v3.6.0
  * https://jquery.com/
  *
  * Includes Sizzle.js
  * https://sizzlejs.com/
  *
- * Copyright JS Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2020-05-04T22:49Z
+ * Date: 2021-03-02T17:08Z
  */
 
 /*!
@@ -302,6 +310,12 @@
  * perfect-scrollbar v1.5.0
  * Copyright 2020 Hyunje Jun, MDBootstrap and Contributors
  * Licensed under MIT
+ */
+
+/*!
+ * vue-i18n v8.24.3 
+ * (c) 2021 kazuya kawaguchi
+ * Released under the MIT License.
  */
 
 /*!
