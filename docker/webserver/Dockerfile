@@ -1,4 +1,4 @@
-FROM webdevops/php-nginx:7.3
+FROM webdevops/php-nginx:7.4
 
 RUN apt update
 
@@ -21,7 +21,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 RUN apt update && apt install -y google-chrome-stable
 
-ENV CHROMEDRIVER_VERSION 90.0.4430.24
+ENV CHROMEDRIVER_VERSION 91.0.4472.19
 ENV CHROMEDRIVER_DIR /chromedriver
 RUN mkdir $CHROMEDRIVER_DIR
 

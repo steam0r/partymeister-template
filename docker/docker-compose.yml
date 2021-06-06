@@ -7,7 +7,7 @@ services:
       dockerfile: ./webserver/Dockerfile
     ports:
       - '${PORT_WEBSERVER}:80'
-      - 60010:6001
+      - '${PORT_WEBSOCKET}:6001'
     volumes:
       - ../.:/app
     environment:

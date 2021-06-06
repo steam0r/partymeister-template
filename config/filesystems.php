@@ -13,20 +13,7 @@ return [
     |
     */
 
-    'default' => 'local',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Default Cloud Filesystem Disk
-    |--------------------------------------------------------------------------
-    |
-    | Many applications store files both locally and in the cloud. For this
-    | reason, you may specify a default "cloud" driver here. This driver
-    | will be bound as the Cloud disk implementation in the container.
-    |
-    */
-
-    'cloud' => 's3',
+    'default' => env('FILESYSTEM_DRIVER', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -37,31 +24,38 @@ return [
     | may even configure multiple disks of the same driver. Defaults have
     | been setup for each driver as an example of the required options.
     |
-    | Supported Drivers: "local", "ftp", "s3", "rackspace"
+    | Supported Drivers: "local", "ftp", "sftp", "s3"
     |
     */
 
     'disks' => [
+
+        'local' => [
+            'driver' => 'local',
+            'root' => storage_path('app'),
+        ],
+
+        'public' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+
         'photowall' => [
             'driver' => 'local',
-            'root' => public_path().'/photowall'
+            'root'   => storage_path('app/public/photowall'),
+            'url' => env('APP_URL').'/photowall',
+            'visibility' => 'public'
         ],
 
         'media' => [
             'driver' => 'local',
-            'root'   => public_path() . '/media',
-        ],
-
-        'local' => [
-            'driver' => 'local',
-            'root'   => storage_path('app'),
-        ],
-
-        'public' => [
-            'driver'     => 'local',
-            'root'       => storage_path('app/public'),
+            'root'   => storage_path('app/public/media'),
+            'url' => env('APP_URL').'/media',
             'visibility' => 'public',
         ],
+
 
         's3' => [
             'driver' => 's3',
@@ -71,6 +65,23 @@ return [
             'bucket' => 'your-bucket',
         ],
 
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Symbolic Links
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure the symbolic links that will be created when the
+    | `storage:link` Artisan command is executed. The array keys should be
+    | the locations of the links and the values should be their targets.
+    |
+    */
+
+    'links' => [
+        public_path('storage') => storage_path('app/public'),
+        public_path('photowall') => storage_path('app/public/photowall'),
+        public_path('media') => storage_path('app/public/media'),
     ],
 
 ];
