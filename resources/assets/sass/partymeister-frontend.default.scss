@@ -1,0 +1,116 @@
+@import '~frontend/resources/assets/sass/partymeister-frontend';
+
+// Revision 2019
+@import url(//fonts.googleapis.com/css?family=Poppins:400,700);
+
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+
+body, p, li, a {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333 !important;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+
+//body {
+//  background: #ccc;
+//}
+//.top-bar, .top-bar ul {
+//  background: #999;
+//}
+
+.top-bar ul li, .top-bar ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.breadcrumbs .disabled {
+  color: #333;
+}
+
+//.button.success {
+//  background-color: #52b9ef;
+//}
+
+table.unstriped tbody, table.unstriped tbody tr {
+  background-color: transparent !important;
+  border: none !important;
+}
+table.unstriped tbody td, table.inner-table tbody td {
+  vertical-align: top;
+}
+
+table.inner-table tbody td {
+  padding-top: 0 !important;
+}
+table.inner-table {
+  margin-bottom: 0;
+}
+table.unstriped td, table.inner-table td {
+  padding-bottom: 0;
+}
+ul.vertical.menu li a {
+  padding: 0.4rem;
+}
+
+.component-entry-upload .card, .component-entry-screenshot .card {
+  background-color: transparent;
+  border: none;
+}
+.card-section unread {
+  background-color: #ff00f0;
+}
+.special-vote-highlight {
+  background-color: orange;
+}
+.partymeister-rating-wrapper {
+  background-color: orange;
+}
+.button.warning.special-vote-off {
+  background-color: red;
+}
+
+.footer {
+  height: 5rem;
+  background: #e6e6e6;
+  //color: #fff;
+  padding: 1rem;
+}
+
+.footer .menu a {
+  margin-top: 0.25rem;
+  color: #333;
+}
+.footer .menu a:hover {
+  text-decoration: underline;
+}
+@import '~foundation-datepicker/scss/foundation-datepicker';
+
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+}
