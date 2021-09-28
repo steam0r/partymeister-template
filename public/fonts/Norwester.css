@@ -1,1 +1,9 @@
-@font-face{font-family:Norwester;src:url('Norwester.ttf.woff') format('woff'),url('Norwester.ttf.svg#Norwester') format('svg'),url('Norwester.ttf.eot'),url('Norwester.ttf.eot?#iefix') format('embedded-opentype');font-weight:400;font-style:normal}
+@font-face {
+    font-family: 'Norwester';
+    src:url('Norwester.ttf.woff') format('woff'),
+    url('Norwester.ttf.svg#Norwester') format('svg'),
+    url('Norwester.ttf.eot'),
+    url('Norwester.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
