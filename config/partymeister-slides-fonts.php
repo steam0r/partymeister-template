@@ -8,14 +8,14 @@ return [
             'family' => '\'Exo 2\''
         ],
         [
-            'name'   => 'Blackpearl',
-            'path'   => '/fonts/blackpearl.css',
-            'family' => '\'Blackpearl\''
+            'name'   => 'IBM Plex Sans',
+            'path'   => '/fonts/ibm.css',
+            'family' => '\'IBM Plex Sans\''
         ],
         [
-            'name'   => 'Booterfz',
-            'path'   => '/fonts/booterfz.css',
-            'family' => '\'Booterfz\''
+            'name'   => 'Krona One',
+            'path'   => '/fonts/krona.css',
+            'family' => '\'Krona One\''
         ],
     ],
 ];
