@@ -29,6 +29,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('partymeister:competitions:publish-release-files')->everyMinute();
         $schedule->command('partymeister:frontend:cache-photowall')->everyFiveMinutes();
         $schedule->command('partymeister:core:import:tickets:api')->everyFiveMinutes();
+        $schedule->command('partymeister:core:import:timetable')->everyFiveMinutes();
     }
 
     /**
