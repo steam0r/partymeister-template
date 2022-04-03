@@ -1,19 +1,31 @@
 @import '~partymeister-frontend/resources/assets/sass/partymeister-frontend';
 
 // Revision 2019
-@import url(//fonts.googleapis.com/css?family=Poppins:400,700);
+@import url(//fonts.googleapis.com/css?family=Anaheim);
 
-@import url(//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+@import url(//fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700);
 
-body, p, li, a {
-  font-family: 'Roboto Slab', serif;
+body {
+  background-color: #353b43;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #929ea9;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #333 !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: white;
+  width: 100%;
+}
+
+p, li, a {
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
 h1 {
@@ -28,6 +40,10 @@ h3 {
   font-size: 20px;
 }
 
+label {
+  font-size: 1rem;
+  color: #afbac4;
+}
 
 //body {
 //  background: #ccc;
@@ -37,7 +53,6 @@ h3 {
 //}
 
 .top-bar ul li, .top-bar ul li a {
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #333;
@@ -91,7 +106,7 @@ ul.vertical.menu li a {
 
 .footer {
   height: 5rem;
-  background: #e6e6e6;
+  background: #292f36;
   //color: #fff;
   padding: 1rem;
 }
@@ -113,4 +128,88 @@ ul.vertical.menu li a {
   float: left;
   margin: 1%;
   cursor: pointer;
+}
+
+.button.success, .button.success.disabled, .button.success[disabled], .button.success.disabled:hover, .button.success[disabled]:hover, .button.success.disabled:focus, .button.success[disabled]:focus {
+  background-color: #138788;
+}
+
+.button.success, .button.primary {
+  background-color: #138788;
+  color: white;
+  text-transform: uppercase;
+}
+
+.button.success:hover, .button.primary:hover {
+  background-color: #238788 !important;
+  color: #0a0a0a;
+}
+
+a {
+  transition: all .2s ease-in 0s;
+  color: white;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:focus,
+a:hover {
+  color: #138788;
+}
+.main-content, .sidebar-content {
+  padding: 0 10px;
+}
+
+
+.top-bar {
+  justify-content: center;
+}
+
+.top-bar, .top-bar ul {
+  background-color: #1d2024 !important;
+}
+
+.top-bar ul li a {
+  color: white;
+}
+
+.menu > .active > a,
+.menu > .is-active > a {
+  background-color: #138788;
+}
+
+.card {
+  background: none;
+  background-color: transparent;
+  color: #929ea9;
+}
+
+.card.special-vote-highlight {
+  background-color: #68afaf;
+}
+
+.card.special-vote-highlight p, .card.special-vote-highlight li {
+  color: white;
+}
+
+.button {
+  text-transform: uppercase;
+}
+.callout.warning,
+.button.warning.special-vote-off {
+  background-color: #cc8246;
+}
+
+
+.error-content {
+  color: white !important;
+  background-color: #c84b4b;
+}
+.error-content a:hover {
+  color: black;
 }

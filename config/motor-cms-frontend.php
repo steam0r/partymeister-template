@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'name' => 'Partymeister',
+    'name' => 'Revision 2022 PARTYNET',
 ];

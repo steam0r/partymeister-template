@@ -1,20 +1,37 @@
 @import '~frontend/resources/assets/sass/partymeister-frontend';
 
 // Revision 2019
-@import url(//fonts.googleapis.com/css?family=Poppins:400,700);
+@import url(//fonts.googleapis.com/css?family=Anaheim%7cQuattrocento&#43;Sans:400,700&amp;display=swap);
 
-@import url(//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
-
-body, p, li, a {
-  font-family: 'Roboto Slab', serif;
+body {
+  background-color: #353b43;
+  font-family: "Anaheim", sans-serif;
+  color: #929ea9;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #333 !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #afbac4;
+  width: 100%;
 }
+
+p, li, a {
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+//h1, h2, h3, h4, h5, h6 {
+//  font-family: 'Poppins', sans-serif;
+//  font-weight: bold;
+//  text-transform: uppercase;
+//  color: #333 !important;
+//}
 
 h1 {
   font-size: 28px;
