@@ -118,7 +118,7 @@
     },
     "files": [
       "packages/motor-backend/helpers/motor_backend_helpers.php",
-      "packages/motor-backend/tests/helpers/test_helper.php",
+      "packages/motor-backend/tests/helpers/test_helper.php"
     ],
     "exclude-from-classmap": [
       "vendor/spatie/laravel-glide/src/GlideImage.php"
