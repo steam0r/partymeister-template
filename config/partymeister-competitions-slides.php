@@ -30,12 +30,12 @@ return [
     'siegmeister_bars'    => [
         'slide_type' => 'siegmeister_bars',
         'transition' => 1,
-        'midi_note'  => 0
+        'midi_note'  => 0,
     ],
     'siegmeister_winners' => [
         'slide_type' => 'siegmeister_winners',
         'transition' => 6,
-        'midi_note'  => 0
+        'midi_note'  => 0,
     ],
     'entry'               => [
         'slide_type' => 'compo',
@@ -48,7 +48,7 @@ return [
         'transition' => 1,
     ],
     'now'                 => [
-        'slide_type' => 'comingup',
+        'slide_type' => 'now',
         'midi_note'  => 102,
         'transition' => 1,
     ],
@@ -66,5 +66,10 @@ return [
         'slide_type' => 'end',
         'midi_note'  => 0,
         'transition' => 1,
-    ]
+    ],
+    'timetable'           => [
+        'slide_type' => 'timetable',
+        'midi_note'  => 0,
+        'transition' => 1,
+    ],
 ];
