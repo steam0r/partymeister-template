@@ -58,7 +58,7 @@ return [
         'transition' => 1,
     ],
     'comments'            => [
-        'slide_type' => 'end',
+        'slide_type' => 'comments',
         'midi_note'  => 0,
         'transition' => 1,
     ],
