@@ -4,7 +4,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 8.83.4.
+ * Generated for Laravel 8.83.9.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -16200,11 +16200,12 @@
          * @param mixed $name
          * @param mixed $value
          * @param mixed $options
+         * @param mixed $escape_html
          * @static 
          */ 
-        public static function customLabel($name, $value, $options = [])
+        public static function customLabel($name, $value, $options = [], $escape_html = true)
         {
-                        return \Collective\Html\FormBuilder::customLabel($name, $value, $options);
+                        return \Collective\Html\FormBuilder::customLabel($name, $value, $options, $escape_html);
         }
          
     }
@@ -16633,11 +16634,12 @@
          * @param mixed $name
          * @param mixed $value
          * @param mixed $options
+         * @param mixed $escape_html
          * @static 
          */ 
-        public static function customLabel($name, $value, $options = [])
+        public static function customLabel($name, $value, $options = [], $escape_html = true)
         {
-                        return \Collective\Html\FormBuilder::customLabel($name, $value, $options);
+                        return \Collective\Html\FormBuilder::customLabel($name, $value, $options, $escape_html);
         }
          
     }
@@ -17605,7 +17607,7 @@
                     /**
          * Perform the transformation to array.
          *
-         * @return array 
+         * @return array|null 
          * @static 
          */ 
         public static function toArray()
@@ -17652,6 +17654,7 @@
                     /**
          * Convert the object into something JSON serializable.
          *
+         * @return array|null 
          * @static 
          */ 
         public static function jsonSerialize()

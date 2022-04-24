@@ -28,3 +28,4 @@ public/models/
 public/vendor/fonts
 .phpstorm.meta.php
 _ide_helper.php
+*.csv

@@ -47,7 +47,8 @@
     "php-webdriver/webdriver": "^1.8",
     "beyondcode/laravel-websockets": "^1.4",
     "fzaninotto/faker": "^1.9",
-    "lavary/laravel-menu": "1.8.1"
+    "lavary/laravel-menu": "1.8.1",
+    "league/csv": "9.8.0"
   },
   "repositories": [
   ],
