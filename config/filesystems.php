@@ -46,7 +46,7 @@ return [
             'driver' => 'local',
             'root'   => storage_path('app/public/photowall'),
             'url' => env('APP_URL').'/photowall',
-            'visibility' => 'public'
+            'visibility' => 'public',
         ],
 
         'media' => [
@@ -55,7 +55,6 @@ return [
             'url' => env('APP_URL').'/media',
             'visibility' => 'public',
         ],
-
 
         's3' => [
             'driver' => 's3',

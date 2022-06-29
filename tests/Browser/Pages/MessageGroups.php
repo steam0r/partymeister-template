@@ -7,7 +7,7 @@ use Laravel\Dusk\Browser;
 class MessageGroups extends GridPage
 {
     const CREATE_BUTTON_TEXT = 'Create message group';
-    
+
     /**
      * Get the URL for the page.
      *

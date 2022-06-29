@@ -17,6 +17,7 @@ class Guests extends GridPage
     // const CATEGORY_IOS = 'ios';
 
     const HAS_ARRIVED_YES = '1';
+
     const HAS_ARRIVED_NO = '0';
 
     const CREATE_BUTTON_TEXT = 'Create guest / ticket';
@@ -58,7 +59,7 @@ class Guests extends GridPage
             '@scanTicketsModalCancelButton' => '#scan-tickets-modal > div > div > div.modal-header > div > button.outline-secondary', //fixme
             '@hasArrivedModal' => '#guest-modal > div',
             '@hasArrivedModalConfirmButton' => ' > div > div.modal-header > div > button.btn-success',
-            '@hasArrivedModalCancelButton' => ' > div > div.modal-header > div > button.outline-secondary'
+            '@hasArrivedModalCancelButton' => ' > div > div.modal-header > div > button.outline-secondary',
         ];
     }
 
@@ -90,7 +91,7 @@ class Guests extends GridPage
     }
 
     // Scan Tickets modal window manipulations
-    
+
     public function scanValidTicket(Browser $browser, $ticketID)
     {
         $this->clickScanTickets($browser);
@@ -117,32 +118,31 @@ class Guests extends GridPage
 
     public function clickHasArrived(Browser $browser, $elementIndexNumber)
     {
-        if(!($this->getHasArrivedStatus($browser, $elementIndexNumber))){
+        if (! ($this->getHasArrivedStatus($browser, $elementIndexNumber))) {
             $ticketCode = $this->getTicketCode($browser, $elementIndexNumber);
-            if(empty($ticketCode)) {
+            if (empty($ticketCode)) {
                 $browser->click($this->getHasArrivedButtonPrefix($elementIndexNumber).'.btn-outline-secondary');
-                $browser  ->waitFor($this->getHasArrivedButtonPrefix($elementIndexNumber).'.btn-success');
+                $browser->waitFor($this->getHasArrivedButtonPrefix($elementIndexNumber).'.btn-success');
                 echo 'For element '.$elementIndexNumber.': has arrived = no; has ticket code = no';
             } else {
                 $browser->click($this->getHasArrivedButtonPrefix($elementIndexNumber).'.btn-outline-secondary')
-                        ->whenAvailable('@hasArrivedModal', function ($modal) use($ticketCode, $elementIndexNumber) {
+                        ->whenAvailable('@hasArrivedModal', function ($modal) use ($ticketCode, $elementIndexNumber) {
                             $modal->assertSee('Mark guest as \'arrived\'')
                                     ->assertSee('Is the ticket code '.$ticketCode.' correct?')
                                     ->click('@hasArrivedModalConfirmButton') // DOESN'T WORK!
-                                    ->waitUntilMissing('@hasArrivedModal',5) // DOESN'T WORK!
+                                    ->waitUntilMissing('@hasArrivedModal', 5) // DOESN'T WORK!
                                     ->waitFor($this->getHasArrivedButtonPrefix($elementIndexNumber).'.btn-success'); // DOESN'T WORK!
                 echo 'For element '.$elementIndexNumber.': has arrived = no; has ticket code = yes';
                         });
             }
         }
-
     }
 
     //Helpers
 
     private function getTicketCode(Browser $browser, $elementIndexNumber)
     {
-        return $browser->text('#app > main > div > div.card > div.card-body.table-responsive.no-padding > table > tbody > tr:nth-child('.$elementIndexNumber.') > td:nth-child(5)');        
+        return $browser->text('#app > main > div > div.card > div.card-body.table-responsive.no-padding > table > tbody > tr:nth-child('.$elementIndexNumber.') > td:nth-child(5)');
     }
 
     private function getHasArrivedButtonPrefix($elementIndexNumber)
@@ -155,7 +155,7 @@ class Guests extends GridPage
         if (is_null($browser->element($this->getHasArrivedButtonPrefix($elementIndexNumber).'.btn-success'))) {
             return false;
         }
+
         return true;
     }
-
 }

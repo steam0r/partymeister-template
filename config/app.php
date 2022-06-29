@@ -170,7 +170,6 @@ return [
         Culpa\CulpaServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
-        Fideloper\Proxy\TrustedProxyServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
 
         Partymeister\Core\Providers\PartymeisterServiceProvider::class,
@@ -186,7 +185,7 @@ return [
         Motor\Media\Providers\MotorServiceProvider::class,
         //Motor\Docs\Providers\MotorDocsServiceProvider::class,
         Motor\CMS\Providers\MotorServiceProvider::class,
-		//Motor\Revision\Providers\MotorServiceProvider::class,
+        //Motor\Revision\Providers\MotorServiceProvider::class,
 
         App\Providers\DuskServiceProvider::class,
     ],
@@ -230,7 +229,7 @@ return [
         'Request'      => Illuminate\Support\Facades\Request::class,
         'Response'     => Illuminate\Support\Facades\Response::class,
         'Route'        => Illuminate\Support\Facades\Route::class,
-//        'Schema'    => Illuminate\Support\Facades\Schema::class,
+        //        'Schema'    => Illuminate\Support\Facades\Schema::class,
         'Schema'       => Culpa\Facades\Schema::class, // we use the culpa schema for easier migrations
         'Session'      => Illuminate\Support\Facades\Session::class,
         'Storage'      => Illuminate\Support\Facades\Storage::class,

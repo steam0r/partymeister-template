@@ -2,5 +2,5 @@
 
 return [
     'webdriver' => env('CHROMEDRIVER'),
-    'screenshots' => env('CHROMEDRIVER_SCREENSHOTS')
+    'screenshots' => env('CHROMEDRIVER_SCREENSHOTS'),
 ];

@@ -18,9 +18,9 @@ return [
         'clients'         => true,
         'languages'       => true,
         'email_templates' => true,
-        'profile'         => true
+        'profile'         => true,
 
     ],
     'flash'             => 'toastr',
-    'bootstrap_version' => 4
+    'bootstrap_version' => 4,
 ];

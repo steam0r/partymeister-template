@@ -15,7 +15,6 @@ class Page extends BasePage
      */
     public static function siteElements()
     {
-
     }
 
     public function url()
@@ -28,7 +27,7 @@ class Page extends BasePage
         $browser->within(new TopBar, function ($browser) {
             $browser->signOut();
         });
+
         return $this;
     }
-
 }

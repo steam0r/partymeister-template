@@ -41,7 +41,7 @@ class TopBar extends BaseComponent
     {
         return [
             '@navbar-toggle' => 'button.navbar-toggler.sidebar-toggler.d-md-down-none',
-            '@user-menu-toggle' => 'ul > li > a.nav-link.dropdown-toggle'
+            '@user-menu-toggle' => 'ul > li > a.nav-link.dropdown-toggle',
         ];
     }
 
@@ -56,6 +56,7 @@ class TopBar extends BaseComponent
         $browser->click('@user-menu-toggle')
                 ->clickLink('Profile')
                 ->assertPathIs('/backend/profile/edit');
+
         return $this;
     }
 
@@ -70,6 +71,7 @@ class TopBar extends BaseComponent
         $browser->click('@user-menu-toggle')
                 ->click('ul > li > div > form > button.dropdown-item')
                 ->assertPathIs('/start');
+
         return $this;
     }
 }

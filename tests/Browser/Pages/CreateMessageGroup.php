@@ -40,14 +40,16 @@ class CreateMessageGroup extends CreatePage
         ];
     }
 
-    public function checkPmAdminCheckbox (Browser $browser) {
+    public function checkPmAdminCheckbox(Browser $browser)
+    {
         $browser->check('@pmAdminCheckbox');
     }
 
-    public function uncheckPmAdminCheckbox (Browser $browser) {
+    public function uncheckPmAdminCheckbox(Browser $browser)
+    {
         $browser->uncheck('@pmAdminCheckbox');
     }
-    
+
     public function clickSaveMessageGroup(Browser $browser)
     {
         $browser->click('@saveMessageGroupButton')

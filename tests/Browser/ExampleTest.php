@@ -2,31 +2,21 @@
 
 namespace Tests\Browser;
 
-use Motor\Backend\Models\User;
-use Tests\DuskTestCase;
 use Laravel\Dusk\Browser;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Tests\Browser\Components\TopBar;
-use Tests\Browser\Pages\Callbacks;
-use Tests\Browser\Pages\Events;
-use Tests\Browser\Pages\GridPage;
-use Tests\Browser\Pages\Schedules;
-use Tests\Browser\Pages\Guests;
+use Motor\Backend\Models\User;
 use Tests\Browser\Pages\CreateCallback;
 use Tests\Browser\Pages\CreateEvent;
 use Tests\Browser\Pages\CreateEventType;
 use Tests\Browser\Pages\CreateGuest;
 use Tests\Browser\Pages\CreateMessageGroup;
-use Tests\Browser\Pages\CreateSchedule;
 use Tests\Browser\Pages\CreateVisitor;
-use Tests\Browser\Pages\DuplicateCallback;
 use Tests\Browser\Pages\DuplicateEvent;
 use Tests\Browser\Pages\EditCallback;
-use Tests\Browser\Pages\EditEvent;
 use Tests\Browser\Pages\EditEventType;
 use Tests\Browser\Pages\EditGuest;
 use Tests\Browser\Pages\EditMessageGroup;
 use Tests\Browser\Pages\EditSchedule;
+use Tests\DuskTestCase;
 
 class ExampleTest extends DuskTestCase
 {
@@ -201,7 +191,6 @@ class ExampleTest extends DuskTestCase
                     ->screenshot('test')
                     ->clickSaveMessageGroup()
                     ->screenshot('test2');
-
         });
     }
 }

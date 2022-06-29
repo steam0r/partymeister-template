@@ -8,7 +8,6 @@ use Laravel\Dusk\Browser;
 
 class DuskServiceProvider extends ServiceProvider
 {
-
     /**
      * Register the Dusk's browser macros.
      *

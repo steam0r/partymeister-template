@@ -2,14 +2,14 @@
 
 namespace Tests;
 
-use Laravel\Dusk\TestCase as BaseTestCase;
+use Facebook\WebDriver\Chrome\ChromeOptions;
+use Facebook\WebDriver\Remote\DesiredCapabilities;
+use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Facebook\WebDriver\WebDriverBy;
+//use Orchestra\Testbench\Dusk\TestCase as BaseTestCase;
 use Facebook\WebDriver\WebDriverDimension;
 use Laravel\Dusk\Browser;
-//use Orchestra\Testbench\Dusk\TestCase as BaseTestCase;
-use Facebook\WebDriver\Chrome\ChromeOptions;
-use Facebook\WebDriver\Remote\RemoteWebDriver;
-use Facebook\WebDriver\Remote\DesiredCapabilities;
+use Laravel\Dusk\TestCase as BaseTestCase;
 
 abstract class DuskTestCase extends BaseTestCase
 {
@@ -22,6 +22,7 @@ abstract class DuskTestCase extends BaseTestCase
      * Prepare for Dusk test execution.
      *
      * @beforeClass
+     *
      * @return void
      */
     public static function prepare()
@@ -66,5 +67,4 @@ abstract class DuskTestCase extends BaseTestCase
 //            $browser->screenshot('failure-'.$name.'-'.$key);
 //        });
 //    }
-
 }

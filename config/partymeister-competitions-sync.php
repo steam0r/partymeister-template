@@ -7,5 +7,5 @@ return [
         'competition' => '/api/sync/competition',
         'entry'       => '/api/sync/entry',
         'livevote'    => '/api/sync/livevote',
-    ]
+    ],
 ];

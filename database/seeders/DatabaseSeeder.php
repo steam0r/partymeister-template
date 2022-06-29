@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             MotorBackendDatabaseSeeder::class,
             MotorMediaDatabaseSeeder::class,
-//            MotorCMSDatabaseSeeder::class,
+            //            MotorCMSDatabaseSeeder::class,
             PartymeisterAccountingDatabaseSeeder::class,
             PartymeisterCoreDatabaseSeeder::class,
             PartymeisterCompetitionsDatabaseSeeder::class,

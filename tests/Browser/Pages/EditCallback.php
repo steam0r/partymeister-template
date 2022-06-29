@@ -12,7 +12,7 @@ class EditCallback extends CreateCallback
     {
         $this->id = $id;
     }
-    
+
     /**
      * Get the URL for the page.
      *

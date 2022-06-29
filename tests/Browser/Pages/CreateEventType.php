@@ -37,7 +37,7 @@ class CreateEventType extends CreatePage
         return [
             '@webColorInput' => '#app > main > div > form > div > div.card-body > div:nth-child(2) > div > input[name=web_color]', //fixme
             '@slideColorInput' => '#app > main > div > form > div > div.card-body > div:nth-child(3) > div > input[name=slide_color]', //fixme
-            '@saveEventTypeButton' => '#app > main > div > form > div > div.card-footer > button.btn-primary'
+            '@saveEventTypeButton' => '#app > main > div > form > div > div.card-footer > button.btn-primary',
         ];
     }
 

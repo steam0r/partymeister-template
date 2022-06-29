@@ -45,7 +45,8 @@ class CreatePage extends Page //not ready yet
                 ->assertPathIs($targetPage->url());
     }
 
-    public function enterName (Browser $browser, $nameString) {
+    public function enterName(Browser $browser, $nameString)
+    {
         $browser->type('@nameField', $nameString);
     }
 

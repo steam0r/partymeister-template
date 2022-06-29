@@ -8,7 +8,7 @@ return [
         'local' => [
             'position'   => 1,
             'name'       => 'Local package bonanza',
-            'navigation' => '_navigation'
-        ]
-    ]
+            'navigation' => '_navigation',
+        ],
+    ],
 ];

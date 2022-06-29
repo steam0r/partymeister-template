@@ -4,8 +4,8 @@ namespace Tests\Factories;
 
 use Illuminate\Support\Facades\DB;
 
-class CallbackFactory extends BaseFactory {
-
+class CallbackFactory extends BaseFactory
+{
     const TABLE = 'callbacks';
 
     public static function generate($count)

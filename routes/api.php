@@ -18,11 +18,10 @@ Route::get('/user', static function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
 
-
 /*
 Route::post('callback/announcement', function() {
 
-	$status = StuhlService::send('This is a test of the Revision Broadcast System', '', '', 'BORING', 'discord');
+    $status = StuhlService::send('This is a test of the Revision Broadcast System', '', '', 'BORING', 'discord');
         return response($status);
-}); 
+});
  */

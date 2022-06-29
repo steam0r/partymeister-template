@@ -8,7 +8,6 @@ use Partymeister\Core\Models\Visitor;
 
 class VisitorRegisteredEventListener
 {
-
     /**
      * Create the event listener.
      *
@@ -19,48 +18,47 @@ class VisitorRegisteredEventListener
         //
     }
 
-
     /**
      * Handle the event.
      */
     public function handle(VisitorRegistered $event)
     {
         $visitorCount = Visitor::count();
-        $maxRows      = max(ceil($visitorCount / 10), 1);
-        $seatNumber   = '';
+        $maxRows = max(ceil($visitorCount / 10), 1);
+        $seatNumber = '';
         switch ($visitorCount % 10) {
             case 1:
-                $seatNumber = $maxRows . 'A';
+                $seatNumber = $maxRows.'A';
                 break;
             case 2:
-                $seatNumber = $maxRows . 'B';
+                $seatNumber = $maxRows.'B';
                 break;
             case 3:
-                $seatNumber = $maxRows . 'C';
+                $seatNumber = $maxRows.'C';
                 break;
             case 4:
-                $seatNumber = $maxRows . 'D';
+                $seatNumber = $maxRows.'D';
                 break;
             case 5:
-                $seatNumber = $maxRows . 'E';
+                $seatNumber = $maxRows.'E';
                 break;
             case 6:
-                $seatNumber = $maxRows . 'F';
+                $seatNumber = $maxRows.'F';
                 break;
             case 7:
-                $seatNumber = $maxRows . 'G';
+                $seatNumber = $maxRows.'G';
                 break;
             case 8:
-                $seatNumber = $maxRows . 'H';
+                $seatNumber = $maxRows.'H';
                 break;
             case 9:
-                $seatNumber = $maxRows . 'J';
+                $seatNumber = $maxRows.'J';
                 break;
             case 0:
-                $seatNumber = $maxRows . 'K';
+                $seatNumber = $maxRows.'K';
                 break;
         }
-        $event->visitor->additional_data = [ 'seat' => $seatNumber, 'boardingpass' => Str::upper(Str::random(5)) ];
+        $event->visitor->additional_data = ['seat' => $seatNumber, 'boardingpass' => Str::upper(Str::random(5))];
         $event->visitor->save();
     }
 }

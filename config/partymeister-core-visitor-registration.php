@@ -6,5 +6,5 @@ return [
         //'AF' => 'Afghanistan',
         //'NI' => 'Niger',
         //'VI' => 'U.S. Virgin Islands'
-    ]
+    ],
 ];

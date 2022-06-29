@@ -14,6 +14,6 @@ return [
         'for'       => 'Für / For',
         'thanks'    => 'Dankend erhalten / Thankfully received',
         'signature' => 'Ort, Datum und Unterschrift / Place, Date and Signature',
-        'rank'      => 'Platz / Rank'
+        'rank'      => 'Platz / Rank',
     ],
 ];

@@ -44,11 +44,13 @@ class CreateVisitor extends CreatePage
         ];
     }
 
-    public function enterGroup (Browser $browser, $fieldString) {
+    public function enterGroup(Browser $browser, $fieldString)
+    {
         $browser->type('@groupField', $fieldString);
     }
 
-    public function enterEmail (Browser $browser, $fieldString) {
+    public function enterEmail(Browser $browser, $fieldString)
+    {
         $browser->type('@emailField', $fieldString);
     }
 
@@ -56,10 +58,11 @@ class CreateVisitor extends CreatePage
     //     $browser->click('@countryCombobox')->type('@countryComboboxInput', $fieldString); //FIXME
     // }
 
-    public function enterPassword (Browser $browser, $fieldString) {
+    public function enterPassword(Browser $browser, $fieldString)
+    {
         $browser->type('@passwordField', $fieldString); // DOESN'T WORK
     }
-    
+
     public function clickSaveVisitor(Browser $browser)
     {
         $browser->click('@saveVisitorButton')

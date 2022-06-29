@@ -7,20 +7,33 @@ use Laravel\Dusk\Browser;
 class CreateCallback extends CreatePage
 {
     const ACTION_NOTIFICATION = 'notification';
+
     const ACTION_LIVE = 'live';
+
     const ACTION_LIVE_WITH_NOTIFICATION = 'live_with_notification';
 
     const DESTINATION_ORGA = 'orga';
+
     const DESTINATION_NOWPLAYING = 'nowplaying';
+
     const DESTINATION_GENERAL = 'general';
+
     const DESTINATION_COMPETITIONS = 'competitions';
+
     const DESTINATION_SEMINARS = 'seminars';
+
     const DESTINATION_DEADLINES = 'deadlines';
+
     const DESTINATION_EVENTS = 'events';
+
     const DESTINATION_NIGHTSHUTTLE = 'nightshuttle';
+
     const DESTINATION_LOCATION = 'location';
+
     const DESTINATION_IOS = 'ios';
+
     const DESTINATION_ANDROID = 'android';
+
     const DESTINATION_TESTING = 'testing';
 
     /**
@@ -63,40 +76,49 @@ class CreateCallback extends CreatePage
             '@saveCallbackButton' => '#app > main > div > form > div:nth-child(4) > div.card-footer > button.competition-submit',
         ];
     }
-    
-    public function selectAction (Browser $browser, $actionOption) {
+
+    public function selectAction(Browser $browser, $actionOption)
+    {
         $browser->select('@actionDropdown', $actionOption);
     }
 
-    public function selectDestination (Browser $browser, $destinationOption) {
+    public function selectDestination(Browser $browser, $destinationOption)
+    {
         $browser->select('@destinationDropdown', $destinationOption);
     }
 
-    public function enterTitle (Browser $browser, $titleString) {
+    public function enterTitle(Browser $browser, $titleString)
+    {
         $browser->type('@titleField', $titleString);
     }
 
-    public function enterBody (Browser $browser, $bodyString) {
+    public function enterBody(Browser $browser, $bodyString)
+    {
         $browser->type('@bodyField', $bodyString);
     }
 
-    public function enterLink (Browser $browser, $fieldString) {
+    public function enterLink(Browser $browser, $fieldString)
+    {
         $browser->type('@linkField', $fieldString);
     }
 
-    public function checkHasFired (Browser $browser) {
+    public function checkHasFired(Browser $browser)
+    {
         $browser->check('@hasFiredCheckbox');
     }
 
-    public function uncheckHasFired (Browser $browser) {
+    public function uncheckHasFired(Browser $browser)
+    {
         $browser->uncheck('@hasFiredCheckbox');
     }
 
-    public function checkIsTimed (Browser $browser) {
+    public function checkIsTimed(Browser $browser)
+    {
         $browser->check('@isTimedCheckbox');
     }
 
-    public function uncheckIsTimed (Browser $browser) {
+    public function uncheckIsTimed(Browser $browser)
+    {
         $browser->uncheck('@isTimedCheckbox');
     }
 

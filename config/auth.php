@@ -75,11 +75,11 @@ return [
     'providers' => [
         'users'    => [
             'driver' => 'eloquent',
-            'model'  => Motor\Backend\Models\User::class
+            'model'  => Motor\Backend\Models\User::class,
         ],
         'visitor' => [
             'driver' => 'eloquent',
-            'model'  => Partymeister\Core\Models\Visitor::class
+            'model'  => Partymeister\Core\Models\Visitor::class,
         ],
 
         // 'users' => [

@@ -12,7 +12,6 @@ use Throwable;
 
 class Handler extends ExceptionHandler
 {
-
     /**
      * A list of the exception types that should not be reported.
      *
@@ -27,13 +26,13 @@ class Handler extends ExceptionHandler
         \Illuminate\Validation\ValidationException::class,
     ];
 
-
     /**
      * Report or log an exception.
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param Throwable $exception
+     * @param  Throwable  $exception
+     *
      * @throws Exception
      */
     public function report(Throwable $exception)
@@ -41,25 +40,25 @@ class Handler extends ExceptionHandler
         parent::report($exception);
     }
 
-
     /**
      * Render an exception into an HTTP response.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param Throwable $exception
+     * @param  \Illuminate\Http\Request  $request
+     * @param  Throwable  $exception
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response|\Symfony\Component\HttpFoundation\Response
+     *
      * @throws Throwable
      */
     public function render($request, Throwable $exception)
     {
         if ($exception instanceof HttpException) {
-            if ( ! $request->acceptsHtml()) {
-                return response()->json([ 'error' => 'Access denied.' ], 403);
+            if (! $request->acceptsHtml()) {
+                return response()->json(['error' => 'Access denied.'], 403);
             }
         }
 
         if ($exception instanceof ModelNotFoundException) {
-            if ( ! $request->acceptsHtml()) {
+            if (! $request->acceptsHtml()) {
                 return response()->json([
                     'message' => 'Record not found',
                 ], 404);
@@ -69,29 +68,26 @@ class Handler extends ExceptionHandler
         return parent::render($request, $exception);
     }
 
-
     /**
      * Convert an authentication exception into an unauthenticated response.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param AuthenticationException $exception
+     * @param  \Illuminate\Http\Request  $request
+     * @param  AuthenticationException  $exception
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     protected function unauthenticated($request, AuthenticationException $exception)
     {
         if ($request->expectsJson()) {
-            return response()->json([ 'error' => 'Unauthenticated.' ], 401);
+            return response()->json(['error' => 'Unauthenticated.'], 401);
         }
 
         return redirect()->guest('login');
     }
 
-
     /**
      * Render the given HttpException.
      *
-     * @param HttpExceptionInterface $exception
-     *
+     * @param  HttpExceptionInterface  $exception
      * @return \Illuminate\Http\Response|\Symfony\Component\HttpFoundation\Response
      */
     protected function renderHttpException(HttpExceptionInterface $exception)
@@ -100,19 +96,18 @@ class Handler extends ExceptionHandler
 
         if (strpos(app()->request->getPathInfo(), '/backend') !== false) {
             if (view()->exists("motor-backend::errors.{$status}")) {
-                return response()->view("motor-backend::errors.{$status}", [ 'exception' => $exception ], $status,
+                return response()->view("motor-backend::errors.{$status}", ['exception' => $exception], $status,
                     $exception->getHeaders());
             } else {
                 return $this->convertExceptionToResponse($exception);
             }
         } else {
             if (view()->exists("motor-cms::errors.{$status}")) {
-                return response()->view("motor-cms::errors.{$status}", [ 'exception' => $exception ], $status,
+                return response()->view("motor-cms::errors.{$status}", ['exception' => $exception], $status,
                     $exception->getHeaders());
             } else {
                 return $this->convertExceptionToResponse($exception);
             }
         }
-
     }
 }

@@ -6,5 +6,5 @@ return [
     ],
     'routes' => [
         'file' => false,
-    ]
+    ],
 ];

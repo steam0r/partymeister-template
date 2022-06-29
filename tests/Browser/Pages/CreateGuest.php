@@ -53,63 +53,78 @@ class CreateGuest extends CreatePage
         ];
     }
 
-    public function selectCategory (Browser $browser, $categoryOption) {
+    public function selectCategory(Browser $browser, $categoryOption)
+    {
         $browser->select('@categoryDropdown', $categoryOption);
     }
 
-    public function enterHandle (Browser $browser, $fieldString) {
+    public function enterHandle(Browser $browser, $fieldString)
+    {
         $browser->type('@handleField', $fieldString);
     }
 
-    public function enterCompany (Browser $browser, $fieldString) {
+    public function enterCompany(Browser $browser, $fieldString)
+    {
         $browser->type('@companyField', $fieldString);
     }
 
-    public function enterEmail (Browser $browser, $fieldString) {
+    public function enterEmail(Browser $browser, $fieldString)
+    {
         $browser->type('@emailField', $fieldString);
     }
 
-    public function enterCountry (Browser $browser, $fieldString) {
+    public function enterCountry(Browser $browser, $fieldString)
+    {
         $browser->type('@countryField', $fieldString);
     }
 
-    public function enterTicketCode (Browser $browser, $fieldString) {
+    public function enterTicketCode(Browser $browser, $fieldString)
+    {
         $browser->type('@ticketCodeField', $fieldString);
     }
 
-    public function enterTicketType (Browser $browser, $fieldString) {
+    public function enterTicketType(Browser $browser, $fieldString)
+    {
         $browser->type('@ticketTypeField', $fieldString);
     }
 
-    public function enterTicketOrderNo (Browser $browser, $fieldString) {
+    public function enterTicketOrderNo(Browser $browser, $fieldString)
+    {
         $browser->type('@ticketOrderNoField', $fieldString);
     }
 
-    public function enterComment (Browser $browser, $textareaString) {
+    public function enterComment(Browser $browser, $textareaString)
+    {
         $browser->type('@commentTextarea', $textareaString);
     }
 
-    public function checkHasBadge (Browser $browser) {
+    public function checkHasBadge(Browser $browser)
+    {
         $browser->check('@hasBadgeCheckbox');
     }
 
-    public function uncheckHasBadge (Browser $browser) {
+    public function uncheckHasBadge(Browser $browser)
+    {
         $browser->uncheck('@hasBadgeCheckbox');
     }
 
-    public function checkHasArrived (Browser $browser) {
+    public function checkHasArrived(Browser $browser)
+    {
         $browser->check('@hasArrivedCheckbox');
     }
 
-    public function uncheckHasArrived (Browser $browser) {
+    public function uncheckHasArrived(Browser $browser)
+    {
         $browser->uncheck('@hasArrivedCheckbox');
     }
 
-    public function checkTicketCodeScanned (Browser $browser) {
+    public function checkTicketCodeScanned(Browser $browser)
+    {
         $browser->check('@ticketCodeScannedCheckbox');
     }
 
-    public function uncheckTicketCodeScanned (Browser $browser) {
+    public function uncheckTicketCodeScanned(Browser $browser)
+    {
         $browser->uncheck('@ticketCodeScannedCheckbox');
     }
 

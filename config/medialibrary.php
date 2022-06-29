@@ -14,7 +14,6 @@ return [
      */
     'max_file_size' => 1024 * 1024 * 1024 * 2,
 
-    
     /*
      * This queue will be used to generate derived images.
      * Leave empty to use the default queue.

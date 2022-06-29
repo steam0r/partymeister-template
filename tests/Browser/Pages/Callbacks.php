@@ -7,16 +7,27 @@ use Laravel\Dusk\Browser;
 class Callbacks extends GridPage
 {
     const DESTINATION_ORGA = 'orga';
+
     const DESTINATION_NOWPLAYING = 'nowplaying';
+
     const DESTINATION_GENERAL = 'general';
+
     const DESTINATION_COMPETITIONS = 'competitions';
+
     const DESTINATION_SEMINARS = 'seminars';
+
     const DESTINATION_DEADLINES = 'deadlines';
+
     const DESTINATION_EVENTS = 'events';
+
     const DESTINATION_NIGHTSHUTTLE = 'nightshuttle';
+
     const DESTINATION_LOCATION = 'location';
+
     const DESTINATION_IOS = 'ios';
+
     const DESTINATION_ANDROID = 'android';
+
     const DESTINATION_TESTING = 'testing';
 
     const CREATE_BUTTON_TEXT = 'Create callback';
@@ -63,5 +74,4 @@ class Callbacks extends GridPage
     {
         $browser->clickCreateButton(self::CREATE_BUTTON_TEXT);
     }
-
 }

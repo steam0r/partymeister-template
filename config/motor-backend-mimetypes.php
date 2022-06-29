@@ -7,5 +7,5 @@ return [
     ],
     'video' => [
         'video/mp4',
-    ]
+    ],
 ];

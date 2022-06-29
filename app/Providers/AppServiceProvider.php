@@ -8,7 +8,6 @@ use Laravel\Horizon\Horizon;
 
 class AppServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap any application services.
      *
@@ -16,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if($this->app->environment('production')) {
+        if ($this->app->environment('production')) {
             \URL::forceScheme('https');
         }
         Horizon::auth(static function ($request) {
@@ -25,7 +24,6 @@ class AppServiceProvider extends ServiceProvider
             }
         });
     }
-
 
     /**
      * Register any application services.

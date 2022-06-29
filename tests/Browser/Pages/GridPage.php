@@ -6,11 +6,14 @@ use Laravel\Dusk\Browser;
 
 class GridPage extends Page
 {
-
     const PAGINATION_25 = '25';
+
     const PAGINATION_50 = '50';
+
     const PAGINATION_100 = '100';
+
     const PAGINATION_200 = '200';
+
     const GRID_ROW_PREFIX = '#app > main > div > div > div.card-body.table-responsive.no-padding > table > tbody > ';
 
     /**
@@ -21,6 +24,7 @@ class GridPage extends Page
     public static function siteElements()
     {
         $prefix = '#app > main > div > div > div.card-header > form > ';
+
         return [
             '@searchField' => $prefix.'input[name=search]',
             '@paginationDropdown' => $prefix.'select[name=per_page]',
@@ -52,14 +56,14 @@ class GridPage extends Page
     {
         $browser->click($this->getButtonPrefixByElementIndex($elementIndexNumber).'a.btn.btn-warning.btn-sm')
                 // ->assertPathIs('dgegegeg')
-                ;
+;
     }
 
     public function duplicateElement(Browser $browser, $elementIndexNumber)
     {
         $browser->click($this->getButtonPrefixByElementIndex($elementIndexNumber).'a.btn.btn-info.btn-sm')
                 // ->assertPathIs('sfgsgwrgwg')
-                ;
+;
     }
 
     public function deleteElement(Browser $browser, $elementIndexNumber)
@@ -78,11 +82,13 @@ class GridPage extends Page
                 ->assertSee($elementName);
     }
 
-    private function getButtonPrefixByElementIndex($elementIndexNumber) {
+    private function getButtonPrefixByElementIndex($elementIndexNumber)
+    {
         return self::GRID_ROW_PREFIX.'tr:nth-child('.$elementIndexNumber.') > td.action-column > ';
     }
 
-    private function getElementName(Browser $browser, $elementIndexNumber) {
+    private function getElementName(Browser $browser, $elementIndexNumber)
+    {
         if ($elementIndexNumber == 1) {
             return $browser->text(self::GRID_ROW_PREFIX.'tr:first-child > td:nth-child(1)');
         } else {
@@ -95,5 +101,4 @@ class GridPage extends Page
         $browser->clickLink($linkText)
                 ->assertPathIs($this->url().'/create');
     }
-
 }
