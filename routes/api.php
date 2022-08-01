@@ -14,10 +14,6 @@ use Partymeister\Core\Services\StuhlService;
 |
 */
 
-Route::get('/user', static function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
-
 /*
 Route::post('callback/announcement', function() {
 

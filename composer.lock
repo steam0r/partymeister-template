@@ -3953,16 +3953,16 @@
         },
         {
             "name": "motor-cms/motor-cms",
-            "version": "1.2.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-cms.git",
-                "reference": "71412f6de14562b2091099a4e6ba66647e91483b"
+                "reference": "5ea2ccb9f6552df5aecfbbec79309afa91b21480"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-cms/zipball/71412f6de14562b2091099a4e6ba66647e91483b",
-                "reference": "71412f6de14562b2091099a4e6ba66647e91483b",
+                "url": "https://api.github.com/repos/motor-cms/motor-cms/zipball/5ea2ccb9f6552df5aecfbbec79309afa91b21480",
+                "reference": "5ea2ccb9f6552df5aecfbbec79309afa91b21480",
                 "shasum": ""
             },
             "require": {
@@ -4001,22 +4001,22 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-cms/issues",
-                "source": "https://github.com/motor-cms/motor-cms/tree/1.2.0"
+                "source": "https://github.com/motor-cms/motor-cms/tree/1.2.2"
             },
-            "time": "2022-06-29T15:04:05+00:00"
+            "time": "2022-06-29T17:53:25+00:00"
         },
         {
             "name": "motor-cms/motor-core",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-core.git",
-                "reference": "f2ee1050271e3b46b905fd8d45ed7e0199e5df46"
+                "reference": "c968fab7b5095099ca7664d80eabb96824065cf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-core/zipball/f2ee1050271e3b46b905fd8d45ed7e0199e5df46",
-                "reference": "f2ee1050271e3b46b905fd8d45ed7e0199e5df46",
+                "url": "https://api.github.com/repos/motor-cms/motor-core/zipball/c968fab7b5095099ca7664d80eabb96824065cf9",
+                "reference": "c968fab7b5095099ca7664d80eabb96824065cf9",
                 "shasum": ""
             },
             "require": {
@@ -4060,22 +4060,22 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-core/issues",
-                "source": "https://github.com/motor-cms/motor-core/tree/1.2.0"
+                "source": "https://github.com/motor-cms/motor-core/tree/1.2.1"
             },
-            "time": "2022-05-27T14:18:55+00:00"
+            "time": "2022-06-29T17:54:14+00:00"
         },
         {
             "name": "motor-cms/motor-media",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-media.git",
-                "reference": "abc641d0377a8033db06ab19f594ee11625821c6"
+                "reference": "9265f887003a7c79ac24d9c58aa5369cca58dbde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-media/zipball/abc641d0377a8033db06ab19f594ee11625821c6",
-                "reference": "abc641d0377a8033db06ab19f594ee11625821c6",
+                "url": "https://api.github.com/repos/motor-cms/motor-media/zipball/9265f887003a7c79ac24d9c58aa5369cca58dbde",
+                "reference": "9265f887003a7c79ac24d9c58aa5369cca58dbde",
                 "shasum": ""
             },
             "require": {
@@ -4115,9 +4115,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-media/issues",
-                "source": "https://github.com/motor-cms/motor-media/tree/1.2.3"
+                "source": "https://github.com/motor-cms/motor-media/tree/1.2.4"
             },
-            "time": "2022-06-29T15:03:07+00:00"
+            "time": "2022-06-29T17:54:45+00:00"
         },
         {
             "name": "myclabs/php-enum",
@@ -4181,16 +4181,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.59.0",
+            "version": "2.59.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "9cea2f72585a46d0651ee6d4c8c8f752e78c16c6"
+                "reference": "a9000603ea337c8df16cc41f8b6be95a65f4d0f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/9cea2f72585a46d0651ee6d4c8c8f752e78c16c6",
-                "reference": "9cea2f72585a46d0651ee6d4c8c8f752e78c16c6",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a9000603ea337c8df16cc41f8b6be95a65f4d0f5",
+                "reference": "a9000603ea337c8df16cc41f8b6be95a65f4d0f5",
                 "shasum": ""
             },
             "require": {
@@ -4279,7 +4279,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-26T20:26:59+00:00"
+            "time": "2022-06-29T21:43:55+00:00"
         },
         {
             "name": "nette/schema",
@@ -4687,16 +4687,16 @@
         },
         {
             "name": "partymeister/accounting",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-accounting.git",
-                "reference": "6e98b29f494bd044fbeecce6595ee0b47507688c"
+                "reference": "528a4896f87d3fb7b294b6f48999a0e413f88021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-accounting/zipball/6e98b29f494bd044fbeecce6595ee0b47507688c",
-                "reference": "6e98b29f494bd044fbeecce6595ee0b47507688c",
+                "url": "https://api.github.com/repos/partymeister/partymeister-accounting/zipball/528a4896f87d3fb7b294b6f48999a0e413f88021",
+                "reference": "528a4896f87d3fb7b294b6f48999a0e413f88021",
                 "shasum": ""
             },
             "require": {
@@ -4735,22 +4735,22 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-accounting/issues",
-                "source": "https://github.com/partymeister/partymeister-accounting/tree/1.2.0"
+                "source": "https://github.com/partymeister/partymeister-accounting/tree/1.2.1"
             },
-            "time": "2022-06-29T15:16:41+00:00"
+            "time": "2022-06-29T17:55:10+00:00"
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "aeb944963bebbc9bfccca40aa4696e5d98cbed16"
+                "reference": "5a593c8c67bfceac41605a9afc159d16b98468a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/aeb944963bebbc9bfccca40aa4696e5d98cbed16",
-                "reference": "aeb944963bebbc9bfccca40aa4696e5d98cbed16",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/5a593c8c67bfceac41605a9afc159d16b98468a0",
+                "reference": "5a593c8c67bfceac41605a9afc159d16b98468a0",
                 "shasum": ""
             },
             "require": {
@@ -4793,22 +4793,22 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.2.0"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.2.1"
             },
-            "time": "2022-06-29T17:42:14+00:00"
+            "time": "2022-06-29T17:55:31+00:00"
         },
         {
             "name": "partymeister/core",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-core.git",
-                "reference": "e9addb8c906bdf1b3ca75c22688ea9203ee15776"
+                "reference": "3e345915e42b115418741ed87dd494fc0c34aa4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/e9addb8c906bdf1b3ca75c22688ea9203ee15776",
-                "reference": "e9addb8c906bdf1b3ca75c22688ea9203ee15776",
+                "url": "https://api.github.com/repos/partymeister/partymeister-core/zipball/3e345915e42b115418741ed87dd494fc0c34aa4b",
+                "reference": "3e345915e42b115418741ed87dd494fc0c34aa4b",
                 "shasum": ""
             },
             "require": {
@@ -4846,22 +4846,22 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-core/issues",
-                "source": "https://github.com/partymeister/partymeister-core/tree/1.2.0"
+                "source": "https://github.com/partymeister/partymeister-core/tree/1.2.1"
             },
-            "time": "2022-06-29T15:17:52+00:00"
+            "time": "2022-06-29T17:55:53+00:00"
         },
         {
             "name": "partymeister/frontend",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-frontend.git",
-                "reference": "00e60efece690a5041961b0aa71371c2e80da7c7"
+                "reference": "09bc56444f015a2c7bfee9a3ed52a805f95463c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/00e60efece690a5041961b0aa71371c2e80da7c7",
-                "reference": "00e60efece690a5041961b0aa71371c2e80da7c7",
+                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/09bc56444f015a2c7bfee9a3ed52a805f95463c6",
+                "reference": "09bc56444f015a2c7bfee9a3ed52a805f95463c6",
                 "shasum": ""
             },
             "require": {
@@ -4900,22 +4900,22 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-frontend/issues",
-                "source": "https://github.com/partymeister/partymeister-frontend/tree/1.2.0"
+                "source": "https://github.com/partymeister/partymeister-frontend/tree/1.2.1"
             },
-            "time": "2022-06-29T17:43:04+00:00"
+            "time": "2022-06-29T17:56:20+00:00"
         },
         {
             "name": "partymeister/slides",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "9732af9316e5831c88de4948b340d6ff0dfe40d0"
+                "reference": "4615f6a31a30f78854be9090fe71f64ee9d6aeff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/9732af9316e5831c88de4948b340d6ff0dfe40d0",
-                "reference": "9732af9316e5831c88de4948b340d6ff0dfe40d0",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/4615f6a31a30f78854be9090fe71f64ee9d6aeff",
+                "reference": "4615f6a31a30f78854be9090fe71f64ee9d6aeff",
                 "shasum": ""
             },
             "require": {
@@ -4955,9 +4955,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.2.0"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.2.1"
             },
-            "time": "2022-06-29T17:44:58+00:00"
+            "time": "2022-06-29T17:56:37+00:00"
         },
         {
             "name": "php-console/php-console",
@@ -7471,16 +7471,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "5.5.4",
+            "version": "5.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "cb86fd87b43fcfc493c3f2b1de6fad100c078146"
+                "reference": "f2303a70be60919811ca8afc313e8244fda00974"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/cb86fd87b43fcfc493c3f2b1de6fad100c078146",
-                "reference": "cb86fd87b43fcfc493c3f2b1de6fad100c078146",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/f2303a70be60919811ca8afc313e8244fda00974",
+                "reference": "f2303a70be60919811ca8afc313e8244fda00974",
                 "shasum": ""
             },
             "require": {
@@ -7541,7 +7541,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/5.5.4"
+                "source": "https://github.com/spatie/laravel-permission/tree/5.5.5"
             },
             "funding": [
                 {
@@ -7549,7 +7549,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-16T12:09:59+00:00"
+            "time": "2022-06-29T23:11:42+00:00"
         },
         {
             "name": "spatie/temporary-directory",
@@ -10783,16 +10783,16 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "4.4.5",
+            "version": "4.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "fd8f1eb8d0165c7a668f307fbccbf3adf33f4017"
+                "reference": "41c03aa742657473335fa53e2d44adcf3b97a97d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/fd8f1eb8d0165c7a668f307fbccbf3adf33f4017",
-                "reference": "fd8f1eb8d0165c7a668f307fbccbf3adf33f4017",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/41c03aa742657473335fa53e2d44adcf3b97a97d",
+                "reference": "41c03aa742657473335fa53e2d44adcf3b97a97d",
                 "shasum": ""
             },
             "require": {
@@ -10854,24 +10854,24 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/4.4.5"
+                "source": "https://github.com/zircote/swagger-php/tree/4.4.6"
             },
-            "time": "2022-06-02T21:05:02+00:00"
+            "time": "2022-06-29T01:40:06+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.6.7",
+            "version": "v3.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298"
+                "reference": "814b36a08a60f4159cdcbb1c466a6a0027440b6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/b96f9820aaf1ff9afe945207883149e1c7afb298",
-                "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/814b36a08a60f4159cdcbb1c466a6a0027440b6c",
+                "reference": "814b36a08a60f4159cdcbb1c466a6a0027440b6c",
                 "shasum": ""
             },
             "require": {
@@ -10931,7 +10931,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.6.7"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.6.8"
             },
             "funding": [
                 {
@@ -10943,7 +10943,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-09T07:52:32+00:00"
+            "time": "2022-06-08T15:03:05+00:00"
         },
         {
             "name": "fakerphp/faker",
