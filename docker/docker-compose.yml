@@ -1,10 +1,11 @@
 version: "3.8"
 services:
   app:
-    image: zeitraumdev/php8-grpc-laravel:1
+    image: dfox288/partymeister:1
     environment:
       APP_NAME: partymeister
-      APP_URL: localhost
+      APP_URL: http://localhost
+      APP_URL_INTERNAL: http://nginx
       DB_HOST: mysql
       DB_CONNECTION: mysql
       DB_PORT: 3306
@@ -14,15 +15,14 @@ services:
       REDIS_HOST: redis
       REDIS_PASSWORD: password
       QUEUE_CONNECTION: redis
-      REDIS_CLIENT: predis
       REDIS_PORT: 6379
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
       - ../:/var/www
-      - ./docker-compose/php/custom_php.ini:/usr/local/etc/php/conf.d/custom.ini
-      - ./docker-compose/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
-      - ./docker-compose/php/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+      - ./config/php/custom_php.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./config/php/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+      - ./config/supervisor/supervisor.conf:/etc/supervisor/conf.d/supervisor.conf
     networks:
       - partymeister_network
     depends_on:
@@ -37,7 +37,7 @@ services:
       - "80:80"
     volumes:
       - ../:/var/www
-      - ./docker-compose/nginx:/etc/nginx/conf.d/
+      - ./config/nginx:/etc/nginx/conf.d/
     networks:
       - partymeister_network
 
@@ -64,7 +64,6 @@ services:
       - "3306:3306"
     networks:
       - partymeister_network
-
 
 volumes:
   mysql:

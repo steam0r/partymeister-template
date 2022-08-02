@@ -4,31 +4,24 @@
 
 ### Docker standalone
 
-1. Copy .env.docker.standalone to .env and adjust settings if necessary
+1. Go to ./docker
 
-2. Go to ./docker/standalone
-
-3. Copy .env.example to .env and adjust the settings if necessary
-
-4. Run the following command
+2. Run the following command
 
 
     docker-compose up --build --force-recreate -d
 
-5. After the images are running successfully, run the following script to create the database
+
+3. After the images are running successfully, run the following script to create the database
 
 
-    ./after-build.sh
+    docker exec -it docker_app_1 /bin/bash
 
-6. After that, run the last command (this will populate the database get everything ready)
+    php artisan db:seed
 
-
-    ./installation.sh
-
-
-7. Go to http://localhost and the frontend page should show up
-8. You can find the backend on http://localhost/backend and log in with
+4. Go to http://localhost and the frontend page should show up
+5. You can find the backend on http://localhost/backend and log in with
     1. User: motor@esmaili.info
     2. Password: admin
     
-9. Go nuts!
+6. Go nuts!
