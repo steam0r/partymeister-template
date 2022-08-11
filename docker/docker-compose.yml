@@ -6,7 +6,7 @@ services:
       APP_NAME: partymeister # do not change
       APP_URL: http://localhost # adjust to the real url (with https) before going live
       APP_URL_INTERNAL: http://nginx # used for internal communication between the containers. only change if the container name is changed as well
-      APP_DEBUG: true # set to false for production
+      APP_DEBUG: "true" # set to false for production
       APP_LOG_LEVEL: debug # can stay the same, logs will appear in /storage/logs
 
       DB_HOST: mysql # container name, do not change unless you change the container name for mysql as well
