@@ -15,7 +15,7 @@
     "ext-zip": "*",
     "ext-zlib": "*",
     "ext-gd": "*",
-    "motor-cms/motor-backend": "1.2.2",
+    "motor-cms/motor-backend": "^1.2",
     "motor-cms/motor-core": "^1.2",
     "motor-cms/motor-cms": "^1.2",
     "motor-cms/motor-media": "^1.2",

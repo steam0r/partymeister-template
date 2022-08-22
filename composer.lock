@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5126526f2813a19b4ebb36f4171dff81",
+    "content-hash": "e71c06310291f0aaf9aad429af29987d",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -809,16 +809,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "94e016428884227245fb1219e0de7d8b86ca16d7"
+                "reference": "22de295f10edbe00df74f517612f1fbd711131e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/94e016428884227245fb1219e0de7d8b86ca16d7",
-                "reference": "94e016428884227245fb1219e0de7d8b86ca16d7",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/22de295f10edbe00df74f517612f1fbd711131e2",
+                "reference": "22de295f10edbe00df74f517612f1fbd711131e2",
                 "shasum": ""
             },
             "require": {
@@ -900,7 +900,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.4.1"
+                "source": "https://github.com/doctrine/dbal/tree/3.4.2"
             },
             "funding": [
                 {
@@ -916,7 +916,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-16T18:37:46+00:00"
+            "time": "2022-08-21T14:21:06+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -3861,16 +3861,16 @@
         },
         {
             "name": "motor-cms/motor-backend",
-            "version": "1.2.2",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/motor-cms/motor-backend.git",
-                "reference": "d4aa72b0a0fd2f5a98c6583299c768f0fcd627d4"
+                "reference": "aa960e015971bc14ca2e68875e3bcc8e1c382102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/d4aa72b0a0fd2f5a98c6583299c768f0fcd627d4",
-                "reference": "d4aa72b0a0fd2f5a98c6583299c768f0fcd627d4",
+                "url": "https://api.github.com/repos/motor-cms/motor-backend/zipball/aa960e015971bc14ca2e68875e3bcc8e1c382102",
+                "reference": "aa960e015971bc14ca2e68875e3bcc8e1c382102",
                 "shasum": ""
             },
             "require": {
@@ -3940,9 +3940,9 @@
             ],
             "support": {
                 "issues": "https://github.com/motor-cms/motor-backend/issues",
-                "source": "https://github.com/motor-cms/motor-backend/tree/1.2.2"
+                "source": "https://github.com/motor-cms/motor-backend/tree/1.2.5"
             },
-            "time": "2022-05-27T15:45:41+00:00"
+            "time": "2022-08-22T07:40:26+00:00"
         },
         {
             "name": "motor-cms/motor-cms",
