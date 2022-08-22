@@ -4823,16 +4823,16 @@
         },
         {
             "name": "partymeister/competitions",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-competitions.git",
-                "reference": "5a593c8c67bfceac41605a9afc159d16b98468a0"
+                "reference": "736bd7d04eccfc00aa57c1545d269a18879fc4a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/5a593c8c67bfceac41605a9afc159d16b98468a0",
-                "reference": "5a593c8c67bfceac41605a9afc159d16b98468a0",
+                "url": "https://api.github.com/repos/partymeister/partymeister-competitions/zipball/736bd7d04eccfc00aa57c1545d269a18879fc4a0",
+                "reference": "736bd7d04eccfc00aa57c1545d269a18879fc4a0",
                 "shasum": ""
             },
             "require": {
@@ -4875,9 +4875,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-competitions/issues",
-                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.2.1"
+                "source": "https://github.com/partymeister/partymeister-competitions/tree/1.2.2"
             },
-            "time": "2022-06-29T17:55:31+00:00"
+            "time": "2022-08-22T08:33:35+00:00"
         },
         {
             "name": "partymeister/core",
@@ -4988,16 +4988,16 @@
         },
         {
             "name": "partymeister/slides",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "99ce3ccf8812763fa7d9ac4b0b0cf19d4656e0f5"
+                "reference": "0dc5f6156259859abc3536aa23bf16300bbd27ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/99ce3ccf8812763fa7d9ac4b0b0cf19d4656e0f5",
-                "reference": "99ce3ccf8812763fa7d9ac4b0b0cf19d4656e0f5",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/0dc5f6156259859abc3536aa23bf16300bbd27ca",
+                "reference": "0dc5f6156259859abc3536aa23bf16300bbd27ca",
                 "shasum": ""
             },
             "require": {
@@ -5037,9 +5037,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.2.7"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.2.8"
             },
-            "time": "2022-08-19T13:20:34+00:00"
+            "time": "2022-08-22T08:34:01+00:00"
         },
         {
             "name": "php-console/php-console",
