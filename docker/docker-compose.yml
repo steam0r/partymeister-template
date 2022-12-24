@@ -3,9 +3,9 @@ services:
   app:
     image: dfox288/partymeister:1
     environment:
-      APP_ENV: development
+      APP_ENV: production
       APP_NAME: partymeister # do not change
-      APP_URL: http://localhost # adjust to the real url (with https) before going live
+      APP_URL: https://pm.zenta.rocks # adjust to the real url (with https) before going live
       APP_URL_INTERNAL: http://nginx # used for internal communication between the containers. only change if the container name is changed as well
       APP_DEBUG: "true" # set to false for production
       APP_LOG_LEVEL: debug # can stay the same, logs will appear in /storage/logs
@@ -21,6 +21,7 @@ services:
       REDIS_PASSWORD: password # please change this, also in the redis container
       QUEUE_CONNECTION: redis
       REDIS_PORT: 6379
+      SESSION_DRIVER: redis
 
       PUSHER_APP_ID: 12345 # change if needed
       PUSHER_APP_KEY: 12345 # change if needed
@@ -29,10 +30,11 @@ services:
       PUSHER_PATH: # do not change
       PUSHER_PORT: 6001 # do not change unless you also change the nginx configuration which maps this port to /socket
       PUSHER_SCHEME: http # actually not quite sure if this should stay the same or not...
-      PUSHER_HOST_EXTERNAL: localhost # change this to APP_URL (without http/https)
+      PUSHER_HOST_EXTERNAL: pm.zenta.rocks # change this to APP_URL (without http/https)
       PUSHER_PATH_EXTERNAL: /socket # do not change unless you also change the nginx config
-      PUSHER_PORT_EXTERNAL: 80 # change this to 443 if you use a ssl proxy
-      PUSHER_SCHEME_EXTERNAL: http # change this to https if you use a ssl proxy
+      PUSHER_PORT_EXTERNAL: 443 # change this to 443 if you use a ssl proxy
+      PUSHER_SCHEME_EXTERNAL: https # change this to https if you use a ssl proxy
+      DEBUGBAR_ENABLED: "false"
 
     restart: unless-stopped
     working_dir: /var/www/
@@ -52,12 +54,17 @@ services:
     image: nginx:1.21
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "10082:80"
     volumes:
       - ../:/var/www
       - ./config/nginx:/etc/nginx/conf.d/
     networks:
       - partymeister_network
+      - proxy
+    environment:
+      VIRTUAL_HOST: pm.zenta.rocks
+      LETSENCRYPT_HOST: pm.zenta.rocks
+      LETSENCRYPT_EMAIL: d.fox@partymeister.org
 
   redis:
     image: wodby/redis:6
@@ -65,8 +72,6 @@ services:
       REDIS_PASSWORD: password # please change this, also in the app container
     networks:
       - partymeister_network
-    ports:
-      - "6379:6379" # can be omitted unless you want redis connections from the docker host
 
   mysql:
     image: mysql:8-oracle
@@ -79,7 +84,7 @@ services:
     volumes:
       - mysql:/var/lib/mysql
     ports:
-      - "3306:3306" # can be omitted unless you want mysql connections from the docker host
+      - "12347:3306" # can be omitted unless you want mysql connections from the docker host
     networks:
       - partymeister_network
 
@@ -87,5 +92,7 @@ volumes:
   mysql:
     external: false
 networks:
+  proxy:
+    external: true
   partymeister_network:
     driver: bridge
