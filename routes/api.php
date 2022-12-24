@@ -21,3 +21,12 @@ Route::post('callback/announcement', function() {
         return response($status);
 });
  */
+Route::group([
+    'middleware' => ['bindings'],
+    'namespace'  => 'Partymeister\Core\Http\Controllers\Api',
+    'prefix'     => 'ajax',
+    'as'         => 'ajax.',
+], function () {
+    Route::get('schedules-for-zenta/{schedule}', 'SchedulesController@show')
+         ->name('schedules.show');
+});

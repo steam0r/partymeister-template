@@ -18,9 +18,9 @@ return [
             'family' => '\'Krona One\'',
         ],
         [
-            'name'   => 'Kanit',
-            'path'   => 'https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap',
-            'family' => '\'Kanit\'',
+            'name'   => 'Literata',
+            'path'   => 'https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Syne:wght@400;500',
+            'family' => '\'Literata\'',
         ],
     ],
 ];
