@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
-use Partymeister\Core\Services\StuhlService;
+use Partymeister\Core\Http\Resources\ScheduleResource;
+use Partymeister\Core\Services\ScheduleService;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,10 +23,11 @@ Route::post('callback/announcement', function() {
  */
 Route::group([
     'middleware' => ['bindings'],
-    'namespace'  => '\Partymeister\Core\Http\Controllers\Api',
-    'prefix'     => 'ajax',
-    'as'         => 'ajax.',
 ], function () {
-    Route::get('schedules-for-zenta/{schedule}', 'SchedulesController@show')
-         ->name('schedules.show');
+    Route::get('schedules-for-zenta/{schedule}', function(\Partymeister\Core\Models\Schedule $record) {
+        $result = ScheduleService::show($record)
+                                 ->getResult();
+
+        return (new ScheduleResource($result->load('events')))->additional(['message' => 'Schedule read']);
+    });
 });
