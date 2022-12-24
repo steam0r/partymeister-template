@@ -23,7 +23,7 @@ Route::post('callback/announcement', function() {
  */
 Route::group([
     'middleware' => ['bindings'],
-    'namespace'  => 'Partymeister\Core\Http\Controllers\Api',
+    'namespace'  => '\Partymeister\Core\Http\Controllers\Api',
     'prefix'     => 'ajax',
     'as'         => 'ajax.',
 ], function () {
