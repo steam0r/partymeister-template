@@ -1,6 +1,6 @@
 ## Patch Variables:
 
-* __SLIDETYPE__ ```String``` (default Value: `initial`)
+* __SLIDETYPE__ ```String``` (default Value: `announce`)
 
   initial set
 
