@@ -6,4 +6,5 @@
 
 * __slideVariation__ ```Number```
 * __slideVariation__ ```Number```
+* __slideVariation__ ```Number```
 
