@@ -8,11 +8,11 @@ MIT:
 
 - glmatrix by toji (https://github.com/toji/gl-matrix)
 
+Apache License:
+
+- BabylonJS Shader Code by Babylon.js (https://github.com/BabylonJS/Babylon.js/blob/master/license.md)
+- Filament Code by google (https://github.com/google/filament/blob/main/LICENSE)
+
 Public Domain:
 
 - Photoshop math GLSL shaders by Romain Dura (https://mouaif.wordpress.com/2009/01/05/photoshop-math-with-glsl-shaders/)
-- GPU-Noise-Lib by Brian Sharpe (https://github.com/BrianSharpe/GPU-Noise-Lib)
-
-Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported:
-
-- Domain Warping Shader by inigo quilez (http://iquilezles.org/www/articles/warp/warp.htm)
