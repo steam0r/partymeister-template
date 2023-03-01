@@ -166,7 +166,6 @@ return [
 
         Collective\Html\HtmlServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Lavary\Menu\ServiceProvider::class,
         Culpa\CulpaServiceProvider::class,
