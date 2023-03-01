@@ -145,7 +145,7 @@ return [
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-        Illuminate\View\ViewServiceProvider::class,  //           <-- we're replacing this so we can use blade templates from strings
+        Illuminate\View\ViewServiceProvider::class,
 
         Motor\Backend\Providers\TranslationServiceProvider::class,
 
@@ -245,9 +245,6 @@ return [
         'Image'       => Intervention\Image\Facades\Image::class,
         'Menu'        => Lavary\Menu\Facade::class,
         'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
-
-        //'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
-
     ],
 
 ];
