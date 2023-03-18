@@ -1,4 +1,4 @@
-FROM php:8.0-fpm
+FROM php:8.1-fpm
 #FROM --platform=linux/amd64 php:8.0-fpm
 
 # Install system dependencies
@@ -39,4 +39,4 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 WORKDIR /var/www
 
 # Start the services
-CMD cp .env.example .env && composer install && php artisan key:generate && php artisan storage:link && php artisan migrate && php artisan config:cache && service supervisor start && php-fpm
+CMD cp .env.example .env && composer install && php artisan key:generate && php artisan storage:link && php artisan migrate --force && php artisan config:cache && service supervisor start && php-fpm

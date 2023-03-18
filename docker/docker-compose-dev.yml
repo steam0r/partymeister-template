@@ -1,7 +1,9 @@
 version: "3.8"
 services:
   app:
-    image: dfox288/partymeister:2
+    build:
+      dockerfile: ./Dockerfile
+      context: .
     environment:
       APP_ENV: development
       APP_NAME: partymeister # do not change
