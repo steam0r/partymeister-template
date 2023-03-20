@@ -56,7 +56,7 @@ services:
     image: nginx:1.21
     restart: unless-stopped
     ports:
-      - "10082:80"
+      - "80:80"
     volumes:
       - ../:/var/www
       - ./config/nginx:/etc/nginx/conf.d/
@@ -85,7 +85,7 @@ services:
     volumes:
       - mysql:/var/lib/mysql
     ports:
-      - "12347:3306" # can be omitted unless you want mysql connections from the docker host
+      - "3306:3306" # can be omitted unless you want mysql connections from the docker host
     networks:
       - partymeister_network
 
